@@ -1,0 +1,3 @@
+[submodule "lib/lcfit"]
+	path = lib/lcfit
+	url = https://github.com/matsengrp/lcfit.git
