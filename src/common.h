@@ -40,7 +40,7 @@ typedef unsigned int nat;
 
 /* some global switches */ 
 
-/* #define _EXPERIMENTAL_INTEGRATION_MODE */
+#define _EXPERIMENTAL_INTEGRATION_MODE
 
 #define _DISABLE_INIT_LNL_CHECK
 

@@ -25,7 +25,7 @@ endif
 
 SRCINCLUDE=-I$(top_srcdir)/src
 
-BAYES_INCLUDES=-I$(top_srcdir)/lib/Random123-1.08/include -I$(top_srcdir)/lib/ncl-2.1.18/ $(SRCINCLUDE) -I$(top_srcdir)/src/comm/dummy
+BAYES_INCLUDES=-I$(top_srcdir)/lib/Random123-1.08/include -I$(top_srcdir)/lib/lcfit/lcfit_src -I$(top_srcdir)/lib/ncl-2.1.18/ $(SRCINCLUDE) -I$(top_srcdir)/src/comm/dummy
 BAYES_INCLUDES_PARA=-I$(top_srcdir)/lib/Random123-1.08/include -I$(top_srcdir)/lib/ncl-2.1.18/  $(SRCINCLUDE) -I$(top_srcdir)/src/comm/mpi
 
 include src-helper.am
@@ -39,6 +39,9 @@ libpll_a_CFLAGS=$(AM_CFLAGS) -w $(VECTOR_FLAGS) -O2 $(SRCINCLUDE)
 noinst_LIBRARIES+=libpll.a
 
 bin_PROGRAMS = yggdrasil  sdsf postProcParam credibleSet extractBips consense parser 	
+# lcfit
+liblcfit_a_CFLAGS=$(AM_CFLAGS) -std=c99 -O2 -Wall -pedantic
+noinst_LIBRARIES+=liblcfit.a
 
 # configure examl/pll specific stuff 
 if WITH_MPI 
@@ -51,7 +54,7 @@ if WITH_TEST
  bin_PROGRAMS+=exatest
 endif 
 
-seqlibs= libncl.a libbayes.a libcommdummy.a  libpll.a libncl.a  
+seqlibs= libncl.a libbayes.a libcommdummy.a  libpll.a liblcfit.a libncl.a
 paralibs= libbayes.a libcommmpi.a libpll.a libncl.a
 
 libbayes_a_CXXFLAGS= $(AM_CXXFLAGS) -O3 $(BAYES_INCLUDES) $(VECTOR_FLAGS)    

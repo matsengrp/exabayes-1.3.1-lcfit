@@ -8,3 +8,4 @@ my-update-src:
 	@echo "libcommmpi_a_SOURCES=" $(shell find ${mpiFolds}  -maxdepth 1 -name "*.[cht]pp" ) >> src.am
 	@echo "libpll_a_SOURCES=" $(shell find ./lib/pll -name "*.[cht]" | grep -v "genericParallelization.c\|mem_alloc.c\|avxLikelihood.c" ) $(shell echo ./src/avxConditional.c ) >> src.am 
 	@echo "libncl_a_SOURCES=" $(shell find ./lib/ncl-2.1.18/ncl -name "*.[cht]") $(shell find ./lib/ncl-2.1.18/ncl -name "*.[cht]pp") >> src.am
+	@echo "liblcfit_a_SOURCES=" $(shell find ./lib/lcfit/lcfit_src -name "*.[cht]" | grep -v 'sampling.c') >> src.am

@@ -120,5 +120,12 @@ fi
 
 AM_CONDITIONAL([WITH_MPI], [ test "x$MPI_CODE" = "xyes" ])
 
+dnl check for libraries
+
+AC_CHECK_LIB([m],[cos])
+AC_CHECK_LIB([gslcblas],[cblas_dgemm])
+AC_CHECK_LIB([gsl],[gsl_blas_dgemm])
+AC_CHECK_LIB([nlopt], [nlopt_create])
+
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
