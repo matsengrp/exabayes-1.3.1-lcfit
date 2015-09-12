@@ -8,6 +8,8 @@
 
 #include "common.h"
 #include "comm/Communicator.hpp"
+#include "lcfit.h"
+#include "lcfit_select.h"
 
 
 AdHocIntegrator::AdHocIntegrator(TreeAln &traln, std::shared_ptr<TreeAln> debugTree, randCtr_t seed, ParallelSetup* pl)
@@ -160,7 +162,31 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   return prevVal; 
 }
 
+struct log_likelihood_data {
+    BranchPlain branch;
+    TreeAln* traln;
+    AbstractParameter* param;
+    LikelihoodEvaluator* eval;
+    size_t n_evals;
+};
 
+double log_likelihood_callback(double t, void* data)
+{
+    log_likelihood_data *lnl_data = static_cast<log_likelihood_data*>(data);
+
+    BranchPlain branch = lnl_data->branch;
+    TreeAln& traln = *(lnl_data->traln);
+    AbstractParameter* param = lnl_data->param;
+    LikelihoodEvaluator& eval = *(lnl_data->eval);
+
+    auto b = traln.getBranch(branch, param);
+    b.setConvertedInternalLength(traln, param, t);
+    traln.setBranch(b, param);
+    eval.evaluate(traln, branch, false);
+
+    ++(lnl_data->n_evals);
+    return traln.getTrHandle().likelihood;
+}
 
 void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, TreeAln & traln , double minHere, double maxHere, nat numSteps)
 {
