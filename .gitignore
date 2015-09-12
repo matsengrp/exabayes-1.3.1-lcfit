@@ -1,0 +1,13 @@
+.deps
+.dirstamp
+*.a
+autom4te.cache
+/consense
+/credibleSet
+/extractBips
+/parser
+/postProcParam
+/sdsf
+/src/stamp-h1
+/yggdrasil
+/config.status
