@@ -220,8 +220,12 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   //
 
   const double tolerance = 1e-6;
-  const double min_t = 0.0;
-  const double max_t = INFINITY;
+
+  // Use formula from LengthPart<double>::getInterpretedLength and
+  // internal length min and max from BoundsChecker.
+  const double frac_c = traln.getMeanSubstitutionRate(param->getPartitions());
+  const double min_t = -log(BoundsChecker::zMax) * frac_c;
+  const double max_t = -log(BoundsChecker::zMin) * frac_c;
 
   log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
