@@ -214,6 +214,39 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
     }
   else
     thisOut << minHere << "\t" << "NA" << endl; 
+
+  //
+  // Here there be lcfit.
+  //
+
+  const double tolerance = 1e-6;
+  const double min_t = 0.0;
+  const double max_t = INFINITY;
+
+  log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
+  log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
+
+  bsm_t model = DEFAULT_INIT;
+  double ts[4] = {0.1, 0.15, 0.5, 1.0};
+  bool success = false;
+
+  double ml_t = estimate_ml_t(&lnl_fn, ts, 4, tolerance, &model, &success, min_t, max_t);
+
+  ss.str(std::string());
+  ss.clear();
+
+  ss << "lcfit." << runid << "." << branch.getPrimNode() << "-" << branch.getSecNode() << ".tab";
+  std::ofstream lcfitOut(ss.str());
+
+  lcfitOut << tolerance << "\t"
+           << lnl_data.n_evals << "\t"
+           << success << "\t"
+           << setprecision(std::numeric_limits<double>::digits10)
+           << model.c << "\t"
+           << model.m << "\t"
+           << model.r << "\t"
+           << model.b << "\t"
+           << ml_t << endl;
 }
 
 
