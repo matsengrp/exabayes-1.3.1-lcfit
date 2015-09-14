@@ -1,5 +1,6 @@
 #include "RateHelper.hpp"
 
+#include <cmath>
 #include <iostream>
 
 
