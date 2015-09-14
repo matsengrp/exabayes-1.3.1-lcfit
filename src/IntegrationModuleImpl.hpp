@@ -66,19 +66,19 @@ void SampleMaster::branchLengthsIntegration(Randomness &rand)
       tout << "printed opt process" << std::endl; 
 
       // print parsimony length  
-      double pLength = ahInt.getParsimonyLength(traln, branch.toPlain(), _plPtr->getChainComm()); 
-      parsAndMLBlen.push_back({pLength, nrOpt});
+      // double pLength = ahInt.getParsimonyLength(traln, branch.toPlain(), _plPtr->getChainComm()); 
+      // parsAndMLBlen.push_back({pLength, nrOpt});
       
       // reset 
       traln.setBranch(initBranch, paramView[0]);
     }
 
   
-  std::stringstream ss; 
-  ss << "parsLengthVsML." << _cl.getRunid() << ".tab"; 
-  std::ofstream out(ss.str());
-  for(auto elem : parsAndMLBlen)
-    out << elem.first << "\t" << elem.second << std::endl; 
+  // std::stringstream ss; 
+  // ss << "parsLengthVsML." << _cl.getRunid() << ".tab"; 
+  // std::ofstream out(ss.str());
+  // for(auto elem : parsAndMLBlen)
+  //   out << elem.first << "\t" << elem.second << std::endl; 
 
   tout << "finished!" << endl; 
 }
