@@ -244,7 +244,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
 
   lcfitOut << tolerance << "\t"
            << lnl_data.n_evals << "\t"
-           << success << "\t"
+           << (success ? "true" : "false") << "\t"
            << setprecision(std::numeric_limits<double>::digits10)
            << model.c << "\t"
            << model.m << "\t"
