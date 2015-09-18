@@ -11,6 +11,8 @@
 
 
 #include <sstream>
+#include <cstdlib>
+#include <cstring>
 #include "priors/ExponentialPrior.hpp"
 #include "proposals/BranchIntegrator.hpp"
 #include "system/ProposalRegistry.hpp"
@@ -19,6 +21,43 @@
 
 #include "AdHocIntegrator.hpp"
 
+bool is_included(nat primary, nat secondary)
+{
+    char* cstr = getenv("LCFIT_EDGES");
+
+    if (cstr == nullptr) {
+        // edge list is empty, so include everything
+        return true;
+    }
+
+    std::string str(cstr);
+    
+    size_t head = 0;
+    size_t tail;
+
+    do {
+        tail = str.find(' ', head);
+        if (tail == std::string::npos) {
+            tail = str.size();
+        }
+
+        std::string token = str.substr(head, tail);
+        
+        nat first;
+        nat second;
+        sscanf(token.c_str(), "%u-%u", &first, &second);
+
+        if (first == primary && second == secondary) {
+            // edge is included in the branch list
+            return true;
+        }
+
+        head = tail + 1;
+    } while (tail != str.size());
+
+    // edge is not in the branch list
+    return false;
+}
 
 void SampleMaster::branchLengthsIntegration(Randomness &rand)  
 {
@@ -38,6 +77,10 @@ void SampleMaster::branchLengthsIntegration(Randomness &rand)
   std::vector<std::pair<double,double> > parsAndMLBlen; 
   for(auto &branch : traln.extractBranches(ahInt.getBlParamView()[0]))
     {      
+      if (!is_included(branch.getPrimNode(), branch.getSecNode())) {
+        continue;
+      }
+
       tout << branch << std::endl; 
       auto initBranch = branch; 
 
