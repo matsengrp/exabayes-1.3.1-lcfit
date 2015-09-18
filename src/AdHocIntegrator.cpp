@@ -1,4 +1,7 @@
 #include "AdHocIntegrator.hpp"
+
+#include <cstdlib>
+#include <string>
 #include "eval/ArrayReservoir.hpp"
 #include "eval/ArrayRestorer.hpp"
 #include "math/Arithmetics.hpp"
@@ -170,6 +173,56 @@ struct log_likelihood_data {
     size_t n_evals;
 };
 
+std::vector<double> get_starting_points(double min_t, double max_t)
+{
+    char* cstr = getenv("LCFIT_POINTS");
+
+    if (cstr == nullptr) {
+        tout << "using default starting points" << endl;
+        return std::vector<double>{0.1, 0.15, 0.5, 1.0};
+    }
+
+    std::string str(cstr);
+    std::vector<double> points;
+
+    if (str == "LIMITS") {
+        points.push_back(min_t);
+        points.push_back(min_t + 0.01);
+        points.push_back(min_t + 0.1);
+        points.push_back(min_t + 1.0);
+        //points.push_back(max_t);
+
+        tout << "using ";
+        std::string sep("");
+        for (auto x : points) {
+            tout << sep << x;
+            sep = ",";
+        }
+        tout << " as starting points" << endl;
+
+        return points;
+    }
+
+    size_t head = 0;
+    size_t tail;
+
+    do {
+        tail = str.find(',', head);
+        if (tail == std::string::npos) {
+            tail = str.size();
+        }
+
+        std::string token = str.substr(head, tail);
+
+        points.push_back(std::stod(token));
+
+        head = tail + 1;
+    } while (tail != str.size());
+
+    tout << "using " << str << " as starting points" << endl;
+    return points;
+}
+
 double log_likelihood_callback(double t, void* data)
 {
     log_likelihood_data *lnl_data = static_cast<log_likelihood_data*>(data);
@@ -231,10 +284,10 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
   bsm_t model = DEFAULT_INIT;
-  double ts[4] = {0.1, 0.15, 0.5, 1.0};
+  std::vector<double> ts = get_starting_points(min_t, max_t);
   bool success = false;
 
-  double ml_t = estimate_ml_t(&lnl_fn, ts, 4, tolerance, &model, &success, min_t, max_t);
+  double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
   ss.str(std::string());
   ss.clear();
