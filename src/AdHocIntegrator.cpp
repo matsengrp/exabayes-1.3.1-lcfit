@@ -173,6 +173,29 @@ struct log_likelihood_data {
     size_t n_evals;
 };
 
+std::vector<double> tokenize_as_doubles(std::string str, char delim)
+{
+    std::vector<double> values;
+
+    size_t head = 0;
+    size_t tail;
+
+    do {
+        tail = str.find(delim, head);
+        if (tail == std::string::npos) {
+            tail = str.size();
+        }
+
+        std::string token = str.substr(head, tail);
+
+        values.push_back(std::stod(token));
+
+        head = tail + 1;
+    } while (tail != str.size());
+
+    return values;
+}
+
 std::vector<double> get_starting_points(double min_t, double max_t)
 {
     char* cstr = getenv("LCFIT_POINTS");
@@ -182,44 +205,9 @@ std::vector<double> get_starting_points(double min_t, double max_t)
         return std::vector<double>{0.1, 0.15, 0.5, 1.0};
     }
 
-    std::string str(cstr);
-    std::vector<double> points;
+    std::vector<double> points = tokenize_as_doubles(cstr, ',');
 
-    if (str == "LIMITS") {
-        points.push_back(min_t);
-        points.push_back(min_t + 0.01);
-        points.push_back(min_t + 0.1);
-        points.push_back(min_t + 1.0);
-        //points.push_back(max_t);
-
-        tout << "using ";
-        std::string sep("");
-        for (auto x : points) {
-            tout << sep << x;
-            sep = ",";
-        }
-        tout << " as starting points" << endl;
-
-        return points;
-    }
-
-    size_t head = 0;
-    size_t tail;
-
-    do {
-        tail = str.find(',', head);
-        if (tail == std::string::npos) {
-            tail = str.size();
-        }
-
-        std::string token = str.substr(head, tail);
-
-        points.push_back(std::stod(token));
-
-        head = tail + 1;
-    } while (tail != str.size());
-
-    tout << "using " << str << " as starting points" << endl;
+    tout << "using " << cstr << " as starting points" << endl;
     return points;
 }
 
