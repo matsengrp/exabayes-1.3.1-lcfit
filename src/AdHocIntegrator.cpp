@@ -211,6 +211,27 @@ std::vector<double> get_starting_points(double min_t, double max_t)
     return points;
 }
 
+bsm_t get_starting_model()
+{
+    char* cstr = getenv("LCFIT_MODEL");
+
+    if (cstr == nullptr) {
+        tout << "using default starting model" << endl;
+        return DEFAULT_INIT;
+    }
+
+    std::vector<double> values = tokenize_as_doubles(cstr, ',');
+    bsm_t m;
+
+    m.c = values[0];
+    m.m = values[1];
+    m.r = values[2];
+    m.b = values[3];
+
+    tout << "using " << cstr << " as starting model" << endl;
+    return m;
+}
+
 double log_likelihood_callback(double t, void* data)
 {
     log_likelihood_data *lnl_data = static_cast<log_likelihood_data*>(data);
@@ -271,7 +292,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
-  bsm_t model = DEFAULT_INIT;
+  bsm_t model = get_starting_model();
   std::vector<double> ts = get_starting_points(min_t, max_t);
   bool success = false;
 
