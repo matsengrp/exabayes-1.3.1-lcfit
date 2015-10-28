@@ -11,3 +11,6 @@ autom4te.cache
 /src/stamp-h1
 /yggdrasil
 /config.status
+*.o
+*~
+/config.log
