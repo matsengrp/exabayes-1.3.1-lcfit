@@ -298,6 +298,17 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
 
   double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
+  double test_t = ml_t + 10.0*(lcfit_bsm_infl_t(&model) - ml_t);
+  double test_err = NAN;
+
+  if (isfinite(test_t)) {
+      double test_lnl = log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
+      test_err = test_lnl - lcfit_bsm_log_like(test_t, &model);
+
+      double ml_lnl = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data));
+      test_err /= (ml_lnl - test_lnl);
+  }
+
   ss.str(std::string());
   ss.clear();
 
@@ -312,7 +323,9 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
            << model.m << "\t"
            << model.r << "\t"
            << model.b << "\t"
-           << ml_t << endl;
+           << ml_t << "\t"
+           << test_t << "\t"
+           << test_err << endl;
 }
 
 
