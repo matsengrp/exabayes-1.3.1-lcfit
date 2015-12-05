@@ -298,15 +298,17 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
 
   double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
-  double test_t = ml_t + 10.0*(lcfit_bsm_infl_t(&model) - ml_t);
-  double test_err = NAN;
+  double test_t = ml_t + 2.0*(lcfit_bsm_infl_t(&model) - ml_t);
+  double spread_ratio = NAN;
 
   if (isfinite(test_t)) {
-      double test_lnl = log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
-      test_err = test_lnl - lcfit_bsm_log_like(test_t, &model);
+      double empirical_spread = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data)) -
+                                log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
 
-      double ml_lnl = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data));
-      test_err /= (ml_lnl - test_lnl);
+      double model_spread = lcfit_bsm_log_like(ml_t, &model) -
+                            lcfit_bsm_log_like(test_t, &model);
+
+      spread_ratio = empirical_spread - model_spread;
   }
 
   ss.str(std::string());
@@ -325,7 +327,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
            << model.b << "\t"
            << ml_t << "\t"
            << test_t << "\t"
-           << test_err << endl;
+           << spread_ratio << endl;
 }
 
 
