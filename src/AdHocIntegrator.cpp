@@ -298,7 +298,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
 
   double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
-  double test_t = ml_t + 2.0*(lcfit_bsm_infl_t(&model) - ml_t);
+  double test_t = lcfit_bsm_infl_t(&model);
   double spread_ratio = NAN;
 
   if (isfinite(test_t)) {
