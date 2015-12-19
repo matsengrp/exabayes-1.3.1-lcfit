@@ -281,7 +281,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   // Here there be lcfit.
   //
 
-  const double tolerance = 1e-6;
+  const double tolerance = 1e-3;
 
   // Use formula from LengthPart<double>::getInterpretedLength and
   // internal length min and max from BoundsChecker.
