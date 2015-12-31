@@ -1022,6 +1022,10 @@ void SampleMaster::run()
     for(auto &c : run.getChains())
       assert( nat(c.getGeneration()) == curGen );       
 
+  if (curGen == nat(_runParams.getNumGen())) {
+      hasConverged = true;
+  }
+
   int lastPrint = (curGen / _runParams.getPrintFreq() )  * _runParams.getPrintFreq() ; 
   int lastDiag =  (curGen / _runParams.getDiagFreq() ) * _runParams.getDiagFreq(); 
   int lastChkpnt = ( curGen / _runParams.getChkpntFreq() )* _runParams.getChkpntFreq() ; 
