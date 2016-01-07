@@ -250,7 +250,7 @@ double log_likelihood_callback(double t, void* data)
     return traln.getTrHandle().likelihood;
 }
 
-void run_lcfit(BranchPlain branch, std::string runid,
+void run_lcfit(std::string runid,
                log_likelihood_data lnl_data, log_like_function_t lnl_fn,
                const double tolerance, const double min_t, const double max_t)
 {
@@ -274,8 +274,10 @@ void run_lcfit(BranchPlain branch, std::string runid,
   }
 
   std::stringstream ss;
-
-  ss << "lcfit." << runid << "." << branch.getPrimNode() << "-" << branch.getSecNode() << ".tab";
+  ss << "lcfit." << runid << "."
+     << lnl_data.branch.getPrimNode() << "-" << lnl_data.branch.getSecNode()
+     << ".tab";
+  
   std::ofstream lcfitOut(ss.str());
 
   lcfitOut << tolerance << "\t"
@@ -334,7 +336,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
-  run_lcfit(branch, runid, lnl_data, lnl_fn, tolerance, min_t, max_t);
+  run_lcfit(runid, lnl_data, lnl_fn, tolerance, min_t, max_t);
 }
 
 
