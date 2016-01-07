@@ -250,6 +250,48 @@ double log_likelihood_callback(double t, void* data)
     return traln.getTrHandle().likelihood;
 }
 
+void run_lcfit(BranchPlain branch, std::string runid,
+               log_likelihood_data lnl_data, log_like_function_t lnl_fn,
+               const double tolerance, const double min_t, const double max_t)
+{
+  bsm_t model = get_starting_model();
+  std::vector<double> ts = get_starting_points(min_t, max_t);
+  bool success = false;
+
+  double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
+
+  double test_t = lcfit_bsm_infl_t(&model);
+  double spread_ratio = NAN;
+
+  if (isfinite(test_t)) {
+      double empirical_spread = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data)) -
+                                log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
+
+      double model_spread = lcfit_bsm_log_like(ml_t, &model) -
+                            lcfit_bsm_log_like(test_t, &model);
+
+      spread_ratio = empirical_spread - model_spread;
+  }
+
+  std::stringstream ss;
+
+  ss << "lcfit." << runid << "." << branch.getPrimNode() << "-" << branch.getSecNode() << ".tab";
+  std::ofstream lcfitOut(ss.str());
+
+  lcfitOut << tolerance << "\t"
+           << lnl_data.n_evals << "\t"
+           << (success ? "true" : "false") << "\t"
+           << setprecision(std::numeric_limits<double>::digits10)
+           << model.c << "\t"
+           << model.m << "\t"
+           << model.r << "\t"
+           << model.b << "\t"
+           << ml_t << "\t"
+           << test_t << "\t"
+           << spread_ratio << endl;
+
+}
+
 void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, TreeAln & traln , double minHere, double maxHere, nat numSteps)
 {
   auto paramView  = integrationChain->getProposalView()[0]->getBranchLengthsParameterView();
@@ -292,42 +334,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
-  bsm_t model = get_starting_model();
-  std::vector<double> ts = get_starting_points(min_t, max_t);
-  bool success = false;
-
-  double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
-
-  double test_t = lcfit_bsm_infl_t(&model);
-  double spread_ratio = NAN;
-
-  if (isfinite(test_t)) {
-      double empirical_spread = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data)) -
-                                log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
-
-      double model_spread = lcfit_bsm_log_like(ml_t, &model) -
-                            lcfit_bsm_log_like(test_t, &model);
-
-      spread_ratio = empirical_spread - model_spread;
-  }
-
-  ss.str(std::string());
-  ss.clear();
-
-  ss << "lcfit." << runid << "." << branch.getPrimNode() << "-" << branch.getSecNode() << ".tab";
-  std::ofstream lcfitOut(ss.str());
-
-  lcfitOut << tolerance << "\t"
-           << lnl_data.n_evals << "\t"
-           << (success ? "true" : "false") << "\t"
-           << setprecision(std::numeric_limits<double>::digits10)
-           << model.c << "\t"
-           << model.m << "\t"
-           << model.r << "\t"
-           << model.b << "\t"
-           << ml_t << "\t"
-           << test_t << "\t"
-           << spread_ratio << endl;
+  run_lcfit(branch, runid, lnl_data, lnl_fn, tolerance, min_t, max_t);
 }
 
 
