@@ -13,6 +13,35 @@
 #include "comm/Communicator.hpp"
 #include "lcfit.h"
 #include "lcfit_select.h"
+#include "lcfit2.h"
+
+
+struct log_likelihood_data {
+  BranchPlain branch;
+  TreeAln* traln;
+  AbstractParameter* param;
+  LikelihoodEvaluator* eval;
+  size_t n_evals;
+};
+
+
+double log_likelihood_callback(double t, void* data)
+{
+  log_likelihood_data *lnl_data = static_cast<log_likelihood_data*>(data);
+
+  BranchPlain branch = lnl_data->branch;
+  TreeAln& traln = *(lnl_data->traln);
+  AbstractParameter* param = lnl_data->param;
+  LikelihoodEvaluator& eval = *(lnl_data->eval);
+
+  auto b = traln.getBranch(branch, param);
+  b.setConvertedInternalLength(traln, param, t);
+  traln.setBranch(b, param);
+  eval.evaluate(traln, branch, false);
+
+  ++(lnl_data->n_evals);
+  return traln.getTrHandle().likelihood;
+}
 
 
 AdHocIntegrator::AdHocIntegrator(TreeAln &traln, std::shared_ptr<TreeAln> debugTree, randCtr_t seed, ParallelSetup* pl)
@@ -116,6 +145,65 @@ std::vector<double> AdHocIntegrator::integrate( const BranchPlain &branch, const
 }
 
 
+void run_lcfit2(std::string runid,
+                log_likelihood_data lnl_data, log_like_function_t lnl_fn,
+                const std::vector<double>& t,
+                const double tolerance, const double min_t, const double max_t,
+                const double t0, const double d1, const double d2)
+{
+  lcfit2_bsm_t model = {1100.0, 800.0, t0, d1, d2};
+  bool success = false;
+
+  std::vector<double> lnl(t.size());
+  std::vector<double> w(t.size());
+
+  double ml_lnl = -HUGE_VAL;
+
+  for (size_t i = 0; i < t.size(); ++i) {
+    lnl[i] = lnl_fn.fn(t[i], lnl_fn.args);
+
+    if (lnl[i] > ml_lnl) {
+      ml_lnl = lnl[i];
+    }
+  }
+
+  fprintf(stderr, "weights = { ");
+  std::string sep = "";
+  for (size_t i = 0; i < t.size(); ++i) {
+    w[i] = exp(lnl[i] - ml_lnl);
+    fprintf(stderr, "%s%g", sep.c_str(), w[i]);
+    sep = ", ";
+  }
+  fprintf(stderr, "\n");
+
+  if (d1 <= sqrt(DBL_EPSILON)) {
+    lcfit2_rescale(t[t.size() - 1], lnl[t.size() - 1], &model);
+    lcfit2_fit_weighted(t.size(), t.data(), lnl.data(), w.data(), &model);
+  }
+
+  //lcfit2_iterative_fit(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t, tolerance, &success);
+
+  // Write out lcfit2 data.
+
+  std::stringstream ss;
+  ss << "lcfit2." << runid << "."
+     << lnl_data.branch.getPrimNode() << "-" << lnl_data.branch.getSecNode()
+     << ".tab";
+
+  std::ofstream lcfit2Out(ss.str());
+
+  lcfit2Out << tolerance << "\t"
+            << lnl_data.n_evals << "\t"
+            << (success ? "true" : "false") << "\t"
+            << setprecision(std::numeric_limits<double>::digits10)
+            << model.c << "\t"
+            << model.m << "\t"
+            << t0 << "\t"
+            << d1 << "\t"
+            << d2 << std::endl;
+}
+
+
 /** 
     @brief gets the optimimum 
  */ 
@@ -138,6 +226,8 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
 
   double prevVal = curVal; 
   curVal = tmpBranch.getLength();
+
+  std::vector<double> t(nrSteps);
   
   for(nat i = 0; i < nrSteps; ++i )
     {
@@ -160,18 +250,36 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
       traln.setBranch(tmpBranch, paramView[0]); 
       curVal = tmpBranch.getInterpretedLength(traln, paramView[0]); 
 
+      t[i] = curVal;
     } 
+
+  //
+  // Here there be lcfit2.
+  //
+
+  const double tolerance = 1e-3;
+
+  auto param = paramView[0];
+  auto& eval = integrationChain->getEvaluator();
+
+  // Use formula from LengthPart<double>::getInterpretedLength and
+  // internal length min and max from BoundsChecker.
+  const double frac_c = traln.getMeanSubstitutionRate(param->getPartitions());
+  const double min_t = -log(BoundsChecker::zMax) * frac_c;
+  const double max_t = -log(BoundsChecker::zMin) * frac_c;
+
+  log_likelihood_data lnl_data = {branch.toPlain(), &traln, param, &eval, 0};
+  log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
+
+  run_lcfit2(runid, lnl_data, lnl_fn, t, tolerance, min_t, max_t,
+             prevVal, firstDerivative, secDerivative);
+
+  //
+  // Here ends lcfit2.
+  //
 
   return prevVal; 
 }
-
-struct log_likelihood_data {
-    BranchPlain branch;
-    TreeAln* traln;
-    AbstractParameter* param;
-    LikelihoodEvaluator* eval;
-    size_t n_evals;
-};
 
 std::vector<double> tokenize_as_doubles(std::string str, char delim)
 {
@@ -230,24 +338,6 @@ bsm_t get_starting_model()
 
     tout << "using " << cstr << " as starting model" << endl;
     return m;
-}
-
-double log_likelihood_callback(double t, void* data)
-{
-    log_likelihood_data *lnl_data = static_cast<log_likelihood_data*>(data);
-
-    BranchPlain branch = lnl_data->branch;
-    TreeAln& traln = *(lnl_data->traln);
-    AbstractParameter* param = lnl_data->param;
-    LikelihoodEvaluator& eval = *(lnl_data->eval);
-
-    auto b = traln.getBranch(branch, param);
-    b.setConvertedInternalLength(traln, param, t);
-    traln.setBranch(b, param);
-    eval.evaluate(traln, branch, false);
-
-    ++(lnl_data->n_evals);
-    return traln.getTrHandle().likelihood;
 }
 
 void run_lcfit(std::string runid,
