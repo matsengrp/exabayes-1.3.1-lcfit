@@ -2,6 +2,8 @@
 
 #include <cstdlib>
 #include <string>
+#include <gsl/gsl_deriv.h>
+
 #include "eval/ArrayReservoir.hpp"
 #include "eval/ArrayRestorer.hpp"
 #include "math/Arithmetics.hpp"
@@ -43,6 +45,37 @@ double log_likelihood_callback(double t, void* data)
   return traln.getTrHandle().likelihood;
 }
 
+double log_likelihood_d1f(double t, void* data)
+{
+    gsl_function F;
+    F.function = &log_likelihood_callback;
+    F.params = data;
+
+    double result = 0.0;
+    double abserr = 0.0;
+
+    gsl_deriv_central(&F, t, 1e-6, &result, &abserr);
+
+    fprintf(stderr, "d1f abserr = %g\n", abserr);
+
+    return result;
+}
+
+double log_likelihood_d2f(double t, void* data)
+{
+    gsl_function F;
+    F.function = &log_likelihood_d1f;
+    F.params = data;
+
+    double result = 0.0;
+    double abserr = 0.0;
+
+    gsl_deriv_forward(&F, t, 1e-4, &result, &abserr);
+
+    fprintf(stderr, "d2f abserr = %g\n", abserr);
+
+    return result;
+}
 
 AdHocIntegrator::AdHocIntegrator(TreeAln &traln, std::shared_ptr<TreeAln> debugTree, randCtr_t seed, ParallelSetup* pl)
 {
@@ -270,6 +303,16 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
 
   log_likelihood_data lnl_data = {branch.toPlain(), &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
+
+  if (firstDerivative <= sqrt(DBL_EPSILON)) {
+      // Calculate the first derivative of the log-likelihood curve with GSL for comparison.
+      fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g\n", firstDerivative, log_likelihood_d1f(prevVal, lnl_fn.args));
+
+      // Recalculate the second derivative of the log-likelihood curve with GSL.
+      fprintf(stderr, "d2(t0) = %g, ", secDerivative);
+      secDerivative = log_likelihood_d2f(prevVal, lnl_fn.args);
+      fprintf(stderr, "gsl_d2(t0) = %g\n", secDerivative);
+  }
 
   run_lcfit2(runid, lnl_data, lnl_fn, t, tolerance, min_t, max_t,
              prevVal, firstDerivative, secDerivative);
