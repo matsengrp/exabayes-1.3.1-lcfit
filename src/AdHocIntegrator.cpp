@@ -198,15 +198,11 @@ void run_lcfit2(std::string runid,
     std::vector<double> lnl(t.size());
     std::vector<double> w(t.size());
 
-    double ml_lnl = -HUGE_VAL;
-
     for (size_t i = 0; i < t.size(); ++i) {
       lnl[i] = lnl_fn.fn(t[i], lnl_fn.args);
-
-      if (lnl[i] > ml_lnl) {
-        ml_lnl = lnl[i];
-      }
     }
+
+    const double ml_lnl = lnl[0];
 
     fprintf(stderr, "weights = { ");
     std::string sep = "";
