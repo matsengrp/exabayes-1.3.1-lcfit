@@ -187,11 +187,14 @@ void run_lcfit2(std::string runid,
   bool success = false;
 
   if (d1 <= sqrt(DBL_EPSILON)) {
+    const double infl_t = lcfit2_infl_t(&model);
+    const double delta = infl_t - t0;
+
     std::vector<double> t(3);
 
     t[0] = t0;
-    t[2] = lcfit2_infl_t(&model);
-    t[1] = t[0] + (1.0 / 2.0) * (t[2] - t[0]);
+    t[1] = t0 + delta / 2.0;
+    t[2] = infl_t;
 
     fprintf(stderr, "t = { %g, %g, %g }\n", t[0], t[1], t[2]);
 
