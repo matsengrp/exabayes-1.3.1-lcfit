@@ -207,8 +207,10 @@ void run_lcfit2(std::string runid,
     fprintf(stderr, "weights = { ");
     std::string sep = "";
     for (size_t i = 0; i < t.size(); ++i) {
+      // disable weighting
       //w[i] = exp(lnl[i] - ml_lnl);
       w[i] = 1.0;
+
       fprintf(stderr, "%s%g", sep.c_str(), w[i]);
       sep = ", ";
     }
