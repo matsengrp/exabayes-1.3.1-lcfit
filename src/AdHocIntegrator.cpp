@@ -219,7 +219,7 @@ void run_lcfit2(std::string runid,
     }
     fprintf(stderr, " }\n");
 
-    lcfit2_rescale(t[t.size() - 1], lnl[t.size() - 1], &model);
+    lcfit2_rescale(t0, ml_lnl, &model);
     lcfit2_fit_weighted(t.size(), t.data(), lnl.data(), w.data(), &model);
   }
 
