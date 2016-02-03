@@ -179,8 +179,8 @@ std::vector<double> AdHocIntegrator::integrate( const BranchPlain &branch, const
 
 
 void run_lcfit2(std::string runid,
-                log_likelihood_data lnl_data, log_like_function_t lnl_fn,
-                const double tolerance, const double min_t, const double max_t,
+                log_like_function_t lnl_fn, const double tolerance,
+                const double min_t, const double max_t,
                 const double t0, const double d1, const double d2)
 {
   lcfit2_bsm_t model = {1100.0, 800.0, t0, d1, d2};
@@ -226,16 +226,17 @@ void run_lcfit2(std::string runid,
   //lcfit2_iterative_fit(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t, tolerance, &success);
 
   // Write out lcfit2 data.
+  const log_likelihood_data* lnl_data = static_cast<log_likelihood_data*>(lnl_fn.args);
 
   std::stringstream ss;
   ss << "lcfit2." << runid << "."
-     << lnl_data.branch.getPrimNode() << "-" << lnl_data.branch.getSecNode()
+     << lnl_data->branch.getPrimNode() << "-" << lnl_data->branch.getSecNode()
      << ".tab";
 
   std::ofstream lcfit2Out(ss.str());
 
   lcfit2Out << tolerance << "\t"
-            << lnl_data.n_evals << "\t"
+            << lnl_data->n_evals << "\t"
             << (success ? "true" : "false") << "\t"
             << setprecision(std::numeric_limits<double>::digits10)
             << model.c << "\t"
@@ -319,7 +320,7 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
       fprintf(stderr, "gsl_d2(t0) = %g\n", secDerivative);
   }
 
-  run_lcfit2(runid, lnl_data, lnl_fn, tolerance, min_t, max_t,
+  run_lcfit2(runid, lnl_fn, tolerance, min_t, max_t,
              prevVal, firstDerivative, secDerivative);
 
   //
