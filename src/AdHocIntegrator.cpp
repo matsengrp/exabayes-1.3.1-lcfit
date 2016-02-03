@@ -180,36 +180,44 @@ std::vector<double> AdHocIntegrator::integrate( const BranchPlain &branch, const
 
 void run_lcfit2(std::string runid,
                 log_likelihood_data lnl_data, log_like_function_t lnl_fn,
-                const std::vector<double>& t,
                 const double tolerance, const double min_t, const double max_t,
                 const double t0, const double d1, const double d2)
 {
   lcfit2_bsm_t model = {1100.0, 800.0, t0, d1, d2};
   bool success = false;
 
-  std::vector<double> lnl(t.size());
-  std::vector<double> w(t.size());
-
-  double ml_lnl = -HUGE_VAL;
-
-  for (size_t i = 0; i < t.size(); ++i) {
-    lnl[i] = lnl_fn.fn(t[i], lnl_fn.args);
-
-    if (lnl[i] > ml_lnl) {
-      ml_lnl = lnl[i];
-    }
-  }
-
-  fprintf(stderr, "weights = { ");
-  std::string sep = "";
-  for (size_t i = 0; i < t.size(); ++i) {
-    w[i] = exp(lnl[i] - ml_lnl);
-    fprintf(stderr, "%s%g", sep.c_str(), w[i]);
-    sep = ", ";
-  }
-  fprintf(stderr, "\n");
-
   if (d1 <= sqrt(DBL_EPSILON)) {
+    std::vector<double> t(3);
+
+    t[0] = t0;
+    t[2] = lcfit2_infl_t(&model);
+    t[1] = t[0] + (1.0 / 2.0) * (t[2] - t[0]);
+
+    fprintf(stderr, "t = { %g, %g, %g }\n", t[0], t[1], t[2]);
+
+    std::vector<double> lnl(t.size());
+    std::vector<double> w(t.size());
+
+    double ml_lnl = -HUGE_VAL;
+
+    for (size_t i = 0; i < t.size(); ++i) {
+      lnl[i] = lnl_fn.fn(t[i], lnl_fn.args);
+
+      if (lnl[i] > ml_lnl) {
+        ml_lnl = lnl[i];
+      }
+    }
+
+    fprintf(stderr, "weights = { ");
+    std::string sep = "";
+    for (size_t i = 0; i < t.size(); ++i) {
+      //w[i] = exp(lnl[i] - ml_lnl);
+      w[i] = 1.0;
+      fprintf(stderr, "%s%g", sep.c_str(), w[i]);
+      sep = ", ";
+    }
+    fprintf(stderr, " }\n");
+
     lcfit2_rescale(t[t.size() - 1], lnl[t.size() - 1], &model);
     lcfit2_fit_weighted(t.size(), t.data(), lnl.data(), w.data(), &model);
   }
@@ -260,8 +268,6 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   double prevVal = curVal; 
   curVal = tmpBranch.getLength();
 
-  std::vector<double> t(nrSteps);
-  
   for(nat i = 0; i < nrSteps; ++i )
     {
       auto blo = BranchLengthOptimizer(traln, branch.toPlain(), 1, comm, paramView);
@@ -282,8 +288,6 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
       
       traln.setBranch(tmpBranch, paramView[0]); 
       curVal = tmpBranch.getInterpretedLength(traln, paramView[0]); 
-
-      t[i] = curVal;
     } 
 
   //
@@ -314,7 +318,7 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
       fprintf(stderr, "gsl_d2(t0) = %g\n", secDerivative);
   }
 
-  run_lcfit2(runid, lnl_data, lnl_fn, t, tolerance, min_t, max_t,
+  run_lcfit2(runid, lnl_data, lnl_fn, tolerance, min_t, max_t,
              prevVal, firstDerivative, secDerivative);
 
   //
