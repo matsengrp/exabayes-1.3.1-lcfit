@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <string>
 #include <gsl/gsl_deriv.h>
+#include <gsl/gsl_errno.h>
+#include <gsl/gsl_min.h>
 
 #include "eval/ArrayReservoir.hpp"
 #include "eval/ArrayRestorer.hpp"
@@ -75,6 +77,46 @@ double log_likelihood_d2f(double t, void* data)
     fprintf(stderr, "d2f abserr = %g\n", abserr);
 
     return result;
+}
+
+double inv_log_likelihood_callback(double t, void* data)
+{
+    return -log_likelihood_callback(t, data);
+}
+
+double log_likelihood_t0(double guess, double min_t, double max_t, void* data)
+{
+    gsl_min_fminimizer* s;
+    gsl_function F;
+
+    F.function = &inv_log_likelihood_callback;
+    F.params = data;
+
+    s = gsl_min_fminimizer_alloc(gsl_min_fminimizer_goldensection);
+    gsl_min_fminimizer_set(s, &F, guess, min_t, max_t);
+
+    const int MAX_ITER = 100;
+    int iter = 0;
+    int status;
+
+    do {
+        gsl_min_fminimizer_iterate(s);
+
+        guess = gsl_min_fminimizer_x_minimum(s);
+        min_t = gsl_min_fminimizer_x_lower(s);
+        max_t = gsl_min_fminimizer_x_upper(s);
+
+        status = gsl_min_test_interval(min_t, max_t, 0.0, 1e-5);
+        ++iter;
+    } while (status == GSL_CONTINUE && iter < MAX_ITER);
+
+    if (iter == MAX_ITER) {
+        fprintf(stderr, "WARNING: maximum number of iterations reached during minimization\n");
+    }
+
+    gsl_min_fminimizer_free(s);
+
+    return guess;
 }
 
 AdHocIntegrator::AdHocIntegrator(TreeAln &traln, std::shared_ptr<TreeAln> debugTree, randCtr_t seed, ParallelSetup* pl)
@@ -313,11 +355,27 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   if (abs(firstDerivative) < 0.1) {
       // Calculate the first derivative of the log-likelihood curve with GSL for comparison.
       fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g\n", firstDerivative, log_likelihood_d1f(prevVal, lnl_fn.args));
+      // Calculate the maximum-likelihood branch length with GSL for comparison.
+      const double t0_guess = prevVal;
+      const double gsl_t0 = log_likelihood_t0(t0_guess, min_t, max_t, lnl_fn.args);
+      fprintf(stderr, "t0 = %g, gsl_t0 = %g\n",
+              prevVal, gsl_t0);
+
+      const double gsl_d1_prevVal = log_likelihood_d1f(prevVal, lnl_fn.args);
+      const double gsl_d1_gsl_t0 = log_likelihood_d1f(gsl_t0, lnl_fn.args);
+      fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g, gsl_d1(gsl_t0) = %g\n",
+              firstDerivative, gsl_d1_prevVal, gsl_d1_gsl_t0);
 
       // Recalculate the second derivative of the log-likelihood curve with GSL.
-      fprintf(stderr, "d2(t0) = %g, ", secDerivative);
-      secDerivative = log_likelihood_d2f(prevVal, lnl_fn.args);
-      fprintf(stderr, "gsl_d2(t0) = %g\n", secDerivative);
+      const double gsl_d2_prevVal = log_likelihood_d2f(prevVal, lnl_fn.args);
+      const double gsl_d2_gsl_t0 = log_likelihood_d2f(gsl_t0, lnl_fn.args);
+      fprintf(stderr, "d2(t0) = %g, gsl_d2(t0) = %g, gsl_d2(gsl_t0) = %g\n",
+              secDerivative, gsl_d2_prevVal, gsl_d2_gsl_t0);
+
+      // Override ExaBayes's calculations.
+      prevVal = gsl_t0;
+      firstDerivative = gsl_d1_gsl_t0;
+      secDerivative = gsl_d2_gsl_t0;
   }
 
   run_lcfit2(runid, lnl_fn, tolerance, min_t, max_t,
