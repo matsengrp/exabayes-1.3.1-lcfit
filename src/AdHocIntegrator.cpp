@@ -186,7 +186,7 @@ void run_lcfit2(std::string runid,
   lcfit2_bsm_t model = {1100.0, 800.0, t0, d1, d2};
   bool success = false;
 
-  if (d1 <= sqrt(DBL_EPSILON)) {
+  if (abs(d1) < sqrt(DBL_EPSILON)) {
     const double infl_t = lcfit2_infl_t(&model);
     const double delta = infl_t - t0;
 
@@ -310,7 +310,7 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   log_likelihood_data lnl_data = {branch.toPlain(), &traln, param, &eval, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
-  if (firstDerivative <= sqrt(DBL_EPSILON)) {
+  if (abs(firstDerivative) < sqrt(DBL_EPSILON)) {
       // Calculate the first derivative of the log-likelihood curve with GSL for comparison.
       fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g\n", firstDerivative, log_likelihood_d1f(prevVal, lnl_fn.args));
 
