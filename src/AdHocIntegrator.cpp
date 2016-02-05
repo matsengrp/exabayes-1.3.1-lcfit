@@ -229,23 +229,12 @@ void run_lcfit2(std::string runid,
   bool success = false;
 
   if (abs(d1) < 0.1) {
-    const size_t n = 5;
-
-    std::vector<double> t(n);
-    std::vector<double> lnl(n);
-    std::vector<double> w(n);
+    const size_t n_points = 5;
     const double alpha = 1.0 / 3.0;
-    double max_lnl;
-
     const size_t n_passes = 1;
-    for (size_t i = 0; i < n_passes; ++i) {
-      lcfit2_select_points(&model, min_t, max_t, n, t.data());
-      lcfit2_evaluate_fn(lnl_fn.fn, lnl_fn.args, n, t.data(), lnl.data());
-      max_lnl = lcfit2_compute_weights(n, lnl.data(), alpha, w.data());
 
-      lcfit2_rescale(t0, max_lnl, &model);
-      lcfit2_fit_weighted(n, t.data(), lnl.data(), w.data(), &model);
-    }
+    lcfit2_fit_iterative(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t,
+                         n_points, alpha, n_passes);
   }
 
   // Write out lcfit2 data.
