@@ -229,56 +229,22 @@ void run_lcfit2(std::string runid,
   bool success = false;
 
   if (abs(d1) < 0.1) {
+    const size_t n = 5;
 
-#if 1
-    //
-    // TODO: factor out point selection, lnl evaluation, and weight calculation
-    // into separate lcfit2 functions
-    //
+    std::vector<double> t(n);
+    lcfit2_select_points(&model, min_t, max_t, n, t.data());
 
-    const double infl_t = lcfit2_infl_t(&model);
-    const double delta = infl_t - t0;
-
-    std::vector<double> t(5);
-
-    t[0] = std::max(t0 - 0.5 * delta, min_t + 0.5 * (t0 - min_t));
-    t[1] = t0;
-    t[2] = t0 + 0.5 * delta;
-    t[3] = t0 + delta;
-    t[4] = t0 + 1.5 * delta;
-
-    fprintf(stderr, "t = { %g, %g, %g, %g, %g }\n", t[0], t[1], t[2], t[3], t[4]);
-
-    std::vector<double> lnl(t.size());
-    std::vector<double> w(t.size());
-
-    double ml_lnl = -HUGE_VAL;
-
-    for (size_t i = 0; i < t.size(); ++i) {
+    std::vector<double> lnl(n);
+    for (size_t i = 0; i < n; ++i) {
       lnl[i] = lnl_fn.fn(t[i], lnl_fn.args);
-
-      if (lnl[i] > ml_lnl) {
-          ml_lnl = lnl[i];
-      }
     }
 
-    fprintf(stderr, "weights = { ");
-    std::string sep = "";
-    for (size_t i = 0; i < t.size(); ++i) {
-      // disable weighting
-      w[i] = pow(exp(lnl[i] - ml_lnl), 1.0 / 3.0);
-      //w[i] = 1.0;
+    const double alpha = 1.0 / 3.0;
+    std::vector<double> w(n);
+    const double max_lnl = lcfit2_compute_weights(n, lnl.data(), alpha, w.data());
 
-      fprintf(stderr, "%s%g", sep.c_str(), w[i]);
-      sep = ", ";
-    }
-    fprintf(stderr, " }\n");
-
-    lcfit2_rescale(t0, ml_lnl, &model);
-    lcfit2_fit_weighted(t.size(), t.data(), lnl.data(), w.data(), &model);
-#else
-    success = lcfit2_fit_iterative(lnl_fn.fn, lnl_fn.args, &model, tolerance);
-#endif
+    lcfit2_rescale(t0, max_lnl, &model);
+    lcfit2_fit_weighted(n, t.data(), lnl.data(), w.data(), &model);
   }
 
   // Write out lcfit2 data.
