@@ -237,7 +237,7 @@ void run_lcfit2(std::string runid,
     const double alpha = 1.0 / 3.0;
     double max_lnl;
 
-    const size_t n_passes = 2;
+    const size_t n_passes = 1;
     for (size_t i = 0; i < n_passes; ++i) {
       lcfit2_select_points(&model, min_t, max_t, n, t.data());
       lcfit2_evaluate_fn(lnl_fn.fn, lnl_fn.args, n, t.data(), lnl.data());
