@@ -25,6 +25,7 @@ struct log_likelihood_data {
   TreeAln* traln;
   AbstractParameter* param;
   LikelihoodEvaluator* eval;
+  double max_lnl;
   size_t n_evals;
 };
 
@@ -44,7 +45,7 @@ double log_likelihood_callback(double t, void* data)
   eval.evaluate(traln, branch, false);
 
   ++(lnl_data->n_evals);
-  return traln.getTrHandle().likelihood;
+  return traln.getTrHandle().likelihood - lnl_data->max_lnl;
 }
 
 double log_likelihood_d1f(double t, void* data)
@@ -319,7 +320,7 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   const double min_t = -log(BoundsChecker::zMax) * frac_c;
   const double max_t = -log(BoundsChecker::zMin) * frac_c;
 
-  log_likelihood_data lnl_data = {branch.toPlain(), &traln, param, &eval, 0};
+  log_likelihood_data lnl_data = {branch.toPlain(), &traln, param, &eval, 0.0, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
   if (abs(firstDerivative) < 0.1) {
@@ -347,6 +348,8 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
       firstDerivative = gsl_d1_gsl_t0;
       secDerivative = gsl_d2_gsl_t0;
   }
+
+  lnl_data.max_lnl = lnl_fn.fn(prevVal, lnl_fn.args);
 
   run_lcfit2(runid, lnl_fn, tolerance, min_t, max_t,
              prevVal, firstDerivative, secDerivative);
@@ -500,7 +503,7 @@ void AdHocIntegrator::createLnlCurve(BranchPlain branch, std::string runid, Tree
   const double min_t = -log(BoundsChecker::zMax) * frac_c;
   const double max_t = -log(BoundsChecker::zMin) * frac_c;
 
-  log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0};
+  log_likelihood_data lnl_data = {branch, &traln, param, &eval, 0.0, 0};
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
   run_lcfit(runid, lnl_data, lnl_fn, tolerance, min_t, max_t);
