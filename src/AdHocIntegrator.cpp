@@ -231,8 +231,8 @@ void run_lcfit2(std::string runid,
 
   if (abs(d1) < 0.1) {
     const double alpha = 1.0 / 3.0;
-    const double omega = 0.2;
-    const size_t n_passes = 5;
+    const double omega = 0.0;
+    const size_t n_passes = 10;
 
     lcfit2_fit_iterative2(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t,
                           alpha, omega, n_passes);
