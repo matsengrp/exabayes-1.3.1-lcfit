@@ -20,6 +20,7 @@
 #include "eval/ParsimonyEvaluator.hpp"
 
 #include "AdHocIntegrator.hpp"
+#include "TreePrinter.hpp"
 
 bool is_included(nat primary, nat secondary)
 {
@@ -73,6 +74,11 @@ void SampleMaster::branchLengthsIntegration(Randomness &rand)
   
   auto&& ahInt = AdHocIntegrator (traln, nullptr ,rand.generateSeed(), _plPtr); 
   auto paramView = _runs[0].getChains()[0].getProposalView()[0]->getBranchLengthsParameterView();
+
+  // dump tree in newick format
+  auto&& fh = std::fstream("tree.nwk", std::ios::out);
+  auto tp = TreePrinter(true, true, false);
+  fh << tp.printTree(traln, paramView) << std::endl;
 
   std::vector<std::pair<double,double> > parsAndMLBlen; 
   for(auto &branch : traln.extractBranches(ahInt.getBlParamView()[0]))
