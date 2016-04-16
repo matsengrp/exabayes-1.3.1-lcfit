@@ -238,15 +238,17 @@ void run_lcfit2(std::string runid,
                           alpha, omega, n_passes);
   }
 
-  // Write out lcfit2 data.
   const log_likelihood_data* lnl_data = static_cast<log_likelihood_data*>(lnl_fn.args);
 
   std::stringstream ss;
-  ss << "lcfit2." << runid << "."
+  ss << "." << runid << "."
      << lnl_data->branch.getPrimNode() << "-" << lnl_data->branch.getSecNode()
      << ".tab";
 
-  std::ofstream lcfit2Out(ss.str());
+  const std::string file_suffix = ss.str();
+
+  // Write out lcfit2 data.
+  std::ofstream lcfit2Out("lcfit2" + file_suffix);
 
   lcfit2Out << tolerance << "\t"
             << lnl_data->n_evals << "\t"
@@ -257,6 +259,20 @@ void run_lcfit2(std::string runid,
             << t0 << "\t"
             << d1 << "\t"
             << d2 << std::endl;
+
+  // Write out log-likelihoods evaluated at extreme points.
+  std::ofstream extremesOut("extremes" + file_suffix);
+
+  const double middle_t = (min_t + max_t) / 2.0;
+
+  extremesOut << min_t << "\t"
+              << lnl_fn.fn(min_t, lnl_fn.args) << "\t"
+              << t0 << "\t"
+              << lnl_fn.fn(t0, lnl_fn.args) << "\t"
+              << middle_t << "\t"
+              << lnl_fn.fn(middle_t, lnl_fn.args) << "\t"
+              << max_t << "\t"
+              << lnl_fn.fn(max_t, lnl_fn.args) << std::endl;
 }
 
 
