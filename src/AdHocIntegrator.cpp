@@ -230,12 +230,9 @@ void run_lcfit2(std::string runid,
   bool success = false;
 
   if (abs(d1) < 0.1) {
-    const double alpha = 1.0 / 3.0;
-    const double omega = 0.0;
-    const size_t n_passes = 10;
+    const double alpha = 0.0;
 
-    lcfit2_fit_iterative2(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t,
-                          alpha, omega, n_passes);
+    lcfit2_fit_auto(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t, alpha);
   }
 
   const log_likelihood_data* lnl_data = static_cast<log_likelihood_data*>(lnl_fn.args);
