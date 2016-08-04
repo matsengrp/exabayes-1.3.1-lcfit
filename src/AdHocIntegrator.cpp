@@ -440,7 +440,7 @@ void run_lcfit(std::string runid,
 
   double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
-  double test_t = lcfit_bsm_infl_t(&model);
+  double test_t = NAN;
   double spread_ratio = NAN;
 
   if (isfinite(test_t)) {
