@@ -336,29 +336,33 @@ double AdHocIntegrator::printOptimizationProcess(const BranchLength& branch, std
   log_like_function_t lnl_fn = {&log_likelihood_callback, static_cast<void*>(&lnl_data)};
 
   if (abs(firstDerivative) < 0.1) {
-      // Calculate the first derivative of the log-likelihood curve with GSL for comparison.
-      fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g\n", firstDerivative, log_likelihood_d1f(prevVal, lnl_fn.args));
-      // Calculate the maximum-likelihood branch length with GSL for comparison.
+      // Calculate the maximum-likelihood branch length with GSL.
       const double t0_guess = prevVal;
       const double gsl_t0 = log_likelihood_t0(t0_guess, min_t, max_t, lnl_fn.args);
-      fprintf(stderr, "t0 = %g, gsl_t0 = %g\n",
-              prevVal, gsl_t0);
 
-      const double gsl_d1_prevVal = log_likelihood_d1f(prevVal, lnl_fn.args);
+      // Recalculate the derivatives of the log-likelihood curve with GSL.
       const double gsl_d1_gsl_t0 = log_likelihood_d1f(gsl_t0, lnl_fn.args);
-      fprintf(stderr, "d1(t0) = %g, gsl_d1(t0) = %g, gsl_d1(gsl_t0) = %g\n",
-              firstDerivative, gsl_d1_prevVal, gsl_d1_gsl_t0);
-
-      // Recalculate the second derivative of the log-likelihood curve with GSL.
-      const double gsl_d2_prevVal = log_likelihood_d2f(prevVal, lnl_fn.args);
       const double gsl_d2_gsl_t0 = log_likelihood_d2f(gsl_t0, lnl_fn.args);
-      fprintf(stderr, "d2(t0) = %g, gsl_d2(t0) = %g, gsl_d2(gsl_t0) = %g\n",
-              secDerivative, gsl_d2_prevVal, gsl_d2_gsl_t0);
+
+      fprintf(stderr, "gsl_t0 = %g, gsl_d1(gsl_t0) = %g, gsl_d2(gsl_t0) = %g\n",
+              gsl_t0, gsl_d1_gsl_t0, gsl_d2_gsl_t0);
+
+      double lmax_d1;
+      double lmax_d2;
+      double lmax_t0 = lcfit_maximize(&log_likelihood_callback, &lnl_data,
+                                      min_t, max_t, &lmax_d1, &lmax_d2);
+
+      fprintf(stderr, "lmax_t0 = %g, lmax_d1(lmax_t0) = %g, lmax_d2(lmax_t0) = %g\n",
+              lmax_t0, lmax_d1, lmax_d2);
 
       // Override ExaBayes's calculations.
-      prevVal = gsl_t0;
-      firstDerivative = gsl_d1_gsl_t0;
-      secDerivative = gsl_d2_gsl_t0;
+      //prevVal = gsl_t0;
+      //firstDerivative = gsl_d1_gsl_t0;
+      //secDerivative = gsl_d2_gsl_t0;
+
+      prevVal = lmax_t0;
+      firstDerivative = lmax_d1;
+      secDerivative = lmax_d2;
   }
 
   run_lcfit2(runid, lnl_fn, tolerance, min_t, max_t,
