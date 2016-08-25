@@ -440,7 +440,7 @@ void run_lcfit(std::string runid,
 {
   bsm_t model = get_starting_model();
   std::vector<double> ts = get_starting_points(min_t, max_t);
-  bool success = false;
+  bool success = true;
 
   double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
 
