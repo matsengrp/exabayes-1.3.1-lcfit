@@ -58,8 +58,6 @@ double log_likelihood_d1f(double t, void* data)
 
     gsl_deriv_central(&F, t, 1e-6, &result, &abserr);
 
-    fprintf(stderr, "d1f abserr = %g\n", abserr);
-
     return result;
 }
 
@@ -73,8 +71,6 @@ double log_likelihood_d2f(double t, void* data)
     double abserr = 0.0;
 
     gsl_deriv_central(&F, t, 1e-5, &result, &abserr);
-
-    fprintf(stderr, "d2f abserr = %g\n", abserr);
 
     return result;
 }
