@@ -441,19 +441,10 @@ void run_lcfit(std::string runid,
   //double ml_t = estimate_ml_t(&lnl_fn, ts.data(), ts.size(), tolerance, &model, &success, min_t, max_t);
   double ml_t = lcfit_fit_auto(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t);
 
-  double test_t = NAN;
-  double spread_ratio = NAN;
-
-  if (isfinite(test_t)) {
-      double empirical_spread = log_likelihood_callback(ml_t, static_cast<void*>(&lnl_data)) -
-                                log_likelihood_callback(test_t, static_cast<void*>(&lnl_data));
-
-      double model_spread = lcfit_bsm_log_like(ml_t, &model) -
-                            lcfit_bsm_log_like(test_t, &model);
-
-      spread_ratio = empirical_spread - model_spread;
-  }
-
+  double d1;
+  double d2;
+  lcfit_maximize(lnl_fn.fn, lnl_fn.args, min_t, max_t, &d1, &d2);
+  
   std::stringstream ss;
   ss << "lcfit." << runid << "."
      << lnl_data.branch.getPrimNode() << "-" << lnl_data.branch.getSecNode()
@@ -470,8 +461,8 @@ void run_lcfit(std::string runid,
            << model.r << "\t"
            << model.b << "\t"
            << ml_t << "\t"
-           << test_t << "\t"
-           << spread_ratio << endl;
+           << d1 << "\t"
+           << d2 << endl;
 
 }
 
