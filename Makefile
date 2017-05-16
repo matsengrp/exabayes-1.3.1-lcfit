@@ -120,205 +120,210 @@ am__v_AR_1 =
 libbayes_a_AR = $(AR) $(ARFLAGS)
 libbayes_a_LIBADD =
 am__dirstamp = $(am__leading_dot)dirstamp
-am_libbayes_a_OBJECTS = ./src/libbayes_a-TreeTraverser.$(OBJEXT) \
-	./src/libbayes_a-WeibullProposer.$(OBJEXT) \
-	./src/libbayes_a-TreeRandomizer.$(OBJEXT) \
-	./src/libbayes_a-GammaProposer.$(OBJEXT) \
-	./src/libbayes_a-AdHocIntegrator.$(OBJEXT) \
-	./src/libbayes_a-ComplexTuner.$(OBJEXT) \
-	./src/libbayes_a-PrescoredDrawer.$(OBJEXT) \
-	./src/libbayes_a-TreePrinter.$(OBJEXT) \
+am_libbayes_a_OBJECTS = ./src/libbayes_a-AdHocIntegrator.$(OBJEXT) \
 	./src/libbayes_a-BranchLengthOptimizer.$(OBJEXT) \
+	./src/libbayes_a-ComplexTuner.$(OBJEXT) \
+	./src/libbayes_a-GammaProposer.$(OBJEXT) \
 	./src/libbayes_a-GibbsProposal.$(OBJEXT) \
 	./src/libbayes_a-OptimizedParameter.$(OBJEXT) \
+	./src/libbayes_a-PrescoredDrawer.$(OBJEXT) \
 	./src/libbayes_a-TreeIntegrator.$(OBJEXT) \
-	./src/proposals/libbayes_a-AminoModelJump.$(OBJEXT) \
-	./src/proposals/libbayes_a-ProposalType.$(OBJEXT) \
-	./src/proposals/libbayes_a-LikelihoodSPR.$(OBJEXT) \
-	./src/proposals/libbayes_a-TbrMove.$(OBJEXT) \
-	./src/proposals/libbayes_a-TreeLengthMultiplier.$(OBJEXT) \
-	./src/proposals/libbayes_a-ExtendedSPR.$(OBJEXT) \
+	./src/libbayes_a-TreePrinter.$(OBJEXT) \
+	./src/libbayes_a-TreeRandomizer.$(OBJEXT) \
+	./src/libbayes_a-TreeTraverser.$(OBJEXT) \
+	./src/libbayes_a-WeibullProposer.$(OBJEXT) \
 	./src/proposals/libbayes_a-AbstractProposal.$(OBJEXT) \
-	./src/proposals/libbayes_a-SprMove.$(OBJEXT) \
-	./src/proposals/libbayes_a-ProposalSet.$(OBJEXT) \
-	./src/proposals/libbayes_a-ParsimonySPR.$(OBJEXT) \
-	./src/proposals/libbayes_a-ExtendedTBR.$(OBJEXT) \
-	./src/proposals/libbayes_a-StatNNI.$(OBJEXT) \
+	./src/proposals/libbayes_a-AminoModelJump.$(OBJEXT) \
 	./src/proposals/libbayes_a-BranchLengthMultiplier.$(OBJEXT) \
 	./src/proposals/libbayes_a-DivTimeProposal.$(OBJEXT) \
-	./src/proposals/libbayes_a-ParameterProposal.$(OBJEXT) \
+	./src/proposals/libbayes_a-ExtendedSPR.$(OBJEXT) \
+	./src/proposals/libbayes_a-ExtendedTBR.$(OBJEXT) \
+	./src/proposals/libbayes_a-LikelihoodSPR.$(OBJEXT) \
 	./src/proposals/libbayes_a-NodeSlider.$(OBJEXT) \
-	./src/parameters/libbayes_a-ProtModelParameter.$(OBJEXT) \
+	./src/proposals/libbayes_a-ParameterProposal.$(OBJEXT) \
+	./src/proposals/libbayes_a-ParsimonySPR.$(OBJEXT) \
+	./src/proposals/libbayes_a-ProposalSet.$(OBJEXT) \
+	./src/proposals/libbayes_a-ProposalType.$(OBJEXT) \
+	./src/proposals/libbayes_a-SprMove.$(OBJEXT) \
+	./src/proposals/libbayes_a-StatNNI.$(OBJEXT) \
+	./src/proposals/libbayes_a-TbrMove.$(OBJEXT) \
+	./src/proposals/libbayes_a-TreeLengthMultiplier.$(OBJEXT) \
+	./src/parameters/libbayes_a-AbstractParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-BranchLengthsParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-FrequencyParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-ParameterContent.$(OBJEXT) \
+	./src/parameters/libbayes_a-ProtModelParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-RateHetParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-RevMatParameter.$(OBJEXT) \
-	./src/parameters/libbayes_a-AbstractParameter.$(OBJEXT) \
 	./src/parameters/libbayes_a-TopologyParameter.$(OBJEXT) \
 	./src/config/libbayes_a-BlockParams.$(OBJEXT) \
-	./src/config/libbayes_a-BlockProposalConfig.$(OBJEXT) \
-	./src/config/libbayes_a-MemoryMode.$(OBJEXT) \
-	./src/config/libbayes_a-ExaBlock.$(OBJEXT) \
 	./src/config/libbayes_a-BlockPrior.$(OBJEXT) \
+	./src/config/libbayes_a-BlockProposalConfig.$(OBJEXT) \
 	./src/config/libbayes_a-BlockRunParameters.$(OBJEXT) \
 	./src/config/libbayes_a-CommandLine.$(OBJEXT) \
+	./src/config/libbayes_a-ExaBlock.$(OBJEXT) \
+	./src/config/libbayes_a-MemoryMode.$(OBJEXT) \
+	./src/priors/libbayes_a-DirichletPrior.$(OBJEXT) \
 	./src/priors/libbayes_a-DiscreteModelPrior.$(OBJEXT) \
+	./src/priors/libbayes_a-ExponentialPrior.$(OBJEXT) \
+	./src/priors/libbayes_a-FixedPrior.$(OBJEXT) \
 	./src/priors/libbayes_a-PriorBelief.$(OBJEXT) \
 	./src/priors/libbayes_a-UniformPrior.$(OBJEXT) \
-	./src/priors/libbayes_a-FixedPrior.$(OBJEXT) \
-	./src/priors/libbayes_a-DirichletPrior.$(OBJEXT) \
-	./src/priors/libbayes_a-ExponentialPrior.$(OBJEXT) \
+	./src/proposers/libbayes_a-AbstractProposer.$(OBJEXT) \
 	./src/proposers/libbayes_a-DirichletProposer.$(OBJEXT) \
 	./src/proposers/libbayes_a-MultiplierProposer.$(OBJEXT) \
-	./src/proposers/libbayes_a-SlidingProposer.$(OBJEXT) \
-	./src/proposers/libbayes_a-AbstractProposer.$(OBJEXT) \
 	./src/proposers/libbayes_a-RateDirichletProposer.$(OBJEXT) \
 	./src/proposers/libbayes_a-RateSlidingProposer.$(OBJEXT) \
-	./src/file/libbayes_a-ParameterFile.$(OBJEXT) \
-	./src/file/libbayes_a-OutputFile.$(OBJEXT) \
-	./src/file/libbayes_a-TopologyFile.$(OBJEXT) \
+	./src/proposers/libbayes_a-SlidingProposer.$(OBJEXT) \
 	./src/file/libbayes_a-DiagnosticsFile.$(OBJEXT) \
-	./src/eval/libbayes_a-ArrayRestorer.$(OBJEXT) \
-	./src/eval/libbayes_a-NoCachePolicy.$(OBJEXT) \
-	./src/eval/libbayes_a-ArrayReservoir.$(OBJEXT) \
-	./src/eval/libbayes_a-ParsimonyEvaluator.$(OBJEXT) \
-	./src/eval/libbayes_a-LikelihoodEvaluator.$(OBJEXT) \
-	./src/eval/libbayes_a-FullCachePolicy.$(OBJEXT) \
+	./src/file/libbayes_a-OutputFile.$(OBJEXT) \
+	./src/file/libbayes_a-ParameterFile.$(OBJEXT) \
+	./src/file/libbayes_a-TopologyFile.$(OBJEXT) \
 	./src/eval/libbayes_a-ArrayOrientation.$(OBJEXT) \
+	./src/eval/libbayes_a-ArrayReservoir.$(OBJEXT) \
+	./src/eval/libbayes_a-ArrayRestorer.$(OBJEXT) \
+	./src/eval/libbayes_a-FullCachePolicy.$(OBJEXT) \
+	./src/eval/libbayes_a-LikelihoodEvaluator.$(OBJEXT) \
+	./src/eval/libbayes_a-NoCachePolicy.$(OBJEXT) \
+	./src/eval/libbayes_a-ParsimonyEvaluator.$(OBJEXT) \
 	./src/parser/libbayes_a-PhylipParser.$(OBJEXT) \
 	./src/tree-parse/libbayes_a-BasicTreeReader.$(OBJEXT) \
 	./src/tree-parse/libbayes_a-TreeProcessor.$(OBJEXT) \
-	./src/contrib/libbayes_a-ConsensusTree.$(OBJEXT) \
 	./src/contrib/libbayes_a-BipartitionExtractor.$(OBJEXT) \
-	./src/contrib/libbayes_a-SplitFreqAssessor.$(OBJEXT) \
+	./src/contrib/libbayes_a-ConsensusTree.$(OBJEXT) \
 	./src/contrib/libbayes_a-CredibleSet.$(OBJEXT) \
+	./src/contrib/libbayes_a-SplitFreqAssessor.$(OBJEXT) \
 	./src/mcmc/libbayes_a-Chain.$(OBJEXT) \
 	./src/mcmc/libbayes_a-CoupledChains.$(OBJEXT) \
 	./src/mcmc/libbayes_a-SampleMaster.$(OBJEXT) \
-	./src/mcmc/libbayes_a-SwapMatrix.$(OBJEXT) \
 	./src/mcmc/libbayes_a-SuccessCounter.$(OBJEXT) \
-	./src/model/libbayes_a-LengthPart.$(OBJEXT) \
+	./src/mcmc/libbayes_a-SwapMatrix.$(OBJEXT) \
 	./src/model/libbayes_a-Branch.$(OBJEXT) \
-	./src/model/libbayes_a-ProtModel.$(OBJEXT) \
 	./src/model/libbayes_a-BranchLengthResource.$(OBJEXT) \
-	./src/model/libbayes_a-RateHelper.$(OBJEXT) \
-	./src/model/libbayes_a-Partition.$(OBJEXT) \
-	./src/model/libbayes_a-TreeAln.$(OBJEXT) \
 	./src/model/libbayes_a-Category.$(OBJEXT) \
-	./src/system/libbayes_a-time.$(OBJEXT) \
-	./src/system/libbayes_a-extensions.$(OBJEXT) \
-	./src/system/libbayes_a-NastyGlobalVariables.$(OBJEXT) \
-	./src/system/libbayes_a-RunFactory.$(OBJEXT) \
-	./src/system/libbayes_a-BoundsChecker.$(OBJEXT) \
-	./src/system/libbayes_a-log_double.$(OBJEXT) \
-	./src/system/libbayes_a-PartitionAssignment.$(OBJEXT) \
+	./src/model/libbayes_a-LengthPart.$(OBJEXT) \
+	./src/model/libbayes_a-Partition.$(OBJEXT) \
+	./src/model/libbayes_a-ProtModel.$(OBJEXT) \
+	./src/model/libbayes_a-RateHelper.$(OBJEXT) \
+	./src/model/libbayes_a-TreeAln.$(OBJEXT) \
 	./src/system/libbayes_a-BandWidthTest.$(OBJEXT) \
-	./src/system/libbayes_a-Serializable.$(OBJEXT) \
 	./src/system/libbayes_a-BitMask.$(OBJEXT) \
-	./src/system/libbayes_a-ProposalRegistry.$(OBJEXT) \
-	./src/system/libbayes_a-Teebuf.$(OBJEXT) \
+	./src/system/libbayes_a-BoundsChecker.$(OBJEXT) \
 	./src/system/libbayes_a-ByteFile.$(OBJEXT) \
+	./src/system/libbayes_a-extensions.$(OBJEXT) \
+	./src/system/libbayes_a-log_double.$(OBJEXT) \
+	./src/system/libbayes_a-NastyGlobalVariables.$(OBJEXT) \
+	./src/system/libbayes_a-PartitionAssignment.$(OBJEXT) \
+	./src/system/libbayes_a-ProposalRegistry.$(OBJEXT) \
+	./src/system/libbayes_a-RunFactory.$(OBJEXT) \
+	./src/system/libbayes_a-Serializable.$(OBJEXT) \
+	./src/system/libbayes_a-Teebuf.$(OBJEXT) \
+	./src/system/libbayes_a-time.$(OBJEXT) \
+	./src/data-struct/libbayes_a-Bipartition.$(OBJEXT) \
 	./src/data-struct/libbayes_a-BipartitionHash.$(OBJEXT) \
 	./src/data-struct/libbayes_a-Path.$(OBJEXT) \
-	./src/data-struct/libbayes_a-Bipartition.$(OBJEXT) \
-	./src/math/libbayes_a-Density.$(OBJEXT) \
-	./src/math/libbayes_a-brent.$(OBJEXT) \
 	./src/math/libbayes_a-Arithmetics.$(OBJEXT) \
+	./src/math/libbayes_a-brent.$(OBJEXT) \
+	./src/math/libbayes_a-Density.$(OBJEXT) \
 	./src/math/libbayes_a-Randomness.$(OBJEXT)
 libbayes_a_OBJECTS = $(am_libbayes_a_OBJECTS)
 libcommdummy_a_AR = $(AR) $(ARFLAGS)
 libcommdummy_a_LIBADD =
 am_libcommdummy_a_OBJECTS =  \
-	./src/comm/libcommdummy_a-PendingSwap.$(OBJEXT) \
-	./src/comm/libcommdummy_a-IncompleteMesh.$(OBJEXT) \
-	./src/comm/libcommdummy_a-RemoteComm.$(OBJEXT) \
-	./src/comm/libcommdummy_a-SwapElem.$(OBJEXT) \
-	./src/comm/libcommdummy_a-ParallelSetup.$(OBJEXT) \
-	./src/comm/libcommdummy_a-Communicator.$(OBJEXT) \
 	./src/comm/libcommdummy_a-CommRequest.$(OBJEXT) \
+	./src/comm/libcommdummy_a-Communicator.$(OBJEXT) \
+	./src/comm/libcommdummy_a-IncompleteMesh.$(OBJEXT) \
 	./src/comm/libcommdummy_a-LocalComm.$(OBJEXT) \
 	./src/comm/libcommdummy_a-LocalSwap.$(OBJEXT) \
+	./src/comm/libcommdummy_a-ParallelSetup.$(OBJEXT) \
+	./src/comm/libcommdummy_a-PendingSwap.$(OBJEXT) \
+	./src/comm/libcommdummy_a-RemoteComm.$(OBJEXT) \
+	./src/comm/libcommdummy_a-SwapElem.$(OBJEXT) \
 	./src/comm/dummy/libcommdummy_a-CommRequestImpl.$(OBJEXT) \
 	./src/comm/dummy/libcommdummy_a-PendingSwapImpl.$(OBJEXT) \
 	./src/comm/dummy/libcommdummy_a-RemoteCommImpl.$(OBJEXT) \
+	./src/comm/threads/libcommdummy_a-MessageQueue.$(OBJEXT) \
 	./src/comm/threads/libcommdummy_a-MessageQueueSingle.$(OBJEXT) \
-	./src/comm/threads/libcommdummy_a-ThreadResource.$(OBJEXT) \
-	./src/comm/threads/libcommdummy_a-MessageQueue.$(OBJEXT)
+	./src/comm/threads/libcommdummy_a-ThreadResource.$(OBJEXT)
 libcommdummy_a_OBJECTS = $(am_libcommdummy_a_OBJECTS)
 libcommmpi_a_AR = $(AR) $(ARFLAGS)
 libcommmpi_a_LIBADD =
 am_libcommmpi_a_OBJECTS =  \
+	./src/comm/threads/libcommmpi_a-MessageQueue.$(OBJEXT) \
 	./src/comm/threads/libcommmpi_a-MessageQueueSingle.$(OBJEXT) \
 	./src/comm/threads/libcommmpi_a-ThreadResource.$(OBJEXT) \
-	./src/comm/threads/libcommmpi_a-MessageQueue.$(OBJEXT) \
-	./src/comm/mpi/libcommmpi_a-MpiType.$(OBJEXT) \
 	./src/comm/mpi/libcommmpi_a-CommRequestImpl.$(OBJEXT) \
+	./src/comm/mpi/libcommmpi_a-MpiType.$(OBJEXT) \
 	./src/comm/mpi/libcommmpi_a-PendingSwapImpl.$(OBJEXT) \
 	./src/comm/mpi/libcommmpi_a-RemoteCommImpl.$(OBJEXT) \
-	./src/comm/libcommmpi_a-PendingSwap.$(OBJEXT) \
-	./src/comm/libcommmpi_a-IncompleteMesh.$(OBJEXT) \
-	./src/comm/libcommmpi_a-RemoteComm.$(OBJEXT) \
-	./src/comm/libcommmpi_a-SwapElem.$(OBJEXT) \
-	./src/comm/libcommmpi_a-ParallelSetup.$(OBJEXT) \
-	./src/comm/libcommmpi_a-Communicator.$(OBJEXT) \
 	./src/comm/libcommmpi_a-CommRequest.$(OBJEXT) \
+	./src/comm/libcommmpi_a-Communicator.$(OBJEXT) \
+	./src/comm/libcommmpi_a-IncompleteMesh.$(OBJEXT) \
 	./src/comm/libcommmpi_a-LocalComm.$(OBJEXT) \
-	./src/comm/libcommmpi_a-LocalSwap.$(OBJEXT)
+	./src/comm/libcommmpi_a-LocalSwap.$(OBJEXT) \
+	./src/comm/libcommmpi_a-ParallelSetup.$(OBJEXT) \
+	./src/comm/libcommmpi_a-PendingSwap.$(OBJEXT) \
+	./src/comm/libcommmpi_a-RemoteComm.$(OBJEXT) \
+	./src/comm/libcommmpi_a-SwapElem.$(OBJEXT)
 libcommmpi_a_OBJECTS = $(am_libcommmpi_a_OBJECTS)
 liblcfit_a_AR = $(AR) $(ARFLAGS)
 liblcfit_a_LIBADD =
 am_liblcfit_a_OBJECTS =  \
 	./lib/lcfit/lcfit_src/liblcfit_a-lcfit.$(OBJEXT) \
+	./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.$(OBJEXT) \
+	./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.$(OBJEXT) \
+	./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.$(OBJEXT) \
+	./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.$(OBJEXT) \
+	./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.$(OBJEXT) \
 	./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.$(OBJEXT)
 liblcfit_a_OBJECTS = $(am_liblcfit_a_OBJECTS)
 libncl_a_AR = $(AR) $(ARFLAGS)
 libncl_a_LIBADD =
 am_libncl_a_OBJECTS =  \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.$(OBJEXT) \
 	./lib/ncl-2.1.18/ncl/libncl_a-nxstaxablock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.$(OBJEXT) \
-	./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.$(OBJEXT)
+	./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.$(OBJEXT) \
+	./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.$(OBJEXT)
 libncl_a_OBJECTS = $(am_libncl_a_OBJECTS)
 libpll_a_AR = $(AR) $(ARFLAGS)
 libpll_a_LIBADD =
-am_libpll_a_OBJECTS = ./lib/pll/libpll_a-bipartitionList.$(OBJEXT) \
-	./lib/pll/libpll_a-topologies.$(OBJEXT) \
-	./lib/pll/libpll_a-alignment.$(OBJEXT) \
-	./lib/pll/libpll_a-utils.$(OBJEXT) \
-	./lib/pll/libpll_a-searchAlgo.$(OBJEXT) \
-	./lib/pll/libpll_a-trash.$(OBJEXT) \
-	./lib/pll/libpll_a-parsePartition.$(OBJEXT) \
-	./lib/pll/libpll_a-recom.$(OBJEXT) \
-	./lib/pll/libpll_a-newviewGenericSpecial.$(OBJEXT) \
+am_libpll_a_OBJECTS = ./lib/pll/libpll_a-alignment.$(OBJEXT) \
+	./lib/pll/libpll_a-bipartitionList.$(OBJEXT) \
 	./lib/pll/libpll_a-evaluateGenericSpecial.$(OBJEXT) \
+	./lib/pll/libpll_a-evaluatePartialGenericSpecial.$(OBJEXT) \
+	./lib/pll/libpll_a-fastDNAparsimony.$(OBJEXT) \
+	./lib/pll/libpll_a-hash.$(OBJEXT) \
+	./lib/pll/libpll_a-lexer.$(OBJEXT) \
+	./lib/pll/libpll_a-makenewzGenericSpecial.$(OBJEXT) \
 	./lib/pll/libpll_a-models.$(OBJEXT) \
 	./lib/pll/libpll_a-newick.$(OBJEXT) \
-	./lib/pll/libpll_a-ssort.$(OBJEXT) \
-	./lib/pll/libpll_a-queue.$(OBJEXT) \
-	./lib/pll/libpll_a-evaluatePartialGenericSpecial.$(OBJEXT) \
-	./lib/pll/libpll_a-restartHashTable.$(OBJEXT) \
-	./lib/pll/libpll_a-stack.$(OBJEXT) \
-	./lib/pll/libpll_a-treeIO.$(OBJEXT) \
+	./lib/pll/libpll_a-newviewGenericSpecial.$(OBJEXT) \
 	./lib/pll/libpll_a-optimizeModel.$(OBJEXT) \
-	./lib/pll/libpll_a-fastDNAparsimony.$(OBJEXT) \
-	./lib/pll/libpll_a-makenewzGenericSpecial.$(OBJEXT) \
+	./lib/pll/libpll_a-parsePartition.$(OBJEXT) \
+	./lib/pll/libpll_a-queue.$(OBJEXT) \
 	./lib/pll/libpll_a-randomTree.$(OBJEXT) \
-	./lib/pll/libpll_a-lexer.$(OBJEXT) \
-	./lib/pll/libpll_a-hash.$(OBJEXT) \
+	./lib/pll/libpll_a-recom.$(OBJEXT) \
+	./lib/pll/libpll_a-restartHashTable.$(OBJEXT) \
+	./lib/pll/libpll_a-searchAlgo.$(OBJEXT) \
+	./lib/pll/libpll_a-ssort.$(OBJEXT) \
+	./lib/pll/libpll_a-stack.$(OBJEXT) \
+	./lib/pll/libpll_a-topologies.$(OBJEXT) \
+	./lib/pll/libpll_a-trash.$(OBJEXT) \
+	./lib/pll/libpll_a-treeIO.$(OBJEXT) \
+	./lib/pll/libpll_a-utils.$(OBJEXT) \
 	./src/libpll_a-avxConditional.$(OBJEXT)
 libpll_a_OBJECTS = $(am_libpll_a_OBJECTS)
 #am__EXEEXT_1 = exabayes$(EXEEXT)
@@ -590,267 +595,271 @@ folders = ./src ./src/proposals ./src/parameters  ./src/config ./src/priors ./sr
 mpiFolds = ./src/comm/threads ./src/comm/mpi ./src/comm/
 dummyFolds = ./src/comm/ ./src/comm/dummy ./src/comm/threads
 libbayes_a_SOURCES = ./src/common.h ./src/pll.h \
-	./src/TreeTraverser.cpp ./src/ComplexTuner.hpp \
-	./src/AdHocIntegrator.hpp ./src/IntegrationModuleImpl.hpp \
-	./src/GammaProposer.hpp ./src/WeibullProposer.cpp \
-	./src/TreeRandomizer.cpp ./src/GammaProposer.cpp \
-	./src/AdHocIntegrator.cpp ./src/releaseDate.hpp \
-	./src/ComplexTuner.cpp ./src/BranchLengthOptimizer.hpp \
-	./src/PrescoredDrawer.cpp ./src/TreeIntegrator.hpp \
-	./src/TreePrinter.cpp ./src/GibbsProposal.hpp \
-	./src/BranchLengthOptimizer.cpp ./src/TreeRandomizer.hpp \
-	./src/OptimizedParameter.hpp ./src/PrescoredDrawer.hpp \
-	./src/GibbsProposal.cpp ./src/InsertionScore.hpp \
-	./src/DistributionProposer.hpp ./src/WeibullProposer.hpp \
-	./src/TreeTraverser.hpp ./src/TreePrinter.hpp \
-	./src/OptimizedParameter.cpp ./src/TreeIntegrator.cpp \
-	./src/proposals/AminoModelJump.cpp \
-	./src/proposals/ProposalType.hpp \
-	./src/proposals/ProposalType.cpp \
-	./src/proposals/LikelihoodSPR.cpp \
-	./src/proposals/AminoModelJump.hpp ./src/proposals/TbrMove.cpp \
-	./src/proposals/NodeSlider.hpp ./src/proposals/ExtendedTBR.hpp \
-	./src/proposals/DivTimeProposal.hpp \
-	./src/proposals/ParsimonySPR.hpp \
-	./src/proposals/ParameterProposal.hpp \
-	./src/proposals/TreeLengthMultiplier.cpp \
-	./src/proposals/ExtendedSPR.cpp \
-	./src/proposals/AbstractProposal.cpp \
-	./src/proposals/LikelihoodSPR.hpp \
-	./src/proposals/BranchIntegrator.hpp \
-	./src/proposals/SprMove.cpp ./src/proposals/SprMove.hpp \
-	./src/proposals/TreeLengthMultiplier.hpp \
+	./src/AdHocIntegrator.cpp ./src/AdHocIntegrator.hpp \
+	./src/BranchLengthOptimizer.cpp \
+	./src/BranchLengthOptimizer.hpp ./src/ComplexTuner.cpp \
+	./src/ComplexTuner.hpp ./src/DistributionProposer.hpp \
+	./src/GammaProposer.cpp ./src/GammaProposer.hpp \
+	./src/GibbsProposal.cpp ./src/GibbsProposal.hpp \
+	./src/InsertionScore.hpp ./src/IntegrationModuleImpl.hpp \
+	./src/OptimizedParameter.cpp ./src/OptimizedParameter.hpp \
+	./src/PrescoredDrawer.cpp ./src/PrescoredDrawer.hpp \
+	./src/releaseDate.hpp ./src/TreeIntegrator.cpp \
+	./src/TreeIntegrator.hpp ./src/TreePrinter.cpp \
+	./src/TreePrinter.hpp ./src/TreeRandomizer.cpp \
+	./src/TreeRandomizer.hpp ./src/TreeTraverser.cpp \
+	./src/TreeTraverser.hpp ./src/WeibullProposer.cpp \
+	./src/WeibullProposer.hpp ./src/proposals/AbstractProposal.cpp \
 	./src/proposals/AbstractProposal.hpp \
-	./src/proposals/StatNNI.hpp ./src/proposals/ProposalSet.cpp \
-	./src/proposals/DistributionBranchLength.tpp \
-	./src/proposals/ParsimonySPR.cpp \
-	./src/proposals/ProposalSet.hpp \
-	./src/proposals/ExtendedTBR.cpp ./src/proposals/TbrMove.hpp \
-	./src/proposals/StatNNI.cpp \
+	./src/proposals/AminoModelJump.cpp \
+	./src/proposals/AminoModelJump.hpp \
+	./src/proposals/BranchIntegrator.hpp \
 	./src/proposals/BranchLengthMultiplier.cpp \
-	./src/proposals/DivTimeProposal.cpp \
-	./src/proposals/DistributionBranchLength.hpp \
-	./src/proposals/ParameterProposal.cpp \
-	./src/proposals/ExtendedSPR.hpp ./src/proposals/NodeSlider.cpp \
 	./src/proposals/BranchLengthMultiplier.hpp \
-	./src/parameters/ProtModelParameter.cpp \
-	./src/parameters/FrequencyParameter.hpp \
+	./src/proposals/DistributionBranchLength.hpp \
+	./src/proposals/DistributionBranchLength.tpp \
+	./src/proposals/DivTimeProposal.cpp \
+	./src/proposals/DivTimeProposal.hpp \
+	./src/proposals/ExtendedSPR.cpp \
+	./src/proposals/ExtendedSPR.hpp \
+	./src/proposals/ExtendedTBR.cpp \
+	./src/proposals/ExtendedTBR.hpp \
+	./src/proposals/LikelihoodSPR.cpp \
+	./src/proposals/LikelihoodSPR.hpp \
+	./src/proposals/NodeSlider.cpp ./src/proposals/NodeSlider.hpp \
+	./src/proposals/ParameterProposal.cpp \
+	./src/proposals/ParameterProposal.hpp \
+	./src/proposals/ParsimonySPR.cpp \
+	./src/proposals/ParsimonySPR.hpp \
+	./src/proposals/ProposalSet.cpp \
+	./src/proposals/ProposalSet.hpp \
+	./src/proposals/ProposalType.cpp \
+	./src/proposals/ProposalType.hpp ./src/proposals/SprMove.cpp \
+	./src/proposals/SprMove.hpp ./src/proposals/StatNNI.cpp \
+	./src/proposals/StatNNI.hpp ./src/proposals/TbrMove.cpp \
+	./src/proposals/TbrMove.hpp \
+	./src/proposals/TreeLengthMultiplier.cpp \
+	./src/proposals/TreeLengthMultiplier.hpp \
+	./src/parameters/AbstractParameter.cpp \
+	./src/parameters/AbstractParameter.hpp \
 	./src/parameters/BranchLengthsParameter.cpp \
-	./src/parameters/FrequencyParameter.cpp \
-	./src/parameters/ParameterContent.cpp \
-	./src/parameters/RevMatParameter.hpp \
 	./src/parameters/BranchLengthsParameter.hpp \
-	./src/parameters/TopologyParameter.hpp \
+	./src/parameters/FrequencyParameter.cpp \
+	./src/parameters/FrequencyParameter.hpp \
+	./src/parameters/ParameterContent.cpp \
+	./src/parameters/ParameterContent.hpp \
+	./src/parameters/ProtModelParameter.cpp \
 	./src/parameters/ProtModelParameter.hpp \
 	./src/parameters/RateHetParameter.cpp \
-	./src/parameters/RevMatParameter.cpp \
-	./src/parameters/AbstractParameter.cpp \
-	./src/parameters/TopologyParameter.cpp \
-	./src/parameters/AbstractParameter.hpp \
-	./src/parameters/ParameterContent.hpp \
 	./src/parameters/RateHetParameter.hpp \
-	./src/config/BlockParams.cpp ./src/config/ExaBlock.hpp \
+	./src/parameters/RevMatParameter.cpp \
+	./src/parameters/RevMatParameter.hpp \
+	./src/parameters/TopologyParameter.cpp \
+	./src/parameters/TopologyParameter.hpp \
+	./src/config/BlockParams.cpp ./src/config/BlockParams.hpp \
+	./src/config/BlockPrior.cpp ./src/config/BlockPrior.hpp \
 	./src/config/BlockProposalConfig.cpp \
-	./src/config/MemoryMode.cpp ./src/config/CommandLine.hpp \
-	./src/config/ExaBlock.cpp ./src/config/BlockProposalConfig.hpp \
-	./src/config/BlockPrior.cpp \
-	./src/config/BlockRunParameters.hpp \
+	./src/config/BlockProposalConfig.hpp \
 	./src/config/BlockRunParameters.cpp \
-	./src/config/MemoryMode.hpp ./src/config/BlockParams.hpp \
-	./src/config/CommandLine.cpp ./src/config/BlockPrior.hpp \
-	./src/config/ConfigReader.hpp ./src/priors/FixedPrior.hpp \
+	./src/config/BlockRunParameters.hpp \
+	./src/config/CommandLine.cpp ./src/config/CommandLine.hpp \
+	./src/config/ConfigReader.hpp ./src/config/ExaBlock.cpp \
+	./src/config/ExaBlock.hpp ./src/config/MemoryMode.cpp \
+	./src/config/MemoryMode.hpp ./src/priors/AbstractPrior.hpp \
+	./src/priors/DirichletPrior.cpp \
+	./src/priors/DirichletPrior.hpp \
 	./src/priors/DiscreteModelPrior.cpp \
 	./src/priors/DiscreteModelPrior.hpp \
-	./src/priors/AbstractPrior.hpp ./src/priors/PriorBelief.cpp \
-	./src/priors/ExponentialPrior.hpp \
-	./src/priors/DirichletPrior.hpp ./src/priors/UniformPrior.cpp \
-	./src/priors/PriorBelief.hpp ./src/priors/FixedPrior.cpp \
-	./src/priors/DirichletPrior.cpp \
 	./src/priors/ExponentialPrior.cpp \
+	./src/priors/ExponentialPrior.hpp ./src/priors/FixedPrior.cpp \
+	./src/priors/FixedPrior.hpp ./src/priors/PriorBelief.cpp \
+	./src/priors/PriorBelief.hpp ./src/priors/UniformPrior.cpp \
 	./src/priors/UniformPrior.hpp \
-	./src/proposers/DirichletProposer.cpp \
-	./src/proposers/MultiplierProposer.cpp \
-	./src/proposers/SlidingProposer.cpp \
 	./src/proposers/AbstractProposer.cpp \
-	./src/proposers/DirichletProposer.hpp \
-	./src/proposers/RateDirichletProposer.cpp \
-	./src/proposers/RateSlidingProposer.cpp \
 	./src/proposers/AbstractProposer.hpp \
-	./src/proposers/RateDirichletProposer.hpp \
-	./src/proposers/RateSlidingProposer.hpp \
+	./src/proposers/DirichletProposer.cpp \
+	./src/proposers/DirichletProposer.hpp \
+	./src/proposers/MultiplierProposer.cpp \
 	./src/proposers/MultiplierProposer.hpp \
+	./src/proposers/RateDirichletProposer.cpp \
+	./src/proposers/RateDirichletProposer.hpp \
+	./src/proposers/RateSlidingProposer.cpp \
+	./src/proposers/RateSlidingProposer.hpp \
+	./src/proposers/SlidingProposer.cpp \
 	./src/proposers/SlidingProposer.hpp \
-	./src/file/DiagnosticsFile.hpp ./src/file/TopologyFile.hpp \
-	./src/file/ParameterFile.cpp ./src/file/OutputFile.cpp \
-	./src/file/ParameterFile.hpp ./src/file/TopologyFile.cpp \
-	./src/file/DiagnosticsFile.cpp ./src/file/OutputFile.hpp \
-	./src/eval/ArrayRestorer.cpp ./src/eval/ArrayRestorer.hpp \
-	./src/eval/ParsimonyEvaluator.hpp ./src/eval/NoCachePolicy.cpp \
-	./src/eval/ArrayReservoir.cpp ./src/eval/FullCachePolicy.hpp \
-	./src/eval/ParsimonyEvaluator.cpp \
-	./src/eval/ArrayReservoir.hpp \
-	./src/eval/LikelihoodEvaluator.cpp \
-	./src/eval/PartitionLikelihood.hpp \
-	./src/eval/NoCachePolicy.hpp ./src/eval/FullCachePolicy.cpp \
+	./src/file/DiagnosticsFile.cpp ./src/file/DiagnosticsFile.hpp \
+	./src/file/OutputFile.cpp ./src/file/OutputFile.hpp \
+	./src/file/ParameterFile.cpp ./src/file/ParameterFile.hpp \
+	./src/file/TopologyFile.cpp ./src/file/TopologyFile.hpp \
 	./src/eval/ArrayOrientation.cpp \
-	./src/eval/LikelihoodEvaluator.hpp \
 	./src/eval/ArrayOrientation.hpp ./src/eval/ArrayPolicy.hpp \
-	./src/parser/PhylipParser.hpp ./src/parser/PhylipParser.cpp \
-	./src/parser/axml-parser.hpp ./src/parser/parserDefines.hpp \
-	./src/parser/globalVariables.hpp \
+	./src/eval/ArrayReservoir.cpp ./src/eval/ArrayReservoir.hpp \
+	./src/eval/ArrayRestorer.cpp ./src/eval/ArrayRestorer.hpp \
+	./src/eval/FullCachePolicy.cpp ./src/eval/FullCachePolicy.hpp \
+	./src/eval/LikelihoodEvaluator.cpp \
+	./src/eval/LikelihoodEvaluator.hpp \
+	./src/eval/NoCachePolicy.cpp ./src/eval/NoCachePolicy.hpp \
+	./src/eval/ParsimonyEvaluator.cpp \
+	./src/eval/ParsimonyEvaluator.hpp \
+	./src/eval/PartitionLikelihood.hpp \
+	./src/parser/axml-parser.hpp ./src/parser/globalVariables.hpp \
+	./src/parser/parserDefines.hpp ./src/parser/PhylipParser.cpp \
+	./src/parser/PhylipParser.hpp \
 	./src/tree-parse/BasicTreeReader.cpp \
 	./src/tree-parse/BasicTreeReader.hpp \
-	./src/tree-parse/LabelPolicy.hpp \
-	./src/tree-parse/TreeProcessor.hpp \
-	./src/tree-parse/TreeProcessor.cpp \
 	./src/tree-parse/BranchLengthPolicy.hpp \
-	./src/contrib/SplitFreqAssessor.hpp \
-	./src/contrib/ConsensusTree.cpp \
+	./src/tree-parse/LabelPolicy.hpp \
+	./src/tree-parse/TreeProcessor.cpp \
+	./src/tree-parse/TreeProcessor.hpp \
 	./src/contrib/BipartitionExtractor.cpp \
-	./src/contrib/ConsensusTree.hpp ./src/contrib/CredibleSet.hpp \
-	./src/contrib/SplitFreqAssessor.cpp \
-	./src/contrib/CredibleSet.cpp \
 	./src/contrib/BipartitionExtractor.hpp \
-	./src/mcmc/CoupledChains.hpp ./src/mcmc/Chain.cpp \
-	./src/mcmc/CoupledChains.cpp ./src/mcmc/SampleMaster.cpp \
-	./src/mcmc/SwapMatrix.cpp ./src/mcmc/SuccessCounter.cpp \
-	./src/mcmc/SwapMatrix.hpp ./src/mcmc/SampleMaster.hpp \
-	./src/mcmc/Chain.hpp ./src/mcmc/SuccessCounter.hpp \
-	./src/model/TreeAln.hpp ./src/model/LengthPart.cpp \
-	./src/model/Partition.hpp ./src/model/BranchLengthResource.hpp \
-	./src/model/LengthPart.hpp ./src/model/Branch.cpp \
-	./src/model/Category.hpp ./src/model/Branch.hpp \
-	./src/model/ProtModel.cpp ./src/model/RateHelper.hpp \
-	./src/model/BranchLengthResource.cpp \
-	./src/model/AbstractAlphabet.hpp ./src/model/RateHelper.cpp \
-	./src/model/DnaAlphabet.hpp ./src/model/Partition.cpp \
-	./src/model/TreeAln.cpp ./src/model/ProtModel.hpp \
-	./src/model/AminoAcidAlphabet.hpp ./src/model/Category.cpp \
-	./src/system/SyncOut.hpp ./src/system/PartitionAssignment.hpp \
-	./src/system/time.cpp ./src/system/extensions.cpp \
-	./src/system/TeeStream.hpp \
-	./src/system/NastyGlobalVariables.cpp \
-	./src/system/RunFactory.cpp ./src/system/BoundsChecker.cpp \
-	./src/system/VectAlign.hpp ./src/system/FlagType.hpp \
+	./src/contrib/ConsensusTree.cpp \
+	./src/contrib/ConsensusTree.hpp ./src/contrib/CredibleSet.cpp \
+	./src/contrib/CredibleSet.hpp \
+	./src/contrib/SplitFreqAssessor.cpp \
+	./src/contrib/SplitFreqAssessor.hpp ./src/mcmc/Chain.cpp \
+	./src/mcmc/Chain.hpp ./src/mcmc/CoupledChains.cpp \
+	./src/mcmc/CoupledChains.hpp ./src/mcmc/SampleMaster.cpp \
+	./src/mcmc/SampleMaster.hpp ./src/mcmc/SuccessCounter.cpp \
+	./src/mcmc/SuccessCounter.hpp ./src/mcmc/SwapMatrix.cpp \
+	./src/mcmc/SwapMatrix.hpp ./src/model/AbstractAlphabet.hpp \
+	./src/model/AminoAcidAlphabet.hpp ./src/model/Branch.cpp \
+	./src/model/Branch.hpp ./src/model/BranchLengthResource.cpp \
+	./src/model/BranchLengthResource.hpp ./src/model/Category.cpp \
+	./src/model/Category.hpp ./src/model/DnaAlphabet.hpp \
+	./src/model/LengthPart.cpp ./src/model/LengthPart.hpp \
+	./src/model/Partition.cpp ./src/model/Partition.hpp \
+	./src/model/ProtModel.cpp ./src/model/ProtModel.hpp \
+	./src/model/RateHelper.cpp ./src/model/RateHelper.hpp \
+	./src/model/TreeAln.cpp ./src/model/TreeAln.hpp \
+	./src/system/AlignedAllocator.hpp \
+	./src/system/BandWidthTest.cpp ./src/system/BandWidthTest.hpp \
+	./src/system/BitMask.cpp ./src/system/BitMask.hpp \
+	./src/system/BoundsChecker.cpp ./src/system/BoundsChecker.hpp \
+	./src/system/ByteFile.cpp ./src/system/ByteFile.hpp \
+	./src/system/ByteFile.tpp ./src/system/extensions.cpp \
+	./src/system/extensions.hpp ./src/system/FlagType.hpp \
 	./src/system/GlobalVariables.hpp ./src/system/log_double.cpp \
-	./src/system/log_double.hpp ./src/system/Serializable.hpp \
-	./src/system/PartitionAssignment.cpp ./src/system/time.hpp \
-	./src/system/ByteFile.tpp ./src/system/BandWidthTest.cpp \
-	./src/system/BandWidthTest.hpp \
-	./src/system/ProposalRegistry.hpp \
-	./src/system/Serializable.cpp ./src/system/memory.hpp \
-	./src/system/AlignedAllocator.hpp ./src/system/BitMask.cpp \
-	./src/system/Teebuf.hpp ./src/system/extensions.hpp \
-	./src/system/ProposalRegistry.cpp ./src/system/Teebuf.cpp \
-	./src/system/BoundsChecker.hpp ./src/system/ByteFile.cpp \
-	./src/system/RunFactory.hpp ./src/system/ByteFile.hpp \
-	./src/system/BitMask.hpp ./src/data-struct/BipartitionHash.cpp \
+	./src/system/log_double.hpp ./src/system/memory.hpp \
+	./src/system/NastyGlobalVariables.cpp \
+	./src/system/PartitionAssignment.cpp \
+	./src/system/PartitionAssignment.hpp \
+	./src/system/ProposalRegistry.cpp \
+	./src/system/ProposalRegistry.hpp ./src/system/RunFactory.cpp \
+	./src/system/RunFactory.hpp ./src/system/Serializable.cpp \
+	./src/system/Serializable.hpp ./src/system/SyncOut.hpp \
+	./src/system/Teebuf.cpp ./src/system/Teebuf.hpp \
+	./src/system/TeeStream.hpp ./src/system/time.cpp \
+	./src/system/time.hpp ./src/system/VectAlign.hpp \
+	./src/data-struct/Bipartition.cpp \
+	./src/data-struct/Bipartition.hpp \
+	./src/data-struct/BipartitionHash.cpp \
 	./src/data-struct/BipartitionHash.hpp \
-	./src/data-struct/Path.hpp ./src/data-struct/Bipartition.hpp \
-	./src/data-struct/Path.cpp ./src/data-struct/Bipartition.cpp \
+	./src/data-struct/Path.cpp ./src/data-struct/Path.hpp \
+	./src/math/Arithmetics.cpp ./src/math/Arithmetics.hpp \
+	./src/math/brent.cpp ./src/math/brent.hpp \
 	./src/math/Density.cpp ./src/math/Density.hpp \
-	./src/math/brent.cpp ./src/math/Arithmetics.cpp \
-	./src/math/brent.hpp ./src/math/Randomness.hpp \
-	./src/math/Arithmetics.hpp ./src/math/Randomness.cpp
-libcommdummy_a_SOURCES = ./src/comm/PendingSwap.cpp \
-	./src/comm/LocalComm.hpp ./src/comm/ParallelSetup.hpp \
-	./src/comm/RemoteComm.hpp ./src/comm/IncompleteMesh.hpp \
-	./src/comm/LocalSwap.hpp ./src/comm/IncompleteMesh.cpp \
-	./src/comm/Communicator.tpp ./src/comm/PendingSwap.hpp \
-	./src/comm/LocalComm.tpp ./src/comm/RemoteComm.cpp \
-	./src/comm/CommCommon.hpp ./src/comm/CommFlag.hpp \
-	./src/comm/SwapElem.hpp ./src/comm/SwapElem.cpp \
-	./src/comm/ParallelSetup.cpp ./src/comm/CommRequest.hpp \
-	./src/comm/Communicator.cpp ./src/comm/CommCore.hpp \
-	./src/comm/Communicator.hpp ./src/comm/CommRequest.cpp \
-	./src/comm/LocalComm.cpp ./src/comm/AbstractPendingSwap.hpp \
-	./src/comm/LocalSwap.cpp ./src/comm/dummy/RemoteCommImpl.tpp \
+	./src/math/Randomness.cpp ./src/math/Randomness.hpp
+libcommdummy_a_SOURCES = ./src/comm/AbstractPendingSwap.hpp \
+	./src/comm/CommCommon.hpp ./src/comm/CommCore.hpp \
+	./src/comm/CommFlag.hpp ./src/comm/CommRequest.cpp \
+	./src/comm/CommRequest.hpp ./src/comm/Communicator.cpp \
+	./src/comm/Communicator.hpp ./src/comm/Communicator.tpp \
+	./src/comm/IncompleteMesh.cpp ./src/comm/IncompleteMesh.hpp \
+	./src/comm/LocalComm.cpp ./src/comm/LocalComm.hpp \
+	./src/comm/LocalComm.tpp ./src/comm/LocalSwap.cpp \
+	./src/comm/LocalSwap.hpp ./src/comm/ParallelSetup.cpp \
+	./src/comm/ParallelSetup.hpp ./src/comm/PendingSwap.cpp \
+	./src/comm/PendingSwap.hpp ./src/comm/RemoteComm.cpp \
+	./src/comm/RemoteComm.hpp ./src/comm/SwapElem.cpp \
+	./src/comm/SwapElem.hpp ./src/comm/dummy/CommMethods.hpp \
 	./src/comm/dummy/CommRequestImpl.cpp \
-	./src/comm/dummy/PendingSwapImpl.cpp \
-	./src/comm/dummy/CommMethods.hpp \
-	./src/comm/dummy/RemoteCommImpl.cpp \
 	./src/comm/dummy/CommRequestImpl.hpp \
+	./src/comm/dummy/PendingSwapImpl.cpp \
 	./src/comm/dummy/PendingSwapImpl.hpp \
+	./src/comm/dummy/RemoteCommImpl.cpp \
 	./src/comm/dummy/RemoteCommImpl.hpp \
-	./src/comm/threads/ThreadResource.hpp \
-	./src/comm/threads/MessageQueueSingle.hpp \
-	./src/comm/threads/MessageQueueSingle.cpp \
-	./src/comm/threads/ThreadResource.cpp \
+	./src/comm/dummy/RemoteCommImpl.tpp \
 	./src/comm/threads/MessageQueue.cpp \
 	./src/comm/threads/MessageQueue.hpp \
 	./src/comm/threads/MessageQueue.tpp \
-	./src/comm/threads/threadDefs.hpp \
-	./src/comm/threads/MessageQueueSingle.tpp
-libcommmpi_a_SOURCES = ./src/comm/threads/ThreadResource.hpp \
-	./src/comm/threads/MessageQueueSingle.hpp \
 	./src/comm/threads/MessageQueueSingle.cpp \
-	./src/comm/threads/ThreadResource.cpp \
-	./src/comm/threads/MessageQueue.cpp \
-	./src/comm/threads/MessageQueue.hpp \
-	./src/comm/threads/MessageQueue.tpp \
-	./src/comm/threads/threadDefs.hpp \
+	./src/comm/threads/MessageQueueSingle.hpp \
 	./src/comm/threads/MessageQueueSingle.tpp \
-	./src/comm/mpi/MpiType.cpp ./src/comm/mpi/RemoteCommImpl.tpp \
+	./src/comm/threads/threadDefs.hpp \
+	./src/comm/threads/ThreadResource.cpp \
+	./src/comm/threads/ThreadResource.hpp
+libcommmpi_a_SOURCES = ./src/comm/threads/MessageQueue.cpp \
+	./src/comm/threads/MessageQueue.hpp \
+	./src/comm/threads/MessageQueue.tpp \
+	./src/comm/threads/MessageQueueSingle.cpp \
+	./src/comm/threads/MessageQueueSingle.hpp \
+	./src/comm/threads/MessageQueueSingle.tpp \
+	./src/comm/threads/threadDefs.hpp \
+	./src/comm/threads/ThreadResource.cpp \
+	./src/comm/threads/ThreadResource.hpp \
 	./src/comm/mpi/CommRequestImpl.cpp \
-	./src/comm/mpi/PendingSwapImpl.cpp \
+	./src/comm/mpi/CommRequestImpl.hpp ./src/comm/mpi/MpiType.cpp \
+	./src/comm/mpi/MpiType.hpp ./src/comm/mpi/PendingSwapImpl.cpp \
+	./src/comm/mpi/PendingSwapImpl.hpp \
 	./src/comm/mpi/RemoteCommImpl.cpp \
-	./src/comm/mpi/CommRequestImpl.hpp \
-	./src/comm/mpi/PendingSwapImpl.hpp ./src/comm/mpi/MpiType.hpp \
-	./src/comm/mpi/RemoteCommImpl.hpp ./src/comm/PendingSwap.cpp \
-	./src/comm/LocalComm.hpp ./src/comm/ParallelSetup.hpp \
-	./src/comm/RemoteComm.hpp ./src/comm/IncompleteMesh.hpp \
-	./src/comm/LocalSwap.hpp ./src/comm/IncompleteMesh.cpp \
-	./src/comm/Communicator.tpp ./src/comm/PendingSwap.hpp \
-	./src/comm/LocalComm.tpp ./src/comm/RemoteComm.cpp \
-	./src/comm/CommCommon.hpp ./src/comm/CommFlag.hpp \
-	./src/comm/SwapElem.hpp ./src/comm/SwapElem.cpp \
-	./src/comm/ParallelSetup.cpp ./src/comm/CommRequest.hpp \
-	./src/comm/Communicator.cpp ./src/comm/CommCore.hpp \
-	./src/comm/Communicator.hpp ./src/comm/CommRequest.cpp \
-	./src/comm/LocalComm.cpp ./src/comm/AbstractPendingSwap.hpp \
-	./src/comm/LocalSwap.cpp
-libpll_a_SOURCES = ./lib/pll/genericParallelization.h ./lib/pll/newick.h ./lib/pll/bipartitionList.c ./lib/pll/topologies.c ./lib/pll/alignment.c ./lib/pll/utils.c ./lib/pll/searchAlgo.c ./lib/pll/cycle.h ./lib/pll/trash.c ./lib/pll/errcodes.h ./lib/pll/parsePartition.c ./lib/pll/mem_alloc.h ./lib/pll/recom.c ./lib/pll/newviewGenericSpecial.c ./lib/pll/evaluateGenericSpecial.c ./lib/pll/models.c ./lib/pll/newick.c ./lib/pll/ssort.c ./lib/pll/stack.h ./lib/pll/queue.c ./lib/pll/hash.h ./lib/pll/globalVariables.h ./lib/pll/evaluatePartialGenericSpecial.c ./lib/pll/restartHashTable.c ./lib/pll/stack.c ./lib/pll/pll-renamed.h ./lib/pll/treeIO.c ./lib/pll/pllInternal.h ./lib/pll/optimizeModel.c ./lib/pll/treeIO.h ./lib/pll/fastDNAparsimony.c ./lib/pll/makenewzGenericSpecial.c ./lib/pll/randomTree.c ./lib/pll/lexer.c ./lib/pll/lexer.h ./lib/pll/parsePartition.h ./lib/pll/queue.h ./lib/pll/hash.c ./src/avxConditional.c
-libncl_a_SOURCES = ./lib/ncl-2.1.18/ncl/nxscharactersblock.h \
+	./src/comm/mpi/RemoteCommImpl.hpp \
+	./src/comm/mpi/RemoteCommImpl.tpp \
+	./src/comm/AbstractPendingSwap.hpp ./src/comm/CommCommon.hpp \
+	./src/comm/CommCore.hpp ./src/comm/CommFlag.hpp \
+	./src/comm/CommRequest.cpp ./src/comm/CommRequest.hpp \
+	./src/comm/Communicator.cpp ./src/comm/Communicator.hpp \
+	./src/comm/Communicator.tpp ./src/comm/IncompleteMesh.cpp \
+	./src/comm/IncompleteMesh.hpp ./src/comm/LocalComm.cpp \
+	./src/comm/LocalComm.hpp ./src/comm/LocalComm.tpp \
+	./src/comm/LocalSwap.cpp ./src/comm/LocalSwap.hpp \
+	./src/comm/ParallelSetup.cpp ./src/comm/ParallelSetup.hpp \
+	./src/comm/PendingSwap.cpp ./src/comm/PendingSwap.hpp \
+	./src/comm/RemoteComm.cpp ./src/comm/RemoteComm.hpp \
+	./src/comm/SwapElem.cpp ./src/comm/SwapElem.hpp
+libpll_a_SOURCES = ./lib/pll/alignment.c ./lib/pll/bipartitionList.c ./lib/pll/cycle.h ./lib/pll/errcodes.h ./lib/pll/evaluateGenericSpecial.c ./lib/pll/evaluatePartialGenericSpecial.c ./lib/pll/fastDNAparsimony.c ./lib/pll/genericParallelization.h ./lib/pll/globalVariables.h ./lib/pll/hash.c ./lib/pll/hash.h ./lib/pll/lexer.c ./lib/pll/lexer.h ./lib/pll/makenewzGenericSpecial.c ./lib/pll/mem_alloc.h ./lib/pll/models.c ./lib/pll/newick.c ./lib/pll/newick.h ./lib/pll/newviewGenericSpecial.c ./lib/pll/optimizeModel.c ./lib/pll/parsePartition.c ./lib/pll/parsePartition.h ./lib/pll/pll-renamed.h ./lib/pll/pllInternal.h ./lib/pll/queue.c ./lib/pll/queue.h ./lib/pll/randomTree.c ./lib/pll/recom.c ./lib/pll/restartHashTable.c ./lib/pll/searchAlgo.c ./lib/pll/ssort.c ./lib/pll/stack.c ./lib/pll/stack.h ./lib/pll/topologies.c ./lib/pll/trash.c ./lib/pll/treeIO.c ./lib/pll/treeIO.h ./lib/pll/utils.c ./src/avxConditional.c
+libncl_a_SOURCES = ./lib/ncl-2.1.18/ncl/ncl.h \
 	./lib/ncl-2.1.18/ncl/nxsallocatematrix.h \
-	./lib/ncl-2.1.18/ncl/nxssetreader.h \
+	./lib/ncl-2.1.18/ncl/nxsassumptionsblock.h \
+	./lib/ncl-2.1.18/ncl/nxsblock.h \
+	./lib/ncl-2.1.18/ncl/nxscdiscretematrix.h \
+	./lib/ncl-2.1.18/ncl/nxscharactersblock.h \
+	./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.h \
+	./lib/ncl-2.1.18/ncl/nxsdatablock.h \
+	./lib/ncl-2.1.18/ncl/nxsdefs.h \
+	./lib/ncl-2.1.18/ncl/nxsdiscretedatum.h \
+	./lib/ncl-2.1.18/ncl/nxsdistancedatum.h \
 	./lib/ncl-2.1.18/ncl/nxsdistancesblock.h \
 	./lib/ncl-2.1.18/ncl/nxsexception.h \
-	./lib/ncl-2.1.18/ncl/nxstreesblock.h \
-	./lib/ncl-2.1.18/ncl/nxsstring.h ./lib/ncl-2.1.18/ncl/ncl.h \
-	./lib/ncl-2.1.18/ncl/nxsreader.h \
-	./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.h \
-	./lib/ncl-2.1.18/ncl/nxsblock.h \
-	./lib/ncl-2.1.18/ncl/nxsdiscretedatum.h \
-	./lib/ncl-2.1.18/ncl/nxsdefs.h \
-	./lib/ncl-2.1.18/ncl/nxsdistancedatum.h \
-	./lib/ncl-2.1.18/ncl/nxspublicblocks.h \
-	./lib/ncl-2.1.18/ncl/nxsunalignedblock.h \
-	./lib/ncl-2.1.18/ncl/nxstoken.h \
-	./lib/ncl-2.1.18/ncl/nxsutilcopy.h \
-	./lib/ncl-2.1.18/ncl/nxstaxablock.h \
-	./lib/ncl-2.1.18/ncl/nxscdiscretematrix.h \
-	./lib/ncl-2.1.18/ncl/nxsassumptionsblock.h \
-	./lib/ncl-2.1.18/ncl/nxsdatablock.h \
 	./lib/ncl-2.1.18/ncl/nxsmultiformat.h \
+	./lib/ncl-2.1.18/ncl/nxspublicblocks.h \
+	./lib/ncl-2.1.18/ncl/nxsreader.h \
+	./lib/ncl-2.1.18/ncl/nxssetreader.h \
+	./lib/ncl-2.1.18/ncl/nxsstring.h \
 	./lib/ncl-2.1.18/ncl/nxstaxaassociationblock.h \
-	./lib/ncl-2.1.18/ncl/nxstoken.cpp \
-	./lib/ncl-2.1.18/ncl/nxsdatablock.cpp \
-	./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp \
-	./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp \
+	./lib/ncl-2.1.18/ncl/nxstaxablock.h \
+	./lib/ncl-2.1.18/ncl/nxstoken.h \
+	./lib/ncl-2.1.18/ncl/nxstreesblock.h \
+	./lib/ncl-2.1.18/ncl/nxsunalignedblock.h \
+	./lib/ncl-2.1.18/ncl/nxsutilcopy.h \
 	./lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp \
-	./lib/ncl-2.1.18/ncl/nxssetreader.cpp \
+	./lib/ncl-2.1.18/ncl/nxsblock.cpp \
+	./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp \
 	./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp \
+	./lib/ncl-2.1.18/ncl/nxsdatablock.cpp \
 	./lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp \
+	./lib/ncl-2.1.18/ncl/nxsexception.cpp \
 	./lib/ncl-2.1.18/ncl/nxsmultiformat.cpp \
-	./lib/ncl-2.1.18/ncl/nxstreesblock.cpp \
+	./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp \
+	./lib/ncl-2.1.18/ncl/nxsreader.cpp \
+	./lib/ncl-2.1.18/ncl/nxssetreader.cpp \
+	./lib/ncl-2.1.18/ncl/nxsstring.cpp \
 	./lib/ncl-2.1.18/ncl/nxstaxaassociationblock.cpp \
 	./lib/ncl-2.1.18/ncl/nxstaxablock.cpp \
-	./lib/ncl-2.1.18/ncl/nxsreader.cpp \
-	./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp \
-	./lib/ncl-2.1.18/ncl/nxsblock.cpp \
-	./lib/ncl-2.1.18/ncl/nxsstring.cpp \
-	./lib/ncl-2.1.18/ncl/nxsexception.cpp
-liblcfit_a_SOURCES = ./lib/lcfit/lcfit_src/lcfit.c ./lib/lcfit/lcfit_src/lcfit.h ./lib/lcfit/lcfit_src/lcfit_select.c ./lib/lcfit/lcfit_src/lcfit_select.h
+	./lib/ncl-2.1.18/ncl/nxstoken.cpp \
+	./lib/ncl-2.1.18/ncl/nxstreesblock.cpp \
+	./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp
+liblcfit_a_SOURCES = ./lib/lcfit/lcfit_src/lcfit.c ./lib/lcfit/lcfit_src/lcfit.h ./lib/lcfit/lcfit_src/lcfit2.c ./lib/lcfit/lcfit_src/lcfit2.h ./lib/lcfit/lcfit_src/lcfit2_gsl.c ./lib/lcfit/lcfit_src/lcfit2_gsl.h ./lib/lcfit/lcfit_src/lcfit2_nlopt.c ./lib/lcfit/lcfit_src/lcfit2_nlopt.h ./lib/lcfit/lcfit_src/lcfit3.c ./lib/lcfit/lcfit_src/lcfit3.h ./lib/lcfit/lcfit_src/lcfit3_nlopt.c ./lib/lcfit/lcfit_src/lcfit3_nlopt.h ./lib/lcfit/lcfit_src/lcfit_priv.h ./lib/lcfit/lcfit_src/lcfit_select.c ./lib/lcfit/lcfit_src/lcfit_select.h
 
 # the comm stuff 
 libcommdummy_a_CXXFLAGS = -O3 $(AM_CXXFLAGS) $(VECTOR_FLAGS) $(BAYES_INCLUDES) 
@@ -858,7 +867,7 @@ libcommdummy_a_CXXFLAGS = -O3 $(AM_CXXFLAGS) $(VECTOR_FLAGS) $(BAYES_INCLUDES)
 # the new pll 
 libpll_a_CFLAGS = $(AM_CFLAGS) -w $(VECTOR_FLAGS) -O2 $(SRCINCLUDE)  
 # lcfit
-liblcfit_a_CFLAGS = $(AM_CFLAGS) -std=c99 -O2 -Wall -pedantic -DVERBOSE
+liblcfit_a_CFLAGS = $(AM_CFLAGS) -std=c99 -O2 -Wall -pedantic -DLCFIT3_VERBOSE -DLCFIT_AUTO_VERBOSE
 #libcommmpi_a_CXXFLAGS = $(AM_CXXFLAGS) -O3 $(VECTOR_FLAGS) $(MPI_CXXFLAGS) $(BAYES_INCLUDES_PARA) 
 seqlibs = libncl.a libbayes.a libcommdummy.a  libpll.a liblcfit.a libncl.a
 paralibs = libbayes.a libcommmpi.a libpll.a libncl.a
@@ -990,29 +999,29 @@ src/$(am__dirstamp):
 src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/$(DEPDIR)
 	@: > src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-TreeTraverser.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-WeibullProposer.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-TreeRandomizer.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-GammaProposer.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
 ./src/libbayes_a-AdHocIntegrator.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-BranchLengthOptimizer.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 ./src/libbayes_a-ComplexTuner.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-PrescoredDrawer.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-TreePrinter.$(OBJEXT): src/$(am__dirstamp) \
-	src/$(DEPDIR)/$(am__dirstamp)
-./src/libbayes_a-BranchLengthOptimizer.$(OBJEXT): src/$(am__dirstamp) \
+./src/libbayes_a-GammaProposer.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 ./src/libbayes_a-GibbsProposal.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 ./src/libbayes_a-OptimizedParameter.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-PrescoredDrawer.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
 ./src/libbayes_a-TreeIntegrator.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-TreePrinter.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-TreeRandomizer.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-TreeTraverser.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
+./src/libbayes_a-WeibullProposer.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 src/proposals/$(am__dirstamp):
 	@$(MKDIR_P) ./src/proposals
@@ -1020,40 +1029,10 @@ src/proposals/$(am__dirstamp):
 src/proposals/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/proposals/$(DEPDIR)
 	@: > src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-AminoModelJump.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ProposalType.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-LikelihoodSPR.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-TbrMove.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-TreeLengthMultiplier.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ExtendedSPR.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
 ./src/proposals/libbayes_a-AbstractProposal.$(OBJEXT):  \
 	src/proposals/$(am__dirstamp) \
 	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-SprMove.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ProposalSet.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ParsimonySPR.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ExtendedTBR.$(OBJEXT):  \
-	src/proposals/$(am__dirstamp) \
-	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-StatNNI.$(OBJEXT):  \
+./src/proposals/libbayes_a-AminoModelJump.$(OBJEXT):  \
 	src/proposals/$(am__dirstamp) \
 	src/proposals/$(DEPDIR)/$(am__dirstamp)
 ./src/proposals/libbayes_a-BranchLengthMultiplier.$(OBJEXT):  \
@@ -1062,10 +1041,40 @@ src/proposals/$(DEPDIR)/$(am__dirstamp):
 ./src/proposals/libbayes_a-DivTimeProposal.$(OBJEXT):  \
 	src/proposals/$(am__dirstamp) \
 	src/proposals/$(DEPDIR)/$(am__dirstamp)
-./src/proposals/libbayes_a-ParameterProposal.$(OBJEXT):  \
+./src/proposals/libbayes_a-ExtendedSPR.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-ExtendedTBR.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-LikelihoodSPR.$(OBJEXT):  \
 	src/proposals/$(am__dirstamp) \
 	src/proposals/$(DEPDIR)/$(am__dirstamp)
 ./src/proposals/libbayes_a-NodeSlider.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-ParameterProposal.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-ParsimonySPR.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-ProposalSet.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-ProposalType.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-SprMove.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-StatNNI.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-TbrMove.$(OBJEXT):  \
+	src/proposals/$(am__dirstamp) \
+	src/proposals/$(DEPDIR)/$(am__dirstamp)
+./src/proposals/libbayes_a-TreeLengthMultiplier.$(OBJEXT):  \
 	src/proposals/$(am__dirstamp) \
 	src/proposals/$(DEPDIR)/$(am__dirstamp)
 src/parameters/$(am__dirstamp):
@@ -1074,7 +1083,7 @@ src/parameters/$(am__dirstamp):
 src/parameters/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/parameters/$(DEPDIR)
 	@: > src/parameters/$(DEPDIR)/$(am__dirstamp)
-./src/parameters/libbayes_a-ProtModelParameter.$(OBJEXT):  \
+./src/parameters/libbayes_a-AbstractParameter.$(OBJEXT):  \
 	src/parameters/$(am__dirstamp) \
 	src/parameters/$(DEPDIR)/$(am__dirstamp)
 ./src/parameters/libbayes_a-BranchLengthsParameter.$(OBJEXT):  \
@@ -1086,13 +1095,13 @@ src/parameters/$(DEPDIR)/$(am__dirstamp):
 ./src/parameters/libbayes_a-ParameterContent.$(OBJEXT):  \
 	src/parameters/$(am__dirstamp) \
 	src/parameters/$(DEPDIR)/$(am__dirstamp)
+./src/parameters/libbayes_a-ProtModelParameter.$(OBJEXT):  \
+	src/parameters/$(am__dirstamp) \
+	src/parameters/$(DEPDIR)/$(am__dirstamp)
 ./src/parameters/libbayes_a-RateHetParameter.$(OBJEXT):  \
 	src/parameters/$(am__dirstamp) \
 	src/parameters/$(DEPDIR)/$(am__dirstamp)
 ./src/parameters/libbayes_a-RevMatParameter.$(OBJEXT):  \
-	src/parameters/$(am__dirstamp) \
-	src/parameters/$(DEPDIR)/$(am__dirstamp)
-./src/parameters/libbayes_a-AbstractParameter.$(OBJEXT):  \
 	src/parameters/$(am__dirstamp) \
 	src/parameters/$(DEPDIR)/$(am__dirstamp)
 ./src/parameters/libbayes_a-TopologyParameter.$(OBJEXT):  \
@@ -1107,16 +1116,10 @@ src/config/$(DEPDIR)/$(am__dirstamp):
 ./src/config/libbayes_a-BlockParams.$(OBJEXT):  \
 	src/config/$(am__dirstamp) \
 	src/config/$(DEPDIR)/$(am__dirstamp)
-./src/config/libbayes_a-BlockProposalConfig.$(OBJEXT):  \
-	src/config/$(am__dirstamp) \
-	src/config/$(DEPDIR)/$(am__dirstamp)
-./src/config/libbayes_a-MemoryMode.$(OBJEXT):  \
-	src/config/$(am__dirstamp) \
-	src/config/$(DEPDIR)/$(am__dirstamp)
-./src/config/libbayes_a-ExaBlock.$(OBJEXT):  \
-	src/config/$(am__dirstamp) \
-	src/config/$(DEPDIR)/$(am__dirstamp)
 ./src/config/libbayes_a-BlockPrior.$(OBJEXT):  \
+	src/config/$(am__dirstamp) \
+	src/config/$(DEPDIR)/$(am__dirstamp)
+./src/config/libbayes_a-BlockProposalConfig.$(OBJEXT):  \
 	src/config/$(am__dirstamp) \
 	src/config/$(DEPDIR)/$(am__dirstamp)
 ./src/config/libbayes_a-BlockRunParameters.$(OBJEXT):  \
@@ -1125,13 +1128,28 @@ src/config/$(DEPDIR)/$(am__dirstamp):
 ./src/config/libbayes_a-CommandLine.$(OBJEXT):  \
 	src/config/$(am__dirstamp) \
 	src/config/$(DEPDIR)/$(am__dirstamp)
+./src/config/libbayes_a-ExaBlock.$(OBJEXT):  \
+	src/config/$(am__dirstamp) \
+	src/config/$(DEPDIR)/$(am__dirstamp)
+./src/config/libbayes_a-MemoryMode.$(OBJEXT):  \
+	src/config/$(am__dirstamp) \
+	src/config/$(DEPDIR)/$(am__dirstamp)
 src/priors/$(am__dirstamp):
 	@$(MKDIR_P) ./src/priors
 	@: > src/priors/$(am__dirstamp)
 src/priors/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/priors/$(DEPDIR)
 	@: > src/priors/$(DEPDIR)/$(am__dirstamp)
+./src/priors/libbayes_a-DirichletPrior.$(OBJEXT):  \
+	src/priors/$(am__dirstamp) \
+	src/priors/$(DEPDIR)/$(am__dirstamp)
 ./src/priors/libbayes_a-DiscreteModelPrior.$(OBJEXT):  \
+	src/priors/$(am__dirstamp) \
+	src/priors/$(DEPDIR)/$(am__dirstamp)
+./src/priors/libbayes_a-ExponentialPrior.$(OBJEXT):  \
+	src/priors/$(am__dirstamp) \
+	src/priors/$(DEPDIR)/$(am__dirstamp)
+./src/priors/libbayes_a-FixedPrior.$(OBJEXT):  \
 	src/priors/$(am__dirstamp) \
 	src/priors/$(DEPDIR)/$(am__dirstamp)
 ./src/priors/libbayes_a-PriorBelief.$(OBJEXT):  \
@@ -1140,31 +1158,19 @@ src/priors/$(DEPDIR)/$(am__dirstamp):
 ./src/priors/libbayes_a-UniformPrior.$(OBJEXT):  \
 	src/priors/$(am__dirstamp) \
 	src/priors/$(DEPDIR)/$(am__dirstamp)
-./src/priors/libbayes_a-FixedPrior.$(OBJEXT):  \
-	src/priors/$(am__dirstamp) \
-	src/priors/$(DEPDIR)/$(am__dirstamp)
-./src/priors/libbayes_a-DirichletPrior.$(OBJEXT):  \
-	src/priors/$(am__dirstamp) \
-	src/priors/$(DEPDIR)/$(am__dirstamp)
-./src/priors/libbayes_a-ExponentialPrior.$(OBJEXT):  \
-	src/priors/$(am__dirstamp) \
-	src/priors/$(DEPDIR)/$(am__dirstamp)
 src/proposers/$(am__dirstamp):
 	@$(MKDIR_P) ./src/proposers
 	@: > src/proposers/$(am__dirstamp)
 src/proposers/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/proposers/$(DEPDIR)
 	@: > src/proposers/$(DEPDIR)/$(am__dirstamp)
+./src/proposers/libbayes_a-AbstractProposer.$(OBJEXT):  \
+	src/proposers/$(am__dirstamp) \
+	src/proposers/$(DEPDIR)/$(am__dirstamp)
 ./src/proposers/libbayes_a-DirichletProposer.$(OBJEXT):  \
 	src/proposers/$(am__dirstamp) \
 	src/proposers/$(DEPDIR)/$(am__dirstamp)
 ./src/proposers/libbayes_a-MultiplierProposer.$(OBJEXT):  \
-	src/proposers/$(am__dirstamp) \
-	src/proposers/$(DEPDIR)/$(am__dirstamp)
-./src/proposers/libbayes_a-SlidingProposer.$(OBJEXT):  \
-	src/proposers/$(am__dirstamp) \
-	src/proposers/$(DEPDIR)/$(am__dirstamp)
-./src/proposers/libbayes_a-AbstractProposer.$(OBJEXT):  \
 	src/proposers/$(am__dirstamp) \
 	src/proposers/$(DEPDIR)/$(am__dirstamp)
 ./src/proposers/libbayes_a-RateDirichletProposer.$(OBJEXT):  \
@@ -1173,19 +1179,22 @@ src/proposers/$(DEPDIR)/$(am__dirstamp):
 ./src/proposers/libbayes_a-RateSlidingProposer.$(OBJEXT):  \
 	src/proposers/$(am__dirstamp) \
 	src/proposers/$(DEPDIR)/$(am__dirstamp)
+./src/proposers/libbayes_a-SlidingProposer.$(OBJEXT):  \
+	src/proposers/$(am__dirstamp) \
+	src/proposers/$(DEPDIR)/$(am__dirstamp)
 src/file/$(am__dirstamp):
 	@$(MKDIR_P) ./src/file
 	@: > src/file/$(am__dirstamp)
 src/file/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/file/$(DEPDIR)
 	@: > src/file/$(DEPDIR)/$(am__dirstamp)
-./src/file/libbayes_a-ParameterFile.$(OBJEXT):  \
+./src/file/libbayes_a-DiagnosticsFile.$(OBJEXT):  \
 	src/file/$(am__dirstamp) src/file/$(DEPDIR)/$(am__dirstamp)
 ./src/file/libbayes_a-OutputFile.$(OBJEXT): src/file/$(am__dirstamp) \
 	src/file/$(DEPDIR)/$(am__dirstamp)
-./src/file/libbayes_a-TopologyFile.$(OBJEXT):  \
+./src/file/libbayes_a-ParameterFile.$(OBJEXT):  \
 	src/file/$(am__dirstamp) src/file/$(DEPDIR)/$(am__dirstamp)
-./src/file/libbayes_a-DiagnosticsFile.$(OBJEXT):  \
+./src/file/libbayes_a-TopologyFile.$(OBJEXT):  \
 	src/file/$(am__dirstamp) src/file/$(DEPDIR)/$(am__dirstamp)
 src/eval/$(am__dirstamp):
 	@$(MKDIR_P) ./src/eval
@@ -1193,19 +1202,19 @@ src/eval/$(am__dirstamp):
 src/eval/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/eval/$(DEPDIR)
 	@: > src/eval/$(DEPDIR)/$(am__dirstamp)
-./src/eval/libbayes_a-ArrayRestorer.$(OBJEXT):  \
-	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
-./src/eval/libbayes_a-NoCachePolicy.$(OBJEXT):  \
+./src/eval/libbayes_a-ArrayOrientation.$(OBJEXT):  \
 	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
 ./src/eval/libbayes_a-ArrayReservoir.$(OBJEXT):  \
 	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
-./src/eval/libbayes_a-ParsimonyEvaluator.$(OBJEXT):  \
-	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
-./src/eval/libbayes_a-LikelihoodEvaluator.$(OBJEXT):  \
+./src/eval/libbayes_a-ArrayRestorer.$(OBJEXT):  \
 	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
 ./src/eval/libbayes_a-FullCachePolicy.$(OBJEXT):  \
 	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
-./src/eval/libbayes_a-ArrayOrientation.$(OBJEXT):  \
+./src/eval/libbayes_a-LikelihoodEvaluator.$(OBJEXT):  \
+	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
+./src/eval/libbayes_a-NoCachePolicy.$(OBJEXT):  \
+	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
+./src/eval/libbayes_a-ParsimonyEvaluator.$(OBJEXT):  \
 	src/eval/$(am__dirstamp) src/eval/$(DEPDIR)/$(am__dirstamp)
 src/parser/$(am__dirstamp):
 	@$(MKDIR_P) ./src/parser
@@ -1234,16 +1243,16 @@ src/contrib/$(am__dirstamp):
 src/contrib/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/contrib/$(DEPDIR)
 	@: > src/contrib/$(DEPDIR)/$(am__dirstamp)
-./src/contrib/libbayes_a-ConsensusTree.$(OBJEXT):  \
-	src/contrib/$(am__dirstamp) \
-	src/contrib/$(DEPDIR)/$(am__dirstamp)
 ./src/contrib/libbayes_a-BipartitionExtractor.$(OBJEXT):  \
 	src/contrib/$(am__dirstamp) \
 	src/contrib/$(DEPDIR)/$(am__dirstamp)
-./src/contrib/libbayes_a-SplitFreqAssessor.$(OBJEXT):  \
+./src/contrib/libbayes_a-ConsensusTree.$(OBJEXT):  \
 	src/contrib/$(am__dirstamp) \
 	src/contrib/$(DEPDIR)/$(am__dirstamp)
 ./src/contrib/libbayes_a-CredibleSet.$(OBJEXT):  \
+	src/contrib/$(am__dirstamp) \
+	src/contrib/$(DEPDIR)/$(am__dirstamp)
+./src/contrib/libbayes_a-SplitFreqAssessor.$(OBJEXT):  \
 	src/contrib/$(am__dirstamp) \
 	src/contrib/$(DEPDIR)/$(am__dirstamp)
 src/mcmc/$(am__dirstamp):
@@ -1258,31 +1267,31 @@ src/mcmc/$(DEPDIR)/$(am__dirstamp):
 	src/mcmc/$(am__dirstamp) src/mcmc/$(DEPDIR)/$(am__dirstamp)
 ./src/mcmc/libbayes_a-SampleMaster.$(OBJEXT):  \
 	src/mcmc/$(am__dirstamp) src/mcmc/$(DEPDIR)/$(am__dirstamp)
-./src/mcmc/libbayes_a-SwapMatrix.$(OBJEXT): src/mcmc/$(am__dirstamp) \
-	src/mcmc/$(DEPDIR)/$(am__dirstamp)
 ./src/mcmc/libbayes_a-SuccessCounter.$(OBJEXT):  \
 	src/mcmc/$(am__dirstamp) src/mcmc/$(DEPDIR)/$(am__dirstamp)
+./src/mcmc/libbayes_a-SwapMatrix.$(OBJEXT): src/mcmc/$(am__dirstamp) \
+	src/mcmc/$(DEPDIR)/$(am__dirstamp)
 src/model/$(am__dirstamp):
 	@$(MKDIR_P) ./src/model
 	@: > src/model/$(am__dirstamp)
 src/model/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/model/$(DEPDIR)
 	@: > src/model/$(DEPDIR)/$(am__dirstamp)
-./src/model/libbayes_a-LengthPart.$(OBJEXT):  \
-	src/model/$(am__dirstamp) src/model/$(DEPDIR)/$(am__dirstamp)
 ./src/model/libbayes_a-Branch.$(OBJEXT): src/model/$(am__dirstamp) \
-	src/model/$(DEPDIR)/$(am__dirstamp)
-./src/model/libbayes_a-ProtModel.$(OBJEXT): src/model/$(am__dirstamp) \
 	src/model/$(DEPDIR)/$(am__dirstamp)
 ./src/model/libbayes_a-BranchLengthResource.$(OBJEXT):  \
 	src/model/$(am__dirstamp) src/model/$(DEPDIR)/$(am__dirstamp)
-./src/model/libbayes_a-RateHelper.$(OBJEXT):  \
+./src/model/libbayes_a-Category.$(OBJEXT): src/model/$(am__dirstamp) \
+	src/model/$(DEPDIR)/$(am__dirstamp)
+./src/model/libbayes_a-LengthPart.$(OBJEXT):  \
 	src/model/$(am__dirstamp) src/model/$(DEPDIR)/$(am__dirstamp)
 ./src/model/libbayes_a-Partition.$(OBJEXT): src/model/$(am__dirstamp) \
 	src/model/$(DEPDIR)/$(am__dirstamp)
-./src/model/libbayes_a-TreeAln.$(OBJEXT): src/model/$(am__dirstamp) \
+./src/model/libbayes_a-ProtModel.$(OBJEXT): src/model/$(am__dirstamp) \
 	src/model/$(DEPDIR)/$(am__dirstamp)
-./src/model/libbayes_a-Category.$(OBJEXT): src/model/$(am__dirstamp) \
+./src/model/libbayes_a-RateHelper.$(OBJEXT):  \
+	src/model/$(am__dirstamp) src/model/$(DEPDIR)/$(am__dirstamp)
+./src/model/libbayes_a-TreeAln.$(OBJEXT): src/model/$(am__dirstamp) \
 	src/model/$(DEPDIR)/$(am__dirstamp)
 src/system/$(am__dirstamp):
 	@$(MKDIR_P) ./src/system
@@ -1290,41 +1299,41 @@ src/system/$(am__dirstamp):
 src/system/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/system/$(DEPDIR)
 	@: > src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-time.$(OBJEXT): src/system/$(am__dirstamp) \
-	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-extensions.$(OBJEXT):  \
+./src/system/libbayes_a-BandWidthTest.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-NastyGlobalVariables.$(OBJEXT):  \
-	src/system/$(am__dirstamp) \
-	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-RunFactory.$(OBJEXT):  \
-	src/system/$(am__dirstamp) \
+./src/system/libbayes_a-BitMask.$(OBJEXT): src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
 ./src/system/libbayes_a-BoundsChecker.$(OBJEXT):  \
+	src/system/$(am__dirstamp) \
+	src/system/$(DEPDIR)/$(am__dirstamp)
+./src/system/libbayes_a-ByteFile.$(OBJEXT):  \
+	src/system/$(am__dirstamp) \
+	src/system/$(DEPDIR)/$(am__dirstamp)
+./src/system/libbayes_a-extensions.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
 ./src/system/libbayes_a-log_double.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
+./src/system/libbayes_a-NastyGlobalVariables.$(OBJEXT):  \
+	src/system/$(am__dirstamp) \
+	src/system/$(DEPDIR)/$(am__dirstamp)
 ./src/system/libbayes_a-PartitionAssignment.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-BandWidthTest.$(OBJEXT):  \
+./src/system/libbayes_a-ProposalRegistry.$(OBJEXT):  \
+	src/system/$(am__dirstamp) \
+	src/system/$(DEPDIR)/$(am__dirstamp)
+./src/system/libbayes_a-RunFactory.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
 ./src/system/libbayes_a-Serializable.$(OBJEXT):  \
 	src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-BitMask.$(OBJEXT): src/system/$(am__dirstamp) \
-	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-ProposalRegistry.$(OBJEXT):  \
-	src/system/$(am__dirstamp) \
-	src/system/$(DEPDIR)/$(am__dirstamp)
 ./src/system/libbayes_a-Teebuf.$(OBJEXT): src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
-./src/system/libbayes_a-ByteFile.$(OBJEXT):  \
-	src/system/$(am__dirstamp) \
+./src/system/libbayes_a-time.$(OBJEXT): src/system/$(am__dirstamp) \
 	src/system/$(DEPDIR)/$(am__dirstamp)
 src/data-struct/$(am__dirstamp):
 	@$(MKDIR_P) ./src/data-struct
@@ -1332,13 +1341,13 @@ src/data-struct/$(am__dirstamp):
 src/data-struct/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/data-struct/$(DEPDIR)
 	@: > src/data-struct/$(DEPDIR)/$(am__dirstamp)
+./src/data-struct/libbayes_a-Bipartition.$(OBJEXT):  \
+	src/data-struct/$(am__dirstamp) \
+	src/data-struct/$(DEPDIR)/$(am__dirstamp)
 ./src/data-struct/libbayes_a-BipartitionHash.$(OBJEXT):  \
 	src/data-struct/$(am__dirstamp) \
 	src/data-struct/$(DEPDIR)/$(am__dirstamp)
 ./src/data-struct/libbayes_a-Path.$(OBJEXT):  \
-	src/data-struct/$(am__dirstamp) \
-	src/data-struct/$(DEPDIR)/$(am__dirstamp)
-./src/data-struct/libbayes_a-Bipartition.$(OBJEXT):  \
 	src/data-struct/$(am__dirstamp) \
 	src/data-struct/$(DEPDIR)/$(am__dirstamp)
 src/math/$(am__dirstamp):
@@ -1347,11 +1356,11 @@ src/math/$(am__dirstamp):
 src/math/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/math/$(DEPDIR)
 	@: > src/math/$(DEPDIR)/$(am__dirstamp)
-./src/math/libbayes_a-Density.$(OBJEXT): src/math/$(am__dirstamp) \
+./src/math/libbayes_a-Arithmetics.$(OBJEXT): src/math/$(am__dirstamp) \
 	src/math/$(DEPDIR)/$(am__dirstamp)
 ./src/math/libbayes_a-brent.$(OBJEXT): src/math/$(am__dirstamp) \
 	src/math/$(DEPDIR)/$(am__dirstamp)
-./src/math/libbayes_a-Arithmetics.$(OBJEXT): src/math/$(am__dirstamp) \
+./src/math/libbayes_a-Density.$(OBJEXT): src/math/$(am__dirstamp) \
 	src/math/$(DEPDIR)/$(am__dirstamp)
 ./src/math/libbayes_a-Randomness.$(OBJEXT): src/math/$(am__dirstamp) \
 	src/math/$(DEPDIR)/$(am__dirstamp)
@@ -1366,23 +1375,23 @@ src/comm/$(am__dirstamp):
 src/comm/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/comm/$(DEPDIR)
 	@: > src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-PendingSwap.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-IncompleteMesh.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-RemoteComm.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-SwapElem.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-ParallelSetup.$(OBJEXT):  \
+./src/comm/libcommdummy_a-CommRequest.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommdummy_a-Communicator.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommdummy_a-CommRequest.$(OBJEXT):  \
+./src/comm/libcommdummy_a-IncompleteMesh.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommdummy_a-LocalComm.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommdummy_a-LocalSwap.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommdummy_a-ParallelSetup.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommdummy_a-PendingSwap.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommdummy_a-RemoteComm.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommdummy_a-SwapElem.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 src/comm/dummy/$(am__dirstamp):
 	@$(MKDIR_P) ./src/comm/dummy
@@ -1405,13 +1414,13 @@ src/comm/threads/$(am__dirstamp):
 src/comm/threads/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/comm/threads/$(DEPDIR)
 	@: > src/comm/threads/$(DEPDIR)/$(am__dirstamp)
+./src/comm/threads/libcommdummy_a-MessageQueue.$(OBJEXT):  \
+	src/comm/threads/$(am__dirstamp) \
+	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/threads/libcommdummy_a-MessageQueueSingle.$(OBJEXT):  \
 	src/comm/threads/$(am__dirstamp) \
 	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/threads/libcommdummy_a-ThreadResource.$(OBJEXT):  \
-	src/comm/threads/$(am__dirstamp) \
-	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
-./src/comm/threads/libcommdummy_a-MessageQueue.$(OBJEXT):  \
 	src/comm/threads/$(am__dirstamp) \
 	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 
@@ -1419,13 +1428,13 @@ libcommdummy.a: $(libcommdummy_a_OBJECTS) $(libcommdummy_a_DEPENDENCIES) $(EXTRA
 	$(AM_V_at)-rm -f libcommdummy.a
 	$(AM_V_AR)$(libcommdummy_a_AR) libcommdummy.a $(libcommdummy_a_OBJECTS) $(libcommdummy_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libcommdummy.a
+./src/comm/threads/libcommmpi_a-MessageQueue.$(OBJEXT):  \
+	src/comm/threads/$(am__dirstamp) \
+	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/threads/libcommmpi_a-MessageQueueSingle.$(OBJEXT):  \
 	src/comm/threads/$(am__dirstamp) \
 	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/threads/libcommmpi_a-ThreadResource.$(OBJEXT):  \
-	src/comm/threads/$(am__dirstamp) \
-	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
-./src/comm/threads/libcommmpi_a-MessageQueue.$(OBJEXT):  \
 	src/comm/threads/$(am__dirstamp) \
 	src/comm/threads/$(DEPDIR)/$(am__dirstamp)
 src/comm/mpi/$(am__dirstamp):
@@ -1434,10 +1443,10 @@ src/comm/mpi/$(am__dirstamp):
 src/comm/mpi/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./src/comm/mpi/$(DEPDIR)
 	@: > src/comm/mpi/$(DEPDIR)/$(am__dirstamp)
-./src/comm/mpi/libcommmpi_a-MpiType.$(OBJEXT):  \
+./src/comm/mpi/libcommmpi_a-CommRequestImpl.$(OBJEXT):  \
 	src/comm/mpi/$(am__dirstamp) \
 	src/comm/mpi/$(DEPDIR)/$(am__dirstamp)
-./src/comm/mpi/libcommmpi_a-CommRequestImpl.$(OBJEXT):  \
+./src/comm/mpi/libcommmpi_a-MpiType.$(OBJEXT):  \
 	src/comm/mpi/$(am__dirstamp) \
 	src/comm/mpi/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/mpi/libcommmpi_a-PendingSwapImpl.$(OBJEXT):  \
@@ -1446,23 +1455,23 @@ src/comm/mpi/$(DEPDIR)/$(am__dirstamp):
 ./src/comm/mpi/libcommmpi_a-RemoteCommImpl.$(OBJEXT):  \
 	src/comm/mpi/$(am__dirstamp) \
 	src/comm/mpi/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-PendingSwap.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-IncompleteMesh.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-RemoteComm.$(OBJEXT):  \
-	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-SwapElem.$(OBJEXT): src/comm/$(am__dirstamp) \
-	src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-ParallelSetup.$(OBJEXT):  \
+./src/comm/libcommmpi_a-CommRequest.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommmpi_a-Communicator.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
-./src/comm/libcommmpi_a-CommRequest.$(OBJEXT):  \
+./src/comm/libcommmpi_a-IncompleteMesh.$(OBJEXT):  \
 	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommmpi_a-LocalComm.$(OBJEXT): src/comm/$(am__dirstamp) \
 	src/comm/$(DEPDIR)/$(am__dirstamp)
 ./src/comm/libcommmpi_a-LocalSwap.$(OBJEXT): src/comm/$(am__dirstamp) \
+	src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommmpi_a-ParallelSetup.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommmpi_a-PendingSwap.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommmpi_a-RemoteComm.$(OBJEXT):  \
+	src/comm/$(am__dirstamp) src/comm/$(DEPDIR)/$(am__dirstamp)
+./src/comm/libcommmpi_a-SwapElem.$(OBJEXT): src/comm/$(am__dirstamp) \
 	src/comm/$(DEPDIR)/$(am__dirstamp)
 
 libcommmpi.a: $(libcommmpi_a_OBJECTS) $(libcommmpi_a_DEPENDENCIES) $(EXTRA_libcommmpi_a_DEPENDENCIES) 
@@ -1476,6 +1485,21 @@ lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./lib/lcfit/lcfit_src/$(DEPDIR)
 	@: > lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
 ./lib/lcfit/lcfit_src/liblcfit_a-lcfit.$(OBJEXT):  \
+	lib/lcfit/lcfit_src/$(am__dirstamp) \
+	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.$(OBJEXT):  \
+	lib/lcfit/lcfit_src/$(am__dirstamp) \
+	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.$(OBJEXT):  \
+	lib/lcfit/lcfit_src/$(am__dirstamp) \
+	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.$(OBJEXT):  \
+	lib/lcfit/lcfit_src/$(am__dirstamp) \
+	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.$(OBJEXT):  \
+	lib/lcfit/lcfit_src/$(am__dirstamp) \
+	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.$(OBJEXT):  \
 	lib/lcfit/lcfit_src/$(am__dirstamp) \
 	lib/lcfit/lcfit_src/$(DEPDIR)/$(am__dirstamp)
 ./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.$(OBJEXT):  \
@@ -1492,34 +1516,40 @@ lib/ncl-2.1.18/ncl/$(am__dirstamp):
 lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./lib/ncl-2.1.18/ncl/$(DEPDIR)
 	@: > lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.$(OBJEXT):  \
+./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.$(OBJEXT):  \
+./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.$(OBJEXT):  \
+./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.$(OBJEXT):  \
@@ -1528,19 +1558,13 @@ lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp):
 ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxablock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.$(OBJEXT):  \
+./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.$(OBJEXT):  \
+	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
+	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
+./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.$(OBJEXT):  \
-	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
-	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
-./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.$(OBJEXT):  \
 	lib/ncl-2.1.18/ncl/$(am__dirstamp) \
 	lib/ncl-2.1.18/ncl/$(DEPDIR)/$(am__dirstamp)
 
@@ -1554,53 +1578,53 @@ lib/pll/$(am__dirstamp):
 lib/pll/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) ./lib/pll/$(DEPDIR)
 	@: > lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-bipartitionList.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-topologies.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-alignment.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-utils.$(OBJEXT): lib/pll/$(am__dirstamp) \
+./lib/pll/libpll_a-bipartitionList.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-searchAlgo.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-trash.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-parsePartition.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-recom.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-newviewGenericSpecial.$(OBJEXT):  \
-	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-evaluateGenericSpecial.$(OBJEXT):  \
+	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-evaluatePartialGenericSpecial.$(OBJEXT):  \
+	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-fastDNAparsimony.$(OBJEXT):  \
+	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-hash.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-lexer.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-makenewzGenericSpecial.$(OBJEXT):  \
 	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-models.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-newick.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-ssort.$(OBJEXT): lib/pll/$(am__dirstamp) \
+./lib/pll/libpll_a-newviewGenericSpecial.$(OBJEXT):  \
+	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-optimizeModel.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-parsePartition.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-queue.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-evaluatePartialGenericSpecial.$(OBJEXT):  \
-	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-randomTree.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-recom.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-restartHashTable.$(OBJEXT):  \
 	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-searchAlgo.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-ssort.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-stack.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-topologies.$(OBJEXT): lib/pll/$(am__dirstamp) \
+	lib/pll/$(DEPDIR)/$(am__dirstamp)
+./lib/pll/libpll_a-trash.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./lib/pll/libpll_a-treeIO.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-optimizeModel.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-fastDNAparsimony.$(OBJEXT):  \
-	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-makenewzGenericSpecial.$(OBJEXT):  \
-	lib/pll/$(am__dirstamp) lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-randomTree.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-lexer.$(OBJEXT): lib/pll/$(am__dirstamp) \
-	lib/pll/$(DEPDIR)/$(am__dirstamp)
-./lib/pll/libpll_a-hash.$(OBJEXT): lib/pll/$(am__dirstamp) \
+./lib/pll/libpll_a-utils.$(OBJEXT): lib/pll/$(am__dirstamp) \
 	lib/pll/$(DEPDIR)/$(am__dirstamp)
 ./src/libpll_a-avxConditional.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
@@ -1750,6 +1774,11 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit.Po
+include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Po
+include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Po
+include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Po
+include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Po
+include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Po
 include ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit_select.Po
 include ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsassumptionsblock.Po
 include ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Po
@@ -1970,6 +1999,76 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit.obj `if test -f './lib/lcfit/lcfit_src/lcfit.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit.c'; fi`
 
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.o: ./lib/lcfit/lcfit_src/lcfit2.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.o `test -f './lib/lcfit/lcfit_src/lcfit2.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2.c
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.o `test -f './lib/lcfit/lcfit_src/lcfit2.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2.c
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.obj: ./lib/lcfit/lcfit_src/lcfit2.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.obj -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.obj `if test -f './lib/lcfit/lcfit_src/lcfit2.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2.obj `if test -f './lib/lcfit/lcfit_src/lcfit2.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2.c'; fi`
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.o: ./lib/lcfit/lcfit_src/lcfit2_gsl.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.o `test -f './lib/lcfit/lcfit_src/lcfit2_gsl.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2_gsl.c
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2_gsl.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.o `test -f './lib/lcfit/lcfit_src/lcfit2_gsl.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2_gsl.c
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.obj: ./lib/lcfit/lcfit_src/lcfit2_gsl.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.obj -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.obj `if test -f './lib/lcfit/lcfit_src/lcfit2_gsl.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2_gsl.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2_gsl.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_gsl.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2_gsl.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_gsl.obj `if test -f './lib/lcfit/lcfit_src/lcfit2_gsl.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2_gsl.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2_gsl.c'; fi`
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.o: ./lib/lcfit/lcfit_src/lcfit2_nlopt.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.o `test -f './lib/lcfit/lcfit_src/lcfit2_nlopt.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2_nlopt.c
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2_nlopt.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.o `test -f './lib/lcfit/lcfit_src/lcfit2_nlopt.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit2_nlopt.c
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.obj: ./lib/lcfit/lcfit_src/lcfit2_nlopt.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.obj -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.obj `if test -f './lib/lcfit/lcfit_src/lcfit2_nlopt.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2_nlopt.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2_nlopt.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit2_nlopt.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit2_nlopt.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit2_nlopt.obj `if test -f './lib/lcfit/lcfit_src/lcfit2_nlopt.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit2_nlopt.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit2_nlopt.c'; fi`
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.o: ./lib/lcfit/lcfit_src/lcfit3.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.o `test -f './lib/lcfit/lcfit_src/lcfit3.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit3.c
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit3.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.o `test -f './lib/lcfit/lcfit_src/lcfit3.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit3.c
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.obj: ./lib/lcfit/lcfit_src/lcfit3.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.obj -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.obj `if test -f './lib/lcfit/lcfit_src/lcfit3.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit3.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit3.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit3.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3.obj `if test -f './lib/lcfit/lcfit_src/lcfit3.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit3.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit3.c'; fi`
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.o: ./lib/lcfit/lcfit_src/lcfit3_nlopt.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.o `test -f './lib/lcfit/lcfit_src/lcfit3_nlopt.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit3_nlopt.c
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit3_nlopt.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.o `test -f './lib/lcfit/lcfit_src/lcfit3_nlopt.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit3_nlopt.c
+
+./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.obj: ./lib/lcfit/lcfit_src/lcfit3_nlopt.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.obj -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.obj `if test -f './lib/lcfit/lcfit_src/lcfit3_nlopt.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit3_nlopt.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit3_nlopt.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit3_nlopt.Po
+#	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit3_nlopt.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit3_nlopt.obj `if test -f './lib/lcfit/lcfit_src/lcfit3_nlopt.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit3_nlopt.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit3_nlopt.c'; fi`
+
 ./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.o: ./lib/lcfit/lcfit_src/lcfit_select.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -MT ./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.o -MD -MP -MF ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit_select.Tpo -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.o `test -f './lib/lcfit/lcfit_src/lcfit_select.c' || echo '$(srcdir)/'`./lib/lcfit/lcfit_src/lcfit_select.c
 	$(AM_V_at)$(am__mv) ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit_select.Tpo ./lib/lcfit/lcfit_src/$(DEPDIR)/liblcfit_a-lcfit_select.Po
@@ -1983,34 +2082,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CC)source='./lib/lcfit/lcfit_src/lcfit_select.c' object='./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(liblcfit_a_CFLAGS) $(CFLAGS) -c -o ./lib/lcfit/lcfit_src/liblcfit_a-lcfit_select.obj `if test -f './lib/lcfit/lcfit_src/lcfit_select.c'; then $(CYGPATH_W) './lib/lcfit/lcfit_src/lcfit_select.c'; else $(CYGPATH_W) '$(srcdir)/./lib/lcfit/lcfit_src/lcfit_select.c'; fi`
-
-./lib/pll/libpll_a-bipartitionList.o: ./lib/pll/bipartitionList.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-bipartitionList.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo -c -o ./lib/pll/libpll_a-bipartitionList.o `test -f './lib/pll/bipartitionList.c' || echo '$(srcdir)/'`./lib/pll/bipartitionList.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Po
-#	$(AM_V_CC)source='./lib/pll/bipartitionList.c' object='./lib/pll/libpll_a-bipartitionList.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-bipartitionList.o `test -f './lib/pll/bipartitionList.c' || echo '$(srcdir)/'`./lib/pll/bipartitionList.c
-
-./lib/pll/libpll_a-bipartitionList.obj: ./lib/pll/bipartitionList.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-bipartitionList.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo -c -o ./lib/pll/libpll_a-bipartitionList.obj `if test -f './lib/pll/bipartitionList.c'; then $(CYGPATH_W) './lib/pll/bipartitionList.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/bipartitionList.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Po
-#	$(AM_V_CC)source='./lib/pll/bipartitionList.c' object='./lib/pll/libpll_a-bipartitionList.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-bipartitionList.obj `if test -f './lib/pll/bipartitionList.c'; then $(CYGPATH_W) './lib/pll/bipartitionList.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/bipartitionList.c'; fi`
-
-./lib/pll/libpll_a-topologies.o: ./lib/pll/topologies.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-topologies.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo -c -o ./lib/pll/libpll_a-topologies.o `test -f './lib/pll/topologies.c' || echo '$(srcdir)/'`./lib/pll/topologies.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo ./lib/pll/$(DEPDIR)/libpll_a-topologies.Po
-#	$(AM_V_CC)source='./lib/pll/topologies.c' object='./lib/pll/libpll_a-topologies.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-topologies.o `test -f './lib/pll/topologies.c' || echo '$(srcdir)/'`./lib/pll/topologies.c
-
-./lib/pll/libpll_a-topologies.obj: ./lib/pll/topologies.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-topologies.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo -c -o ./lib/pll/libpll_a-topologies.obj `if test -f './lib/pll/topologies.c'; then $(CYGPATH_W) './lib/pll/topologies.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/topologies.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo ./lib/pll/$(DEPDIR)/libpll_a-topologies.Po
-#	$(AM_V_CC)source='./lib/pll/topologies.c' object='./lib/pll/libpll_a-topologies.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-topologies.obj `if test -f './lib/pll/topologies.c'; then $(CYGPATH_W) './lib/pll/topologies.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/topologies.c'; fi`
 
 ./lib/pll/libpll_a-alignment.o: ./lib/pll/alignment.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-alignment.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-alignment.Tpo -c -o ./lib/pll/libpll_a-alignment.o `test -f './lib/pll/alignment.c' || echo '$(srcdir)/'`./lib/pll/alignment.c
@@ -2026,89 +2097,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-alignment.obj `if test -f './lib/pll/alignment.c'; then $(CYGPATH_W) './lib/pll/alignment.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/alignment.c'; fi`
 
-./lib/pll/libpll_a-utils.o: ./lib/pll/utils.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-utils.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo -c -o ./lib/pll/libpll_a-utils.o `test -f './lib/pll/utils.c' || echo '$(srcdir)/'`./lib/pll/utils.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo ./lib/pll/$(DEPDIR)/libpll_a-utils.Po
-#	$(AM_V_CC)source='./lib/pll/utils.c' object='./lib/pll/libpll_a-utils.o' libtool=no \
+./lib/pll/libpll_a-bipartitionList.o: ./lib/pll/bipartitionList.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-bipartitionList.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo -c -o ./lib/pll/libpll_a-bipartitionList.o `test -f './lib/pll/bipartitionList.c' || echo '$(srcdir)/'`./lib/pll/bipartitionList.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Po
+#	$(AM_V_CC)source='./lib/pll/bipartitionList.c' object='./lib/pll/libpll_a-bipartitionList.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-utils.o `test -f './lib/pll/utils.c' || echo '$(srcdir)/'`./lib/pll/utils.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-bipartitionList.o `test -f './lib/pll/bipartitionList.c' || echo '$(srcdir)/'`./lib/pll/bipartitionList.c
 
-./lib/pll/libpll_a-utils.obj: ./lib/pll/utils.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-utils.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo -c -o ./lib/pll/libpll_a-utils.obj `if test -f './lib/pll/utils.c'; then $(CYGPATH_W) './lib/pll/utils.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/utils.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo ./lib/pll/$(DEPDIR)/libpll_a-utils.Po
-#	$(AM_V_CC)source='./lib/pll/utils.c' object='./lib/pll/libpll_a-utils.obj' libtool=no \
+./lib/pll/libpll_a-bipartitionList.obj: ./lib/pll/bipartitionList.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-bipartitionList.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo -c -o ./lib/pll/libpll_a-bipartitionList.obj `if test -f './lib/pll/bipartitionList.c'; then $(CYGPATH_W) './lib/pll/bipartitionList.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/bipartitionList.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Tpo ./lib/pll/$(DEPDIR)/libpll_a-bipartitionList.Po
+#	$(AM_V_CC)source='./lib/pll/bipartitionList.c' object='./lib/pll/libpll_a-bipartitionList.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-utils.obj `if test -f './lib/pll/utils.c'; then $(CYGPATH_W) './lib/pll/utils.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/utils.c'; fi`
-
-./lib/pll/libpll_a-searchAlgo.o: ./lib/pll/searchAlgo.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-searchAlgo.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo -c -o ./lib/pll/libpll_a-searchAlgo.o `test -f './lib/pll/searchAlgo.c' || echo '$(srcdir)/'`./lib/pll/searchAlgo.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Po
-#	$(AM_V_CC)source='./lib/pll/searchAlgo.c' object='./lib/pll/libpll_a-searchAlgo.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-searchAlgo.o `test -f './lib/pll/searchAlgo.c' || echo '$(srcdir)/'`./lib/pll/searchAlgo.c
-
-./lib/pll/libpll_a-searchAlgo.obj: ./lib/pll/searchAlgo.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-searchAlgo.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo -c -o ./lib/pll/libpll_a-searchAlgo.obj `if test -f './lib/pll/searchAlgo.c'; then $(CYGPATH_W) './lib/pll/searchAlgo.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/searchAlgo.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Po
-#	$(AM_V_CC)source='./lib/pll/searchAlgo.c' object='./lib/pll/libpll_a-searchAlgo.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-searchAlgo.obj `if test -f './lib/pll/searchAlgo.c'; then $(CYGPATH_W) './lib/pll/searchAlgo.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/searchAlgo.c'; fi`
-
-./lib/pll/libpll_a-trash.o: ./lib/pll/trash.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-trash.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo -c -o ./lib/pll/libpll_a-trash.o `test -f './lib/pll/trash.c' || echo '$(srcdir)/'`./lib/pll/trash.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-trash.Po
-#	$(AM_V_CC)source='./lib/pll/trash.c' object='./lib/pll/libpll_a-trash.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-trash.o `test -f './lib/pll/trash.c' || echo '$(srcdir)/'`./lib/pll/trash.c
-
-./lib/pll/libpll_a-trash.obj: ./lib/pll/trash.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-trash.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo -c -o ./lib/pll/libpll_a-trash.obj `if test -f './lib/pll/trash.c'; then $(CYGPATH_W) './lib/pll/trash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/trash.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-trash.Po
-#	$(AM_V_CC)source='./lib/pll/trash.c' object='./lib/pll/libpll_a-trash.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-trash.obj `if test -f './lib/pll/trash.c'; then $(CYGPATH_W) './lib/pll/trash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/trash.c'; fi`
-
-./lib/pll/libpll_a-parsePartition.o: ./lib/pll/parsePartition.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-parsePartition.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo -c -o ./lib/pll/libpll_a-parsePartition.o `test -f './lib/pll/parsePartition.c' || echo '$(srcdir)/'`./lib/pll/parsePartition.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Po
-#	$(AM_V_CC)source='./lib/pll/parsePartition.c' object='./lib/pll/libpll_a-parsePartition.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-parsePartition.o `test -f './lib/pll/parsePartition.c' || echo '$(srcdir)/'`./lib/pll/parsePartition.c
-
-./lib/pll/libpll_a-parsePartition.obj: ./lib/pll/parsePartition.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-parsePartition.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo -c -o ./lib/pll/libpll_a-parsePartition.obj `if test -f './lib/pll/parsePartition.c'; then $(CYGPATH_W) './lib/pll/parsePartition.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/parsePartition.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Po
-#	$(AM_V_CC)source='./lib/pll/parsePartition.c' object='./lib/pll/libpll_a-parsePartition.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-parsePartition.obj `if test -f './lib/pll/parsePartition.c'; then $(CYGPATH_W) './lib/pll/parsePartition.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/parsePartition.c'; fi`
-
-./lib/pll/libpll_a-recom.o: ./lib/pll/recom.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-recom.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo -c -o ./lib/pll/libpll_a-recom.o `test -f './lib/pll/recom.c' || echo '$(srcdir)/'`./lib/pll/recom.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo ./lib/pll/$(DEPDIR)/libpll_a-recom.Po
-#	$(AM_V_CC)source='./lib/pll/recom.c' object='./lib/pll/libpll_a-recom.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-recom.o `test -f './lib/pll/recom.c' || echo '$(srcdir)/'`./lib/pll/recom.c
-
-./lib/pll/libpll_a-recom.obj: ./lib/pll/recom.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-recom.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo -c -o ./lib/pll/libpll_a-recom.obj `if test -f './lib/pll/recom.c'; then $(CYGPATH_W) './lib/pll/recom.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/recom.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo ./lib/pll/$(DEPDIR)/libpll_a-recom.Po
-#	$(AM_V_CC)source='./lib/pll/recom.c' object='./lib/pll/libpll_a-recom.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-recom.obj `if test -f './lib/pll/recom.c'; then $(CYGPATH_W) './lib/pll/recom.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/recom.c'; fi`
-
-./lib/pll/libpll_a-newviewGenericSpecial.o: ./lib/pll/newviewGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-newviewGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-newviewGenericSpecial.o `test -f './lib/pll/newviewGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/newviewGenericSpecial.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/newviewGenericSpecial.c' object='./lib/pll/libpll_a-newviewGenericSpecial.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-newviewGenericSpecial.o `test -f './lib/pll/newviewGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/newviewGenericSpecial.c
-
-./lib/pll/libpll_a-newviewGenericSpecial.obj: ./lib/pll/newviewGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-newviewGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-newviewGenericSpecial.obj `if test -f './lib/pll/newviewGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/newviewGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/newviewGenericSpecial.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/newviewGenericSpecial.c' object='./lib/pll/libpll_a-newviewGenericSpecial.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-newviewGenericSpecial.obj `if test -f './lib/pll/newviewGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/newviewGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/newviewGenericSpecial.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-bipartitionList.obj `if test -f './lib/pll/bipartitionList.c'; then $(CYGPATH_W) './lib/pll/bipartitionList.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/bipartitionList.c'; fi`
 
 ./lib/pll/libpll_a-evaluateGenericSpecial.o: ./lib/pll/evaluateGenericSpecial.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-evaluateGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-evaluateGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-evaluateGenericSpecial.o `test -f './lib/pll/evaluateGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/evaluateGenericSpecial.c
@@ -2123,6 +2124,76 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CC)source='./lib/pll/evaluateGenericSpecial.c' object='./lib/pll/libpll_a-evaluateGenericSpecial.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-evaluateGenericSpecial.obj `if test -f './lib/pll/evaluateGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/evaluateGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/evaluateGenericSpecial.c'; fi`
+
+./lib/pll/libpll_a-evaluatePartialGenericSpecial.o: ./lib/pll/evaluatePartialGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o `test -f './lib/pll/evaluatePartialGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/evaluatePartialGenericSpecial.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/evaluatePartialGenericSpecial.c' object='./lib/pll/libpll_a-evaluatePartialGenericSpecial.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o `test -f './lib/pll/evaluatePartialGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/evaluatePartialGenericSpecial.c
+
+./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj: ./lib/pll/evaluatePartialGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj `if test -f './lib/pll/evaluatePartialGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/evaluatePartialGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/evaluatePartialGenericSpecial.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/evaluatePartialGenericSpecial.c' object='./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj `if test -f './lib/pll/evaluatePartialGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/evaluatePartialGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/evaluatePartialGenericSpecial.c'; fi`
+
+./lib/pll/libpll_a-fastDNAparsimony.o: ./lib/pll/fastDNAparsimony.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-fastDNAparsimony.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo -c -o ./lib/pll/libpll_a-fastDNAparsimony.o `test -f './lib/pll/fastDNAparsimony.c' || echo '$(srcdir)/'`./lib/pll/fastDNAparsimony.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Po
+#	$(AM_V_CC)source='./lib/pll/fastDNAparsimony.c' object='./lib/pll/libpll_a-fastDNAparsimony.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-fastDNAparsimony.o `test -f './lib/pll/fastDNAparsimony.c' || echo '$(srcdir)/'`./lib/pll/fastDNAparsimony.c
+
+./lib/pll/libpll_a-fastDNAparsimony.obj: ./lib/pll/fastDNAparsimony.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-fastDNAparsimony.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo -c -o ./lib/pll/libpll_a-fastDNAparsimony.obj `if test -f './lib/pll/fastDNAparsimony.c'; then $(CYGPATH_W) './lib/pll/fastDNAparsimony.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/fastDNAparsimony.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Po
+#	$(AM_V_CC)source='./lib/pll/fastDNAparsimony.c' object='./lib/pll/libpll_a-fastDNAparsimony.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-fastDNAparsimony.obj `if test -f './lib/pll/fastDNAparsimony.c'; then $(CYGPATH_W) './lib/pll/fastDNAparsimony.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/fastDNAparsimony.c'; fi`
+
+./lib/pll/libpll_a-hash.o: ./lib/pll/hash.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-hash.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo -c -o ./lib/pll/libpll_a-hash.o `test -f './lib/pll/hash.c' || echo '$(srcdir)/'`./lib/pll/hash.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-hash.Po
+#	$(AM_V_CC)source='./lib/pll/hash.c' object='./lib/pll/libpll_a-hash.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-hash.o `test -f './lib/pll/hash.c' || echo '$(srcdir)/'`./lib/pll/hash.c
+
+./lib/pll/libpll_a-hash.obj: ./lib/pll/hash.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-hash.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo -c -o ./lib/pll/libpll_a-hash.obj `if test -f './lib/pll/hash.c'; then $(CYGPATH_W) './lib/pll/hash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/hash.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-hash.Po
+#	$(AM_V_CC)source='./lib/pll/hash.c' object='./lib/pll/libpll_a-hash.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-hash.obj `if test -f './lib/pll/hash.c'; then $(CYGPATH_W) './lib/pll/hash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/hash.c'; fi`
+
+./lib/pll/libpll_a-lexer.o: ./lib/pll/lexer.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-lexer.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo -c -o ./lib/pll/libpll_a-lexer.o `test -f './lib/pll/lexer.c' || echo '$(srcdir)/'`./lib/pll/lexer.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo ./lib/pll/$(DEPDIR)/libpll_a-lexer.Po
+#	$(AM_V_CC)source='./lib/pll/lexer.c' object='./lib/pll/libpll_a-lexer.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-lexer.o `test -f './lib/pll/lexer.c' || echo '$(srcdir)/'`./lib/pll/lexer.c
+
+./lib/pll/libpll_a-lexer.obj: ./lib/pll/lexer.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-lexer.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo -c -o ./lib/pll/libpll_a-lexer.obj `if test -f './lib/pll/lexer.c'; then $(CYGPATH_W) './lib/pll/lexer.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/lexer.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo ./lib/pll/$(DEPDIR)/libpll_a-lexer.Po
+#	$(AM_V_CC)source='./lib/pll/lexer.c' object='./lib/pll/libpll_a-lexer.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-lexer.obj `if test -f './lib/pll/lexer.c'; then $(CYGPATH_W) './lib/pll/lexer.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/lexer.c'; fi`
+
+./lib/pll/libpll_a-makenewzGenericSpecial.o: ./lib/pll/makenewzGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-makenewzGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.o `test -f './lib/pll/makenewzGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/makenewzGenericSpecial.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/makenewzGenericSpecial.c' object='./lib/pll/libpll_a-makenewzGenericSpecial.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.o `test -f './lib/pll/makenewzGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/makenewzGenericSpecial.c
+
+./lib/pll/libpll_a-makenewzGenericSpecial.obj: ./lib/pll/makenewzGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-makenewzGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.obj `if test -f './lib/pll/makenewzGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/makenewzGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/makenewzGenericSpecial.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/makenewzGenericSpecial.c' object='./lib/pll/libpll_a-makenewzGenericSpecial.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.obj `if test -f './lib/pll/makenewzGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/makenewzGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/makenewzGenericSpecial.c'; fi`
 
 ./lib/pll/libpll_a-models.o: ./lib/pll/models.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-models.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-models.Tpo -c -o ./lib/pll/libpll_a-models.o `test -f './lib/pll/models.c' || echo '$(srcdir)/'`./lib/pll/models.c
@@ -2152,89 +2223,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-newick.obj `if test -f './lib/pll/newick.c'; then $(CYGPATH_W) './lib/pll/newick.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/newick.c'; fi`
 
-./lib/pll/libpll_a-ssort.o: ./lib/pll/ssort.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-ssort.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo -c -o ./lib/pll/libpll_a-ssort.o `test -f './lib/pll/ssort.c' || echo '$(srcdir)/'`./lib/pll/ssort.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo ./lib/pll/$(DEPDIR)/libpll_a-ssort.Po
-#	$(AM_V_CC)source='./lib/pll/ssort.c' object='./lib/pll/libpll_a-ssort.o' libtool=no \
+./lib/pll/libpll_a-newviewGenericSpecial.o: ./lib/pll/newviewGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-newviewGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-newviewGenericSpecial.o `test -f './lib/pll/newviewGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/newviewGenericSpecial.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/newviewGenericSpecial.c' object='./lib/pll/libpll_a-newviewGenericSpecial.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-ssort.o `test -f './lib/pll/ssort.c' || echo '$(srcdir)/'`./lib/pll/ssort.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-newviewGenericSpecial.o `test -f './lib/pll/newviewGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/newviewGenericSpecial.c
 
-./lib/pll/libpll_a-ssort.obj: ./lib/pll/ssort.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-ssort.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo -c -o ./lib/pll/libpll_a-ssort.obj `if test -f './lib/pll/ssort.c'; then $(CYGPATH_W) './lib/pll/ssort.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/ssort.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo ./lib/pll/$(DEPDIR)/libpll_a-ssort.Po
-#	$(AM_V_CC)source='./lib/pll/ssort.c' object='./lib/pll/libpll_a-ssort.obj' libtool=no \
+./lib/pll/libpll_a-newviewGenericSpecial.obj: ./lib/pll/newviewGenericSpecial.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-newviewGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-newviewGenericSpecial.obj `if test -f './lib/pll/newviewGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/newviewGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/newviewGenericSpecial.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-newviewGenericSpecial.Po
+#	$(AM_V_CC)source='./lib/pll/newviewGenericSpecial.c' object='./lib/pll/libpll_a-newviewGenericSpecial.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-ssort.obj `if test -f './lib/pll/ssort.c'; then $(CYGPATH_W) './lib/pll/ssort.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/ssort.c'; fi`
-
-./lib/pll/libpll_a-queue.o: ./lib/pll/queue.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-queue.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo -c -o ./lib/pll/libpll_a-queue.o `test -f './lib/pll/queue.c' || echo '$(srcdir)/'`./lib/pll/queue.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo ./lib/pll/$(DEPDIR)/libpll_a-queue.Po
-#	$(AM_V_CC)source='./lib/pll/queue.c' object='./lib/pll/libpll_a-queue.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-queue.o `test -f './lib/pll/queue.c' || echo '$(srcdir)/'`./lib/pll/queue.c
-
-./lib/pll/libpll_a-queue.obj: ./lib/pll/queue.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-queue.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo -c -o ./lib/pll/libpll_a-queue.obj `if test -f './lib/pll/queue.c'; then $(CYGPATH_W) './lib/pll/queue.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/queue.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo ./lib/pll/$(DEPDIR)/libpll_a-queue.Po
-#	$(AM_V_CC)source='./lib/pll/queue.c' object='./lib/pll/libpll_a-queue.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-queue.obj `if test -f './lib/pll/queue.c'; then $(CYGPATH_W) './lib/pll/queue.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/queue.c'; fi`
-
-./lib/pll/libpll_a-evaluatePartialGenericSpecial.o: ./lib/pll/evaluatePartialGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o `test -f './lib/pll/evaluatePartialGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/evaluatePartialGenericSpecial.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/evaluatePartialGenericSpecial.c' object='./lib/pll/libpll_a-evaluatePartialGenericSpecial.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.o `test -f './lib/pll/evaluatePartialGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/evaluatePartialGenericSpecial.c
-
-./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj: ./lib/pll/evaluatePartialGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj `if test -f './lib/pll/evaluatePartialGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/evaluatePartialGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/evaluatePartialGenericSpecial.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-evaluatePartialGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/evaluatePartialGenericSpecial.c' object='./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-evaluatePartialGenericSpecial.obj `if test -f './lib/pll/evaluatePartialGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/evaluatePartialGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/evaluatePartialGenericSpecial.c'; fi`
-
-./lib/pll/libpll_a-restartHashTable.o: ./lib/pll/restartHashTable.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-restartHashTable.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo -c -o ./lib/pll/libpll_a-restartHashTable.o `test -f './lib/pll/restartHashTable.c' || echo '$(srcdir)/'`./lib/pll/restartHashTable.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Po
-#	$(AM_V_CC)source='./lib/pll/restartHashTable.c' object='./lib/pll/libpll_a-restartHashTable.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-restartHashTable.o `test -f './lib/pll/restartHashTable.c' || echo '$(srcdir)/'`./lib/pll/restartHashTable.c
-
-./lib/pll/libpll_a-restartHashTable.obj: ./lib/pll/restartHashTable.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-restartHashTable.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo -c -o ./lib/pll/libpll_a-restartHashTable.obj `if test -f './lib/pll/restartHashTable.c'; then $(CYGPATH_W) './lib/pll/restartHashTable.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/restartHashTable.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Po
-#	$(AM_V_CC)source='./lib/pll/restartHashTable.c' object='./lib/pll/libpll_a-restartHashTable.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-restartHashTable.obj `if test -f './lib/pll/restartHashTable.c'; then $(CYGPATH_W) './lib/pll/restartHashTable.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/restartHashTable.c'; fi`
-
-./lib/pll/libpll_a-stack.o: ./lib/pll/stack.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-stack.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo -c -o ./lib/pll/libpll_a-stack.o `test -f './lib/pll/stack.c' || echo '$(srcdir)/'`./lib/pll/stack.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo ./lib/pll/$(DEPDIR)/libpll_a-stack.Po
-#	$(AM_V_CC)source='./lib/pll/stack.c' object='./lib/pll/libpll_a-stack.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-stack.o `test -f './lib/pll/stack.c' || echo '$(srcdir)/'`./lib/pll/stack.c
-
-./lib/pll/libpll_a-stack.obj: ./lib/pll/stack.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-stack.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo -c -o ./lib/pll/libpll_a-stack.obj `if test -f './lib/pll/stack.c'; then $(CYGPATH_W) './lib/pll/stack.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/stack.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo ./lib/pll/$(DEPDIR)/libpll_a-stack.Po
-#	$(AM_V_CC)source='./lib/pll/stack.c' object='./lib/pll/libpll_a-stack.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-stack.obj `if test -f './lib/pll/stack.c'; then $(CYGPATH_W) './lib/pll/stack.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/stack.c'; fi`
-
-./lib/pll/libpll_a-treeIO.o: ./lib/pll/treeIO.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-treeIO.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo -c -o ./lib/pll/libpll_a-treeIO.o `test -f './lib/pll/treeIO.c' || echo '$(srcdir)/'`./lib/pll/treeIO.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Po
-#	$(AM_V_CC)source='./lib/pll/treeIO.c' object='./lib/pll/libpll_a-treeIO.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-treeIO.o `test -f './lib/pll/treeIO.c' || echo '$(srcdir)/'`./lib/pll/treeIO.c
-
-./lib/pll/libpll_a-treeIO.obj: ./lib/pll/treeIO.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-treeIO.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo -c -o ./lib/pll/libpll_a-treeIO.obj `if test -f './lib/pll/treeIO.c'; then $(CYGPATH_W) './lib/pll/treeIO.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/treeIO.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Po
-#	$(AM_V_CC)source='./lib/pll/treeIO.c' object='./lib/pll/libpll_a-treeIO.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-treeIO.obj `if test -f './lib/pll/treeIO.c'; then $(CYGPATH_W) './lib/pll/treeIO.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/treeIO.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-newviewGenericSpecial.obj `if test -f './lib/pll/newviewGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/newviewGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/newviewGenericSpecial.c'; fi`
 
 ./lib/pll/libpll_a-optimizeModel.o: ./lib/pll/optimizeModel.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-optimizeModel.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-optimizeModel.Tpo -c -o ./lib/pll/libpll_a-optimizeModel.o `test -f './lib/pll/optimizeModel.c' || echo '$(srcdir)/'`./lib/pll/optimizeModel.c
@@ -2250,33 +2251,33 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-optimizeModel.obj `if test -f './lib/pll/optimizeModel.c'; then $(CYGPATH_W) './lib/pll/optimizeModel.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/optimizeModel.c'; fi`
 
-./lib/pll/libpll_a-fastDNAparsimony.o: ./lib/pll/fastDNAparsimony.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-fastDNAparsimony.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo -c -o ./lib/pll/libpll_a-fastDNAparsimony.o `test -f './lib/pll/fastDNAparsimony.c' || echo '$(srcdir)/'`./lib/pll/fastDNAparsimony.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Po
-#	$(AM_V_CC)source='./lib/pll/fastDNAparsimony.c' object='./lib/pll/libpll_a-fastDNAparsimony.o' libtool=no \
+./lib/pll/libpll_a-parsePartition.o: ./lib/pll/parsePartition.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-parsePartition.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo -c -o ./lib/pll/libpll_a-parsePartition.o `test -f './lib/pll/parsePartition.c' || echo '$(srcdir)/'`./lib/pll/parsePartition.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Po
+#	$(AM_V_CC)source='./lib/pll/parsePartition.c' object='./lib/pll/libpll_a-parsePartition.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-fastDNAparsimony.o `test -f './lib/pll/fastDNAparsimony.c' || echo '$(srcdir)/'`./lib/pll/fastDNAparsimony.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-parsePartition.o `test -f './lib/pll/parsePartition.c' || echo '$(srcdir)/'`./lib/pll/parsePartition.c
 
-./lib/pll/libpll_a-fastDNAparsimony.obj: ./lib/pll/fastDNAparsimony.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-fastDNAparsimony.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo -c -o ./lib/pll/libpll_a-fastDNAparsimony.obj `if test -f './lib/pll/fastDNAparsimony.c'; then $(CYGPATH_W) './lib/pll/fastDNAparsimony.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/fastDNAparsimony.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Tpo ./lib/pll/$(DEPDIR)/libpll_a-fastDNAparsimony.Po
-#	$(AM_V_CC)source='./lib/pll/fastDNAparsimony.c' object='./lib/pll/libpll_a-fastDNAparsimony.obj' libtool=no \
+./lib/pll/libpll_a-parsePartition.obj: ./lib/pll/parsePartition.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-parsePartition.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo -c -o ./lib/pll/libpll_a-parsePartition.obj `if test -f './lib/pll/parsePartition.c'; then $(CYGPATH_W) './lib/pll/parsePartition.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/parsePartition.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Tpo ./lib/pll/$(DEPDIR)/libpll_a-parsePartition.Po
+#	$(AM_V_CC)source='./lib/pll/parsePartition.c' object='./lib/pll/libpll_a-parsePartition.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-fastDNAparsimony.obj `if test -f './lib/pll/fastDNAparsimony.c'; then $(CYGPATH_W) './lib/pll/fastDNAparsimony.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/fastDNAparsimony.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-parsePartition.obj `if test -f './lib/pll/parsePartition.c'; then $(CYGPATH_W) './lib/pll/parsePartition.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/parsePartition.c'; fi`
 
-./lib/pll/libpll_a-makenewzGenericSpecial.o: ./lib/pll/makenewzGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-makenewzGenericSpecial.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.o `test -f './lib/pll/makenewzGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/makenewzGenericSpecial.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/makenewzGenericSpecial.c' object='./lib/pll/libpll_a-makenewzGenericSpecial.o' libtool=no \
+./lib/pll/libpll_a-queue.o: ./lib/pll/queue.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-queue.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo -c -o ./lib/pll/libpll_a-queue.o `test -f './lib/pll/queue.c' || echo '$(srcdir)/'`./lib/pll/queue.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo ./lib/pll/$(DEPDIR)/libpll_a-queue.Po
+#	$(AM_V_CC)source='./lib/pll/queue.c' object='./lib/pll/libpll_a-queue.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.o `test -f './lib/pll/makenewzGenericSpecial.c' || echo '$(srcdir)/'`./lib/pll/makenewzGenericSpecial.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-queue.o `test -f './lib/pll/queue.c' || echo '$(srcdir)/'`./lib/pll/queue.c
 
-./lib/pll/libpll_a-makenewzGenericSpecial.obj: ./lib/pll/makenewzGenericSpecial.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-makenewzGenericSpecial.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.obj `if test -f './lib/pll/makenewzGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/makenewzGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/makenewzGenericSpecial.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Tpo ./lib/pll/$(DEPDIR)/libpll_a-makenewzGenericSpecial.Po
-#	$(AM_V_CC)source='./lib/pll/makenewzGenericSpecial.c' object='./lib/pll/libpll_a-makenewzGenericSpecial.obj' libtool=no \
+./lib/pll/libpll_a-queue.obj: ./lib/pll/queue.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-queue.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo -c -o ./lib/pll/libpll_a-queue.obj `if test -f './lib/pll/queue.c'; then $(CYGPATH_W) './lib/pll/queue.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/queue.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-queue.Tpo ./lib/pll/$(DEPDIR)/libpll_a-queue.Po
+#	$(AM_V_CC)source='./lib/pll/queue.c' object='./lib/pll/libpll_a-queue.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-makenewzGenericSpecial.obj `if test -f './lib/pll/makenewzGenericSpecial.c'; then $(CYGPATH_W) './lib/pll/makenewzGenericSpecial.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/makenewzGenericSpecial.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-queue.obj `if test -f './lib/pll/queue.c'; then $(CYGPATH_W) './lib/pll/queue.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/queue.c'; fi`
 
 ./lib/pll/libpll_a-randomTree.o: ./lib/pll/randomTree.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-randomTree.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-randomTree.Tpo -c -o ./lib/pll/libpll_a-randomTree.o `test -f './lib/pll/randomTree.c' || echo '$(srcdir)/'`./lib/pll/randomTree.c
@@ -2292,33 +2293,131 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-randomTree.obj `if test -f './lib/pll/randomTree.c'; then $(CYGPATH_W) './lib/pll/randomTree.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/randomTree.c'; fi`
 
-./lib/pll/libpll_a-lexer.o: ./lib/pll/lexer.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-lexer.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo -c -o ./lib/pll/libpll_a-lexer.o `test -f './lib/pll/lexer.c' || echo '$(srcdir)/'`./lib/pll/lexer.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo ./lib/pll/$(DEPDIR)/libpll_a-lexer.Po
-#	$(AM_V_CC)source='./lib/pll/lexer.c' object='./lib/pll/libpll_a-lexer.o' libtool=no \
+./lib/pll/libpll_a-recom.o: ./lib/pll/recom.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-recom.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo -c -o ./lib/pll/libpll_a-recom.o `test -f './lib/pll/recom.c' || echo '$(srcdir)/'`./lib/pll/recom.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo ./lib/pll/$(DEPDIR)/libpll_a-recom.Po
+#	$(AM_V_CC)source='./lib/pll/recom.c' object='./lib/pll/libpll_a-recom.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-lexer.o `test -f './lib/pll/lexer.c' || echo '$(srcdir)/'`./lib/pll/lexer.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-recom.o `test -f './lib/pll/recom.c' || echo '$(srcdir)/'`./lib/pll/recom.c
 
-./lib/pll/libpll_a-lexer.obj: ./lib/pll/lexer.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-lexer.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo -c -o ./lib/pll/libpll_a-lexer.obj `if test -f './lib/pll/lexer.c'; then $(CYGPATH_W) './lib/pll/lexer.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/lexer.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-lexer.Tpo ./lib/pll/$(DEPDIR)/libpll_a-lexer.Po
-#	$(AM_V_CC)source='./lib/pll/lexer.c' object='./lib/pll/libpll_a-lexer.obj' libtool=no \
+./lib/pll/libpll_a-recom.obj: ./lib/pll/recom.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-recom.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo -c -o ./lib/pll/libpll_a-recom.obj `if test -f './lib/pll/recom.c'; then $(CYGPATH_W) './lib/pll/recom.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/recom.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-recom.Tpo ./lib/pll/$(DEPDIR)/libpll_a-recom.Po
+#	$(AM_V_CC)source='./lib/pll/recom.c' object='./lib/pll/libpll_a-recom.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-lexer.obj `if test -f './lib/pll/lexer.c'; then $(CYGPATH_W) './lib/pll/lexer.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/lexer.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-recom.obj `if test -f './lib/pll/recom.c'; then $(CYGPATH_W) './lib/pll/recom.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/recom.c'; fi`
 
-./lib/pll/libpll_a-hash.o: ./lib/pll/hash.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-hash.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo -c -o ./lib/pll/libpll_a-hash.o `test -f './lib/pll/hash.c' || echo '$(srcdir)/'`./lib/pll/hash.c
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-hash.Po
-#	$(AM_V_CC)source='./lib/pll/hash.c' object='./lib/pll/libpll_a-hash.o' libtool=no \
+./lib/pll/libpll_a-restartHashTable.o: ./lib/pll/restartHashTable.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-restartHashTable.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo -c -o ./lib/pll/libpll_a-restartHashTable.o `test -f './lib/pll/restartHashTable.c' || echo '$(srcdir)/'`./lib/pll/restartHashTable.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Po
+#	$(AM_V_CC)source='./lib/pll/restartHashTable.c' object='./lib/pll/libpll_a-restartHashTable.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-hash.o `test -f './lib/pll/hash.c' || echo '$(srcdir)/'`./lib/pll/hash.c
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-restartHashTable.o `test -f './lib/pll/restartHashTable.c' || echo '$(srcdir)/'`./lib/pll/restartHashTable.c
 
-./lib/pll/libpll_a-hash.obj: ./lib/pll/hash.c
-	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-hash.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo -c -o ./lib/pll/libpll_a-hash.obj `if test -f './lib/pll/hash.c'; then $(CYGPATH_W) './lib/pll/hash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/hash.c'; fi`
-	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-hash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-hash.Po
-#	$(AM_V_CC)source='./lib/pll/hash.c' object='./lib/pll/libpll_a-hash.obj' libtool=no \
+./lib/pll/libpll_a-restartHashTable.obj: ./lib/pll/restartHashTable.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-restartHashTable.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo -c -o ./lib/pll/libpll_a-restartHashTable.obj `if test -f './lib/pll/restartHashTable.c'; then $(CYGPATH_W) './lib/pll/restartHashTable.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/restartHashTable.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Tpo ./lib/pll/$(DEPDIR)/libpll_a-restartHashTable.Po
+#	$(AM_V_CC)source='./lib/pll/restartHashTable.c' object='./lib/pll/libpll_a-restartHashTable.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-hash.obj `if test -f './lib/pll/hash.c'; then $(CYGPATH_W) './lib/pll/hash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/hash.c'; fi`
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-restartHashTable.obj `if test -f './lib/pll/restartHashTable.c'; then $(CYGPATH_W) './lib/pll/restartHashTable.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/restartHashTable.c'; fi`
+
+./lib/pll/libpll_a-searchAlgo.o: ./lib/pll/searchAlgo.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-searchAlgo.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo -c -o ./lib/pll/libpll_a-searchAlgo.o `test -f './lib/pll/searchAlgo.c' || echo '$(srcdir)/'`./lib/pll/searchAlgo.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Po
+#	$(AM_V_CC)source='./lib/pll/searchAlgo.c' object='./lib/pll/libpll_a-searchAlgo.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-searchAlgo.o `test -f './lib/pll/searchAlgo.c' || echo '$(srcdir)/'`./lib/pll/searchAlgo.c
+
+./lib/pll/libpll_a-searchAlgo.obj: ./lib/pll/searchAlgo.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-searchAlgo.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo -c -o ./lib/pll/libpll_a-searchAlgo.obj `if test -f './lib/pll/searchAlgo.c'; then $(CYGPATH_W) './lib/pll/searchAlgo.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/searchAlgo.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Tpo ./lib/pll/$(DEPDIR)/libpll_a-searchAlgo.Po
+#	$(AM_V_CC)source='./lib/pll/searchAlgo.c' object='./lib/pll/libpll_a-searchAlgo.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-searchAlgo.obj `if test -f './lib/pll/searchAlgo.c'; then $(CYGPATH_W) './lib/pll/searchAlgo.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/searchAlgo.c'; fi`
+
+./lib/pll/libpll_a-ssort.o: ./lib/pll/ssort.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-ssort.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo -c -o ./lib/pll/libpll_a-ssort.o `test -f './lib/pll/ssort.c' || echo '$(srcdir)/'`./lib/pll/ssort.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo ./lib/pll/$(DEPDIR)/libpll_a-ssort.Po
+#	$(AM_V_CC)source='./lib/pll/ssort.c' object='./lib/pll/libpll_a-ssort.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-ssort.o `test -f './lib/pll/ssort.c' || echo '$(srcdir)/'`./lib/pll/ssort.c
+
+./lib/pll/libpll_a-ssort.obj: ./lib/pll/ssort.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-ssort.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo -c -o ./lib/pll/libpll_a-ssort.obj `if test -f './lib/pll/ssort.c'; then $(CYGPATH_W) './lib/pll/ssort.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/ssort.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-ssort.Tpo ./lib/pll/$(DEPDIR)/libpll_a-ssort.Po
+#	$(AM_V_CC)source='./lib/pll/ssort.c' object='./lib/pll/libpll_a-ssort.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-ssort.obj `if test -f './lib/pll/ssort.c'; then $(CYGPATH_W) './lib/pll/ssort.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/ssort.c'; fi`
+
+./lib/pll/libpll_a-stack.o: ./lib/pll/stack.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-stack.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo -c -o ./lib/pll/libpll_a-stack.o `test -f './lib/pll/stack.c' || echo '$(srcdir)/'`./lib/pll/stack.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo ./lib/pll/$(DEPDIR)/libpll_a-stack.Po
+#	$(AM_V_CC)source='./lib/pll/stack.c' object='./lib/pll/libpll_a-stack.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-stack.o `test -f './lib/pll/stack.c' || echo '$(srcdir)/'`./lib/pll/stack.c
+
+./lib/pll/libpll_a-stack.obj: ./lib/pll/stack.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-stack.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo -c -o ./lib/pll/libpll_a-stack.obj `if test -f './lib/pll/stack.c'; then $(CYGPATH_W) './lib/pll/stack.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/stack.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-stack.Tpo ./lib/pll/$(DEPDIR)/libpll_a-stack.Po
+#	$(AM_V_CC)source='./lib/pll/stack.c' object='./lib/pll/libpll_a-stack.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-stack.obj `if test -f './lib/pll/stack.c'; then $(CYGPATH_W) './lib/pll/stack.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/stack.c'; fi`
+
+./lib/pll/libpll_a-topologies.o: ./lib/pll/topologies.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-topologies.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo -c -o ./lib/pll/libpll_a-topologies.o `test -f './lib/pll/topologies.c' || echo '$(srcdir)/'`./lib/pll/topologies.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo ./lib/pll/$(DEPDIR)/libpll_a-topologies.Po
+#	$(AM_V_CC)source='./lib/pll/topologies.c' object='./lib/pll/libpll_a-topologies.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-topologies.o `test -f './lib/pll/topologies.c' || echo '$(srcdir)/'`./lib/pll/topologies.c
+
+./lib/pll/libpll_a-topologies.obj: ./lib/pll/topologies.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-topologies.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo -c -o ./lib/pll/libpll_a-topologies.obj `if test -f './lib/pll/topologies.c'; then $(CYGPATH_W) './lib/pll/topologies.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/topologies.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-topologies.Tpo ./lib/pll/$(DEPDIR)/libpll_a-topologies.Po
+#	$(AM_V_CC)source='./lib/pll/topologies.c' object='./lib/pll/libpll_a-topologies.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-topologies.obj `if test -f './lib/pll/topologies.c'; then $(CYGPATH_W) './lib/pll/topologies.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/topologies.c'; fi`
+
+./lib/pll/libpll_a-trash.o: ./lib/pll/trash.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-trash.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo -c -o ./lib/pll/libpll_a-trash.o `test -f './lib/pll/trash.c' || echo '$(srcdir)/'`./lib/pll/trash.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-trash.Po
+#	$(AM_V_CC)source='./lib/pll/trash.c' object='./lib/pll/libpll_a-trash.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-trash.o `test -f './lib/pll/trash.c' || echo '$(srcdir)/'`./lib/pll/trash.c
+
+./lib/pll/libpll_a-trash.obj: ./lib/pll/trash.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-trash.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo -c -o ./lib/pll/libpll_a-trash.obj `if test -f './lib/pll/trash.c'; then $(CYGPATH_W) './lib/pll/trash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/trash.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-trash.Tpo ./lib/pll/$(DEPDIR)/libpll_a-trash.Po
+#	$(AM_V_CC)source='./lib/pll/trash.c' object='./lib/pll/libpll_a-trash.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-trash.obj `if test -f './lib/pll/trash.c'; then $(CYGPATH_W) './lib/pll/trash.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/trash.c'; fi`
+
+./lib/pll/libpll_a-treeIO.o: ./lib/pll/treeIO.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-treeIO.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo -c -o ./lib/pll/libpll_a-treeIO.o `test -f './lib/pll/treeIO.c' || echo '$(srcdir)/'`./lib/pll/treeIO.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Po
+#	$(AM_V_CC)source='./lib/pll/treeIO.c' object='./lib/pll/libpll_a-treeIO.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-treeIO.o `test -f './lib/pll/treeIO.c' || echo '$(srcdir)/'`./lib/pll/treeIO.c
+
+./lib/pll/libpll_a-treeIO.obj: ./lib/pll/treeIO.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-treeIO.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo -c -o ./lib/pll/libpll_a-treeIO.obj `if test -f './lib/pll/treeIO.c'; then $(CYGPATH_W) './lib/pll/treeIO.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/treeIO.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Tpo ./lib/pll/$(DEPDIR)/libpll_a-treeIO.Po
+#	$(AM_V_CC)source='./lib/pll/treeIO.c' object='./lib/pll/libpll_a-treeIO.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-treeIO.obj `if test -f './lib/pll/treeIO.c'; then $(CYGPATH_W) './lib/pll/treeIO.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/treeIO.c'; fi`
+
+./lib/pll/libpll_a-utils.o: ./lib/pll/utils.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-utils.o -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo -c -o ./lib/pll/libpll_a-utils.o `test -f './lib/pll/utils.c' || echo '$(srcdir)/'`./lib/pll/utils.c
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo ./lib/pll/$(DEPDIR)/libpll_a-utils.Po
+#	$(AM_V_CC)source='./lib/pll/utils.c' object='./lib/pll/libpll_a-utils.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-utils.o `test -f './lib/pll/utils.c' || echo '$(srcdir)/'`./lib/pll/utils.c
+
+./lib/pll/libpll_a-utils.obj: ./lib/pll/utils.c
+	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./lib/pll/libpll_a-utils.obj -MD -MP -MF ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo -c -o ./lib/pll/libpll_a-utils.obj `if test -f './lib/pll/utils.c'; then $(CYGPATH_W) './lib/pll/utils.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/utils.c'; fi`
+	$(AM_V_at)$(am__mv) ./lib/pll/$(DEPDIR)/libpll_a-utils.Tpo ./lib/pll/$(DEPDIR)/libpll_a-utils.Po
+#	$(AM_V_CC)source='./lib/pll/utils.c' object='./lib/pll/libpll_a-utils.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -c -o ./lib/pll/libpll_a-utils.obj `if test -f './lib/pll/utils.c'; then $(CYGPATH_W) './lib/pll/utils.c'; else $(CYGPATH_W) '$(srcdir)/./lib/pll/utils.c'; fi`
 
 ./src/libpll_a-avxConditional.o: ./src/avxConditional.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libpll_a_CFLAGS) $(CFLAGS) -MT ./src/libpll_a-avxConditional.o -MD -MP -MF ./src/$(DEPDIR)/libpll_a-avxConditional.Tpo -c -o ./src/libpll_a-avxConditional.o `test -f './src/avxConditional.c' || echo '$(srcdir)/'`./src/avxConditional.c
@@ -2350,62 +2449,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
-./src/libbayes_a-TreeTraverser.o: ./src/TreeTraverser.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeTraverser.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo -c -o ./src/libbayes_a-TreeTraverser.o `test -f './src/TreeTraverser.cpp' || echo '$(srcdir)/'`./src/TreeTraverser.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Po
-#	$(AM_V_CXX)source='./src/TreeTraverser.cpp' object='./src/libbayes_a-TreeTraverser.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeTraverser.o `test -f './src/TreeTraverser.cpp' || echo '$(srcdir)/'`./src/TreeTraverser.cpp
-
-./src/libbayes_a-TreeTraverser.obj: ./src/TreeTraverser.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeTraverser.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo -c -o ./src/libbayes_a-TreeTraverser.obj `if test -f './src/TreeTraverser.cpp'; then $(CYGPATH_W) './src/TreeTraverser.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeTraverser.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Po
-#	$(AM_V_CXX)source='./src/TreeTraverser.cpp' object='./src/libbayes_a-TreeTraverser.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeTraverser.obj `if test -f './src/TreeTraverser.cpp'; then $(CYGPATH_W) './src/TreeTraverser.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeTraverser.cpp'; fi`
-
-./src/libbayes_a-WeibullProposer.o: ./src/WeibullProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-WeibullProposer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo -c -o ./src/libbayes_a-WeibullProposer.o `test -f './src/WeibullProposer.cpp' || echo '$(srcdir)/'`./src/WeibullProposer.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Po
-#	$(AM_V_CXX)source='./src/WeibullProposer.cpp' object='./src/libbayes_a-WeibullProposer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-WeibullProposer.o `test -f './src/WeibullProposer.cpp' || echo '$(srcdir)/'`./src/WeibullProposer.cpp
-
-./src/libbayes_a-WeibullProposer.obj: ./src/WeibullProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-WeibullProposer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo -c -o ./src/libbayes_a-WeibullProposer.obj `if test -f './src/WeibullProposer.cpp'; then $(CYGPATH_W) './src/WeibullProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/WeibullProposer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Po
-#	$(AM_V_CXX)source='./src/WeibullProposer.cpp' object='./src/libbayes_a-WeibullProposer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-WeibullProposer.obj `if test -f './src/WeibullProposer.cpp'; then $(CYGPATH_W) './src/WeibullProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/WeibullProposer.cpp'; fi`
-
-./src/libbayes_a-TreeRandomizer.o: ./src/TreeRandomizer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeRandomizer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo -c -o ./src/libbayes_a-TreeRandomizer.o `test -f './src/TreeRandomizer.cpp' || echo '$(srcdir)/'`./src/TreeRandomizer.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Po
-#	$(AM_V_CXX)source='./src/TreeRandomizer.cpp' object='./src/libbayes_a-TreeRandomizer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeRandomizer.o `test -f './src/TreeRandomizer.cpp' || echo '$(srcdir)/'`./src/TreeRandomizer.cpp
-
-./src/libbayes_a-TreeRandomizer.obj: ./src/TreeRandomizer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeRandomizer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo -c -o ./src/libbayes_a-TreeRandomizer.obj `if test -f './src/TreeRandomizer.cpp'; then $(CYGPATH_W) './src/TreeRandomizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeRandomizer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Po
-#	$(AM_V_CXX)source='./src/TreeRandomizer.cpp' object='./src/libbayes_a-TreeRandomizer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeRandomizer.obj `if test -f './src/TreeRandomizer.cpp'; then $(CYGPATH_W) './src/TreeRandomizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeRandomizer.cpp'; fi`
-
-./src/libbayes_a-GammaProposer.o: ./src/GammaProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-GammaProposer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo -c -o ./src/libbayes_a-GammaProposer.o `test -f './src/GammaProposer.cpp' || echo '$(srcdir)/'`./src/GammaProposer.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo ./src/$(DEPDIR)/libbayes_a-GammaProposer.Po
-#	$(AM_V_CXX)source='./src/GammaProposer.cpp' object='./src/libbayes_a-GammaProposer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-GammaProposer.o `test -f './src/GammaProposer.cpp' || echo '$(srcdir)/'`./src/GammaProposer.cpp
-
-./src/libbayes_a-GammaProposer.obj: ./src/GammaProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-GammaProposer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo -c -o ./src/libbayes_a-GammaProposer.obj `if test -f './src/GammaProposer.cpp'; then $(CYGPATH_W) './src/GammaProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/GammaProposer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo ./src/$(DEPDIR)/libbayes_a-GammaProposer.Po
-#	$(AM_V_CXX)source='./src/GammaProposer.cpp' object='./src/libbayes_a-GammaProposer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-GammaProposer.obj `if test -f './src/GammaProposer.cpp'; then $(CYGPATH_W) './src/GammaProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/GammaProposer.cpp'; fi`
-
 ./src/libbayes_a-AdHocIntegrator.o: ./src/AdHocIntegrator.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-AdHocIntegrator.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-AdHocIntegrator.Tpo -c -o ./src/libbayes_a-AdHocIntegrator.o `test -f './src/AdHocIntegrator.cpp' || echo '$(srcdir)/'`./src/AdHocIntegrator.cpp
 	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-AdHocIntegrator.Tpo ./src/$(DEPDIR)/libbayes_a-AdHocIntegrator.Po
@@ -2419,6 +2462,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/AdHocIntegrator.cpp' object='./src/libbayes_a-AdHocIntegrator.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-AdHocIntegrator.obj `if test -f './src/AdHocIntegrator.cpp'; then $(CYGPATH_W) './src/AdHocIntegrator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/AdHocIntegrator.cpp'; fi`
+
+./src/libbayes_a-BranchLengthOptimizer.o: ./src/BranchLengthOptimizer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-BranchLengthOptimizer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo -c -o ./src/libbayes_a-BranchLengthOptimizer.o `test -f './src/BranchLengthOptimizer.cpp' || echo '$(srcdir)/'`./src/BranchLengthOptimizer.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Po
+#	$(AM_V_CXX)source='./src/BranchLengthOptimizer.cpp' object='./src/libbayes_a-BranchLengthOptimizer.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-BranchLengthOptimizer.o `test -f './src/BranchLengthOptimizer.cpp' || echo '$(srcdir)/'`./src/BranchLengthOptimizer.cpp
+
+./src/libbayes_a-BranchLengthOptimizer.obj: ./src/BranchLengthOptimizer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-BranchLengthOptimizer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo -c -o ./src/libbayes_a-BranchLengthOptimizer.obj `if test -f './src/BranchLengthOptimizer.cpp'; then $(CYGPATH_W) './src/BranchLengthOptimizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/BranchLengthOptimizer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Po
+#	$(AM_V_CXX)source='./src/BranchLengthOptimizer.cpp' object='./src/libbayes_a-BranchLengthOptimizer.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-BranchLengthOptimizer.obj `if test -f './src/BranchLengthOptimizer.cpp'; then $(CYGPATH_W) './src/BranchLengthOptimizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/BranchLengthOptimizer.cpp'; fi`
 
 ./src/libbayes_a-ComplexTuner.o: ./src/ComplexTuner.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-ComplexTuner.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-ComplexTuner.Tpo -c -o ./src/libbayes_a-ComplexTuner.o `test -f './src/ComplexTuner.cpp' || echo '$(srcdir)/'`./src/ComplexTuner.cpp
@@ -2434,47 +2491,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-ComplexTuner.obj `if test -f './src/ComplexTuner.cpp'; then $(CYGPATH_W) './src/ComplexTuner.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/ComplexTuner.cpp'; fi`
 
-./src/libbayes_a-PrescoredDrawer.o: ./src/PrescoredDrawer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-PrescoredDrawer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo -c -o ./src/libbayes_a-PrescoredDrawer.o `test -f './src/PrescoredDrawer.cpp' || echo '$(srcdir)/'`./src/PrescoredDrawer.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Po
-#	$(AM_V_CXX)source='./src/PrescoredDrawer.cpp' object='./src/libbayes_a-PrescoredDrawer.o' libtool=no \
+./src/libbayes_a-GammaProposer.o: ./src/GammaProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-GammaProposer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo -c -o ./src/libbayes_a-GammaProposer.o `test -f './src/GammaProposer.cpp' || echo '$(srcdir)/'`./src/GammaProposer.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo ./src/$(DEPDIR)/libbayes_a-GammaProposer.Po
+#	$(AM_V_CXX)source='./src/GammaProposer.cpp' object='./src/libbayes_a-GammaProposer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-PrescoredDrawer.o `test -f './src/PrescoredDrawer.cpp' || echo '$(srcdir)/'`./src/PrescoredDrawer.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-GammaProposer.o `test -f './src/GammaProposer.cpp' || echo '$(srcdir)/'`./src/GammaProposer.cpp
 
-./src/libbayes_a-PrescoredDrawer.obj: ./src/PrescoredDrawer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-PrescoredDrawer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo -c -o ./src/libbayes_a-PrescoredDrawer.obj `if test -f './src/PrescoredDrawer.cpp'; then $(CYGPATH_W) './src/PrescoredDrawer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/PrescoredDrawer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Po
-#	$(AM_V_CXX)source='./src/PrescoredDrawer.cpp' object='./src/libbayes_a-PrescoredDrawer.obj' libtool=no \
+./src/libbayes_a-GammaProposer.obj: ./src/GammaProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-GammaProposer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo -c -o ./src/libbayes_a-GammaProposer.obj `if test -f './src/GammaProposer.cpp'; then $(CYGPATH_W) './src/GammaProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/GammaProposer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-GammaProposer.Tpo ./src/$(DEPDIR)/libbayes_a-GammaProposer.Po
+#	$(AM_V_CXX)source='./src/GammaProposer.cpp' object='./src/libbayes_a-GammaProposer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-PrescoredDrawer.obj `if test -f './src/PrescoredDrawer.cpp'; then $(CYGPATH_W) './src/PrescoredDrawer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/PrescoredDrawer.cpp'; fi`
-
-./src/libbayes_a-TreePrinter.o: ./src/TreePrinter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreePrinter.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo -c -o ./src/libbayes_a-TreePrinter.o `test -f './src/TreePrinter.cpp' || echo '$(srcdir)/'`./src/TreePrinter.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo ./src/$(DEPDIR)/libbayes_a-TreePrinter.Po
-#	$(AM_V_CXX)source='./src/TreePrinter.cpp' object='./src/libbayes_a-TreePrinter.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreePrinter.o `test -f './src/TreePrinter.cpp' || echo '$(srcdir)/'`./src/TreePrinter.cpp
-
-./src/libbayes_a-TreePrinter.obj: ./src/TreePrinter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreePrinter.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo -c -o ./src/libbayes_a-TreePrinter.obj `if test -f './src/TreePrinter.cpp'; then $(CYGPATH_W) './src/TreePrinter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreePrinter.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo ./src/$(DEPDIR)/libbayes_a-TreePrinter.Po
-#	$(AM_V_CXX)source='./src/TreePrinter.cpp' object='./src/libbayes_a-TreePrinter.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreePrinter.obj `if test -f './src/TreePrinter.cpp'; then $(CYGPATH_W) './src/TreePrinter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreePrinter.cpp'; fi`
-
-./src/libbayes_a-BranchLengthOptimizer.o: ./src/BranchLengthOptimizer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-BranchLengthOptimizer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo -c -o ./src/libbayes_a-BranchLengthOptimizer.o `test -f './src/BranchLengthOptimizer.cpp' || echo '$(srcdir)/'`./src/BranchLengthOptimizer.cpp
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Po
-#	$(AM_V_CXX)source='./src/BranchLengthOptimizer.cpp' object='./src/libbayes_a-BranchLengthOptimizer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-BranchLengthOptimizer.o `test -f './src/BranchLengthOptimizer.cpp' || echo '$(srcdir)/'`./src/BranchLengthOptimizer.cpp
-
-./src/libbayes_a-BranchLengthOptimizer.obj: ./src/BranchLengthOptimizer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-BranchLengthOptimizer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo -c -o ./src/libbayes_a-BranchLengthOptimizer.obj `if test -f './src/BranchLengthOptimizer.cpp'; then $(CYGPATH_W) './src/BranchLengthOptimizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/BranchLengthOptimizer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Tpo ./src/$(DEPDIR)/libbayes_a-BranchLengthOptimizer.Po
-#	$(AM_V_CXX)source='./src/BranchLengthOptimizer.cpp' object='./src/libbayes_a-BranchLengthOptimizer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-BranchLengthOptimizer.obj `if test -f './src/BranchLengthOptimizer.cpp'; then $(CYGPATH_W) './src/BranchLengthOptimizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/BranchLengthOptimizer.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-GammaProposer.obj `if test -f './src/GammaProposer.cpp'; then $(CYGPATH_W) './src/GammaProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/GammaProposer.cpp'; fi`
 
 ./src/libbayes_a-GibbsProposal.o: ./src/GibbsProposal.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-GibbsProposal.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-GibbsProposal.Tpo -c -o ./src/libbayes_a-GibbsProposal.o `test -f './src/GibbsProposal.cpp' || echo '$(srcdir)/'`./src/GibbsProposal.cpp
@@ -2504,6 +2533,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-OptimizedParameter.obj `if test -f './src/OptimizedParameter.cpp'; then $(CYGPATH_W) './src/OptimizedParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/OptimizedParameter.cpp'; fi`
 
+./src/libbayes_a-PrescoredDrawer.o: ./src/PrescoredDrawer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-PrescoredDrawer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo -c -o ./src/libbayes_a-PrescoredDrawer.o `test -f './src/PrescoredDrawer.cpp' || echo '$(srcdir)/'`./src/PrescoredDrawer.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Po
+#	$(AM_V_CXX)source='./src/PrescoredDrawer.cpp' object='./src/libbayes_a-PrescoredDrawer.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-PrescoredDrawer.o `test -f './src/PrescoredDrawer.cpp' || echo '$(srcdir)/'`./src/PrescoredDrawer.cpp
+
+./src/libbayes_a-PrescoredDrawer.obj: ./src/PrescoredDrawer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-PrescoredDrawer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo -c -o ./src/libbayes_a-PrescoredDrawer.obj `if test -f './src/PrescoredDrawer.cpp'; then $(CYGPATH_W) './src/PrescoredDrawer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/PrescoredDrawer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Tpo ./src/$(DEPDIR)/libbayes_a-PrescoredDrawer.Po
+#	$(AM_V_CXX)source='./src/PrescoredDrawer.cpp' object='./src/libbayes_a-PrescoredDrawer.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-PrescoredDrawer.obj `if test -f './src/PrescoredDrawer.cpp'; then $(CYGPATH_W) './src/PrescoredDrawer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/PrescoredDrawer.cpp'; fi`
+
 ./src/libbayes_a-TreeIntegrator.o: ./src/TreeIntegrator.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeIntegrator.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeIntegrator.Tpo -c -o ./src/libbayes_a-TreeIntegrator.o `test -f './src/TreeIntegrator.cpp' || echo '$(srcdir)/'`./src/TreeIntegrator.cpp
 	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeIntegrator.Tpo ./src/$(DEPDIR)/libbayes_a-TreeIntegrator.Po
@@ -2518,89 +2561,61 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeIntegrator.obj `if test -f './src/TreeIntegrator.cpp'; then $(CYGPATH_W) './src/TreeIntegrator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeIntegrator.cpp'; fi`
 
-./src/proposals/libbayes_a-AminoModelJump.o: ./src/proposals/AminoModelJump.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-AminoModelJump.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo -c -o ./src/proposals/libbayes_a-AminoModelJump.o `test -f './src/proposals/AminoModelJump.cpp' || echo '$(srcdir)/'`./src/proposals/AminoModelJump.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Po
-#	$(AM_V_CXX)source='./src/proposals/AminoModelJump.cpp' object='./src/proposals/libbayes_a-AminoModelJump.o' libtool=no \
+./src/libbayes_a-TreePrinter.o: ./src/TreePrinter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreePrinter.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo -c -o ./src/libbayes_a-TreePrinter.o `test -f './src/TreePrinter.cpp' || echo '$(srcdir)/'`./src/TreePrinter.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo ./src/$(DEPDIR)/libbayes_a-TreePrinter.Po
+#	$(AM_V_CXX)source='./src/TreePrinter.cpp' object='./src/libbayes_a-TreePrinter.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-AminoModelJump.o `test -f './src/proposals/AminoModelJump.cpp' || echo '$(srcdir)/'`./src/proposals/AminoModelJump.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreePrinter.o `test -f './src/TreePrinter.cpp' || echo '$(srcdir)/'`./src/TreePrinter.cpp
 
-./src/proposals/libbayes_a-AminoModelJump.obj: ./src/proposals/AminoModelJump.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-AminoModelJump.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo -c -o ./src/proposals/libbayes_a-AminoModelJump.obj `if test -f './src/proposals/AminoModelJump.cpp'; then $(CYGPATH_W) './src/proposals/AminoModelJump.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/AminoModelJump.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Po
-#	$(AM_V_CXX)source='./src/proposals/AminoModelJump.cpp' object='./src/proposals/libbayes_a-AminoModelJump.obj' libtool=no \
+./src/libbayes_a-TreePrinter.obj: ./src/TreePrinter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreePrinter.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo -c -o ./src/libbayes_a-TreePrinter.obj `if test -f './src/TreePrinter.cpp'; then $(CYGPATH_W) './src/TreePrinter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreePrinter.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreePrinter.Tpo ./src/$(DEPDIR)/libbayes_a-TreePrinter.Po
+#	$(AM_V_CXX)source='./src/TreePrinter.cpp' object='./src/libbayes_a-TreePrinter.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-AminoModelJump.obj `if test -f './src/proposals/AminoModelJump.cpp'; then $(CYGPATH_W) './src/proposals/AminoModelJump.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/AminoModelJump.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreePrinter.obj `if test -f './src/TreePrinter.cpp'; then $(CYGPATH_W) './src/TreePrinter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreePrinter.cpp'; fi`
 
-./src/proposals/libbayes_a-ProposalType.o: ./src/proposals/ProposalType.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalType.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo -c -o ./src/proposals/libbayes_a-ProposalType.o `test -f './src/proposals/ProposalType.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalType.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Po
-#	$(AM_V_CXX)source='./src/proposals/ProposalType.cpp' object='./src/proposals/libbayes_a-ProposalType.o' libtool=no \
+./src/libbayes_a-TreeRandomizer.o: ./src/TreeRandomizer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeRandomizer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo -c -o ./src/libbayes_a-TreeRandomizer.o `test -f './src/TreeRandomizer.cpp' || echo '$(srcdir)/'`./src/TreeRandomizer.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Po
+#	$(AM_V_CXX)source='./src/TreeRandomizer.cpp' object='./src/libbayes_a-TreeRandomizer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalType.o `test -f './src/proposals/ProposalType.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalType.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeRandomizer.o `test -f './src/TreeRandomizer.cpp' || echo '$(srcdir)/'`./src/TreeRandomizer.cpp
 
-./src/proposals/libbayes_a-ProposalType.obj: ./src/proposals/ProposalType.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalType.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo -c -o ./src/proposals/libbayes_a-ProposalType.obj `if test -f './src/proposals/ProposalType.cpp'; then $(CYGPATH_W) './src/proposals/ProposalType.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalType.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Po
-#	$(AM_V_CXX)source='./src/proposals/ProposalType.cpp' object='./src/proposals/libbayes_a-ProposalType.obj' libtool=no \
+./src/libbayes_a-TreeRandomizer.obj: ./src/TreeRandomizer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeRandomizer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo -c -o ./src/libbayes_a-TreeRandomizer.obj `if test -f './src/TreeRandomizer.cpp'; then $(CYGPATH_W) './src/TreeRandomizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeRandomizer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Tpo ./src/$(DEPDIR)/libbayes_a-TreeRandomizer.Po
+#	$(AM_V_CXX)source='./src/TreeRandomizer.cpp' object='./src/libbayes_a-TreeRandomizer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalType.obj `if test -f './src/proposals/ProposalType.cpp'; then $(CYGPATH_W) './src/proposals/ProposalType.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalType.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeRandomizer.obj `if test -f './src/TreeRandomizer.cpp'; then $(CYGPATH_W) './src/TreeRandomizer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeRandomizer.cpp'; fi`
 
-./src/proposals/libbayes_a-LikelihoodSPR.o: ./src/proposals/LikelihoodSPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-LikelihoodSPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo -c -o ./src/proposals/libbayes_a-LikelihoodSPR.o `test -f './src/proposals/LikelihoodSPR.cpp' || echo '$(srcdir)/'`./src/proposals/LikelihoodSPR.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Po
-#	$(AM_V_CXX)source='./src/proposals/LikelihoodSPR.cpp' object='./src/proposals/libbayes_a-LikelihoodSPR.o' libtool=no \
+./src/libbayes_a-TreeTraverser.o: ./src/TreeTraverser.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeTraverser.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo -c -o ./src/libbayes_a-TreeTraverser.o `test -f './src/TreeTraverser.cpp' || echo '$(srcdir)/'`./src/TreeTraverser.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Po
+#	$(AM_V_CXX)source='./src/TreeTraverser.cpp' object='./src/libbayes_a-TreeTraverser.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-LikelihoodSPR.o `test -f './src/proposals/LikelihoodSPR.cpp' || echo '$(srcdir)/'`./src/proposals/LikelihoodSPR.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeTraverser.o `test -f './src/TreeTraverser.cpp' || echo '$(srcdir)/'`./src/TreeTraverser.cpp
 
-./src/proposals/libbayes_a-LikelihoodSPR.obj: ./src/proposals/LikelihoodSPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-LikelihoodSPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo -c -o ./src/proposals/libbayes_a-LikelihoodSPR.obj `if test -f './src/proposals/LikelihoodSPR.cpp'; then $(CYGPATH_W) './src/proposals/LikelihoodSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/LikelihoodSPR.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Po
-#	$(AM_V_CXX)source='./src/proposals/LikelihoodSPR.cpp' object='./src/proposals/libbayes_a-LikelihoodSPR.obj' libtool=no \
+./src/libbayes_a-TreeTraverser.obj: ./src/TreeTraverser.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-TreeTraverser.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo -c -o ./src/libbayes_a-TreeTraverser.obj `if test -f './src/TreeTraverser.cpp'; then $(CYGPATH_W) './src/TreeTraverser.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeTraverser.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Tpo ./src/$(DEPDIR)/libbayes_a-TreeTraverser.Po
+#	$(AM_V_CXX)source='./src/TreeTraverser.cpp' object='./src/libbayes_a-TreeTraverser.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-LikelihoodSPR.obj `if test -f './src/proposals/LikelihoodSPR.cpp'; then $(CYGPATH_W) './src/proposals/LikelihoodSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/LikelihoodSPR.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-TreeTraverser.obj `if test -f './src/TreeTraverser.cpp'; then $(CYGPATH_W) './src/TreeTraverser.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/TreeTraverser.cpp'; fi`
 
-./src/proposals/libbayes_a-TbrMove.o: ./src/proposals/TbrMove.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TbrMove.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo -c -o ./src/proposals/libbayes_a-TbrMove.o `test -f './src/proposals/TbrMove.cpp' || echo '$(srcdir)/'`./src/proposals/TbrMove.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Po
-#	$(AM_V_CXX)source='./src/proposals/TbrMove.cpp' object='./src/proposals/libbayes_a-TbrMove.o' libtool=no \
+./src/libbayes_a-WeibullProposer.o: ./src/WeibullProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-WeibullProposer.o -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo -c -o ./src/libbayes_a-WeibullProposer.o `test -f './src/WeibullProposer.cpp' || echo '$(srcdir)/'`./src/WeibullProposer.cpp
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Po
+#	$(AM_V_CXX)source='./src/WeibullProposer.cpp' object='./src/libbayes_a-WeibullProposer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TbrMove.o `test -f './src/proposals/TbrMove.cpp' || echo '$(srcdir)/'`./src/proposals/TbrMove.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-WeibullProposer.o `test -f './src/WeibullProposer.cpp' || echo '$(srcdir)/'`./src/WeibullProposer.cpp
 
-./src/proposals/libbayes_a-TbrMove.obj: ./src/proposals/TbrMove.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TbrMove.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo -c -o ./src/proposals/libbayes_a-TbrMove.obj `if test -f './src/proposals/TbrMove.cpp'; then $(CYGPATH_W) './src/proposals/TbrMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TbrMove.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Po
-#	$(AM_V_CXX)source='./src/proposals/TbrMove.cpp' object='./src/proposals/libbayes_a-TbrMove.obj' libtool=no \
+./src/libbayes_a-WeibullProposer.obj: ./src/WeibullProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/libbayes_a-WeibullProposer.obj -MD -MP -MF ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo -c -o ./src/libbayes_a-WeibullProposer.obj `if test -f './src/WeibullProposer.cpp'; then $(CYGPATH_W) './src/WeibullProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/WeibullProposer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Tpo ./src/$(DEPDIR)/libbayes_a-WeibullProposer.Po
+#	$(AM_V_CXX)source='./src/WeibullProposer.cpp' object='./src/libbayes_a-WeibullProposer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TbrMove.obj `if test -f './src/proposals/TbrMove.cpp'; then $(CYGPATH_W) './src/proposals/TbrMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TbrMove.cpp'; fi`
-
-./src/proposals/libbayes_a-TreeLengthMultiplier.o: ./src/proposals/TreeLengthMultiplier.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TreeLengthMultiplier.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.o `test -f './src/proposals/TreeLengthMultiplier.cpp' || echo '$(srcdir)/'`./src/proposals/TreeLengthMultiplier.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Po
-#	$(AM_V_CXX)source='./src/proposals/TreeLengthMultiplier.cpp' object='./src/proposals/libbayes_a-TreeLengthMultiplier.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.o `test -f './src/proposals/TreeLengthMultiplier.cpp' || echo '$(srcdir)/'`./src/proposals/TreeLengthMultiplier.cpp
-
-./src/proposals/libbayes_a-TreeLengthMultiplier.obj: ./src/proposals/TreeLengthMultiplier.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TreeLengthMultiplier.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.obj `if test -f './src/proposals/TreeLengthMultiplier.cpp'; then $(CYGPATH_W) './src/proposals/TreeLengthMultiplier.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TreeLengthMultiplier.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Po
-#	$(AM_V_CXX)source='./src/proposals/TreeLengthMultiplier.cpp' object='./src/proposals/libbayes_a-TreeLengthMultiplier.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.obj `if test -f './src/proposals/TreeLengthMultiplier.cpp'; then $(CYGPATH_W) './src/proposals/TreeLengthMultiplier.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TreeLengthMultiplier.cpp'; fi`
-
-./src/proposals/libbayes_a-ExtendedSPR.o: ./src/proposals/ExtendedSPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedSPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedSPR.o `test -f './src/proposals/ExtendedSPR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedSPR.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Po
-#	$(AM_V_CXX)source='./src/proposals/ExtendedSPR.cpp' object='./src/proposals/libbayes_a-ExtendedSPR.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedSPR.o `test -f './src/proposals/ExtendedSPR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedSPR.cpp
-
-./src/proposals/libbayes_a-ExtendedSPR.obj: ./src/proposals/ExtendedSPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedSPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedSPR.obj `if test -f './src/proposals/ExtendedSPR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedSPR.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Po
-#	$(AM_V_CXX)source='./src/proposals/ExtendedSPR.cpp' object='./src/proposals/libbayes_a-ExtendedSPR.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedSPR.obj `if test -f './src/proposals/ExtendedSPR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedSPR.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/libbayes_a-WeibullProposer.obj `if test -f './src/WeibullProposer.cpp'; then $(CYGPATH_W) './src/WeibullProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/WeibullProposer.cpp'; fi`
 
 ./src/proposals/libbayes_a-AbstractProposal.o: ./src/proposals/AbstractProposal.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-AbstractProposal.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-AbstractProposal.Tpo -c -o ./src/proposals/libbayes_a-AbstractProposal.o `test -f './src/proposals/AbstractProposal.cpp' || echo '$(srcdir)/'`./src/proposals/AbstractProposal.cpp
@@ -2616,75 +2631,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-AbstractProposal.obj `if test -f './src/proposals/AbstractProposal.cpp'; then $(CYGPATH_W) './src/proposals/AbstractProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/AbstractProposal.cpp'; fi`
 
-./src/proposals/libbayes_a-SprMove.o: ./src/proposals/SprMove.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-SprMove.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo -c -o ./src/proposals/libbayes_a-SprMove.o `test -f './src/proposals/SprMove.cpp' || echo '$(srcdir)/'`./src/proposals/SprMove.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Po
-#	$(AM_V_CXX)source='./src/proposals/SprMove.cpp' object='./src/proposals/libbayes_a-SprMove.o' libtool=no \
+./src/proposals/libbayes_a-AminoModelJump.o: ./src/proposals/AminoModelJump.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-AminoModelJump.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo -c -o ./src/proposals/libbayes_a-AminoModelJump.o `test -f './src/proposals/AminoModelJump.cpp' || echo '$(srcdir)/'`./src/proposals/AminoModelJump.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Po
+#	$(AM_V_CXX)source='./src/proposals/AminoModelJump.cpp' object='./src/proposals/libbayes_a-AminoModelJump.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-SprMove.o `test -f './src/proposals/SprMove.cpp' || echo '$(srcdir)/'`./src/proposals/SprMove.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-AminoModelJump.o `test -f './src/proposals/AminoModelJump.cpp' || echo '$(srcdir)/'`./src/proposals/AminoModelJump.cpp
 
-./src/proposals/libbayes_a-SprMove.obj: ./src/proposals/SprMove.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-SprMove.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo -c -o ./src/proposals/libbayes_a-SprMove.obj `if test -f './src/proposals/SprMove.cpp'; then $(CYGPATH_W) './src/proposals/SprMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/SprMove.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Po
-#	$(AM_V_CXX)source='./src/proposals/SprMove.cpp' object='./src/proposals/libbayes_a-SprMove.obj' libtool=no \
+./src/proposals/libbayes_a-AminoModelJump.obj: ./src/proposals/AminoModelJump.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-AminoModelJump.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo -c -o ./src/proposals/libbayes_a-AminoModelJump.obj `if test -f './src/proposals/AminoModelJump.cpp'; then $(CYGPATH_W) './src/proposals/AminoModelJump.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/AminoModelJump.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-AminoModelJump.Po
+#	$(AM_V_CXX)source='./src/proposals/AminoModelJump.cpp' object='./src/proposals/libbayes_a-AminoModelJump.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-SprMove.obj `if test -f './src/proposals/SprMove.cpp'; then $(CYGPATH_W) './src/proposals/SprMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/SprMove.cpp'; fi`
-
-./src/proposals/libbayes_a-ProposalSet.o: ./src/proposals/ProposalSet.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalSet.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo -c -o ./src/proposals/libbayes_a-ProposalSet.o `test -f './src/proposals/ProposalSet.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalSet.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Po
-#	$(AM_V_CXX)source='./src/proposals/ProposalSet.cpp' object='./src/proposals/libbayes_a-ProposalSet.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalSet.o `test -f './src/proposals/ProposalSet.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalSet.cpp
-
-./src/proposals/libbayes_a-ProposalSet.obj: ./src/proposals/ProposalSet.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalSet.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo -c -o ./src/proposals/libbayes_a-ProposalSet.obj `if test -f './src/proposals/ProposalSet.cpp'; then $(CYGPATH_W) './src/proposals/ProposalSet.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalSet.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Po
-#	$(AM_V_CXX)source='./src/proposals/ProposalSet.cpp' object='./src/proposals/libbayes_a-ProposalSet.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalSet.obj `if test -f './src/proposals/ProposalSet.cpp'; then $(CYGPATH_W) './src/proposals/ProposalSet.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalSet.cpp'; fi`
-
-./src/proposals/libbayes_a-ParsimonySPR.o: ./src/proposals/ParsimonySPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParsimonySPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo -c -o ./src/proposals/libbayes_a-ParsimonySPR.o `test -f './src/proposals/ParsimonySPR.cpp' || echo '$(srcdir)/'`./src/proposals/ParsimonySPR.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Po
-#	$(AM_V_CXX)source='./src/proposals/ParsimonySPR.cpp' object='./src/proposals/libbayes_a-ParsimonySPR.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParsimonySPR.o `test -f './src/proposals/ParsimonySPR.cpp' || echo '$(srcdir)/'`./src/proposals/ParsimonySPR.cpp
-
-./src/proposals/libbayes_a-ParsimonySPR.obj: ./src/proposals/ParsimonySPR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParsimonySPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo -c -o ./src/proposals/libbayes_a-ParsimonySPR.obj `if test -f './src/proposals/ParsimonySPR.cpp'; then $(CYGPATH_W) './src/proposals/ParsimonySPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParsimonySPR.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Po
-#	$(AM_V_CXX)source='./src/proposals/ParsimonySPR.cpp' object='./src/proposals/libbayes_a-ParsimonySPR.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParsimonySPR.obj `if test -f './src/proposals/ParsimonySPR.cpp'; then $(CYGPATH_W) './src/proposals/ParsimonySPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParsimonySPR.cpp'; fi`
-
-./src/proposals/libbayes_a-ExtendedTBR.o: ./src/proposals/ExtendedTBR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedTBR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedTBR.o `test -f './src/proposals/ExtendedTBR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedTBR.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Po
-#	$(AM_V_CXX)source='./src/proposals/ExtendedTBR.cpp' object='./src/proposals/libbayes_a-ExtendedTBR.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedTBR.o `test -f './src/proposals/ExtendedTBR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedTBR.cpp
-
-./src/proposals/libbayes_a-ExtendedTBR.obj: ./src/proposals/ExtendedTBR.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedTBR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedTBR.obj `if test -f './src/proposals/ExtendedTBR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedTBR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedTBR.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Po
-#	$(AM_V_CXX)source='./src/proposals/ExtendedTBR.cpp' object='./src/proposals/libbayes_a-ExtendedTBR.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedTBR.obj `if test -f './src/proposals/ExtendedTBR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedTBR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedTBR.cpp'; fi`
-
-./src/proposals/libbayes_a-StatNNI.o: ./src/proposals/StatNNI.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-StatNNI.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo -c -o ./src/proposals/libbayes_a-StatNNI.o `test -f './src/proposals/StatNNI.cpp' || echo '$(srcdir)/'`./src/proposals/StatNNI.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Po
-#	$(AM_V_CXX)source='./src/proposals/StatNNI.cpp' object='./src/proposals/libbayes_a-StatNNI.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-StatNNI.o `test -f './src/proposals/StatNNI.cpp' || echo '$(srcdir)/'`./src/proposals/StatNNI.cpp
-
-./src/proposals/libbayes_a-StatNNI.obj: ./src/proposals/StatNNI.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-StatNNI.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo -c -o ./src/proposals/libbayes_a-StatNNI.obj `if test -f './src/proposals/StatNNI.cpp'; then $(CYGPATH_W) './src/proposals/StatNNI.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/StatNNI.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Po
-#	$(AM_V_CXX)source='./src/proposals/StatNNI.cpp' object='./src/proposals/libbayes_a-StatNNI.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-StatNNI.obj `if test -f './src/proposals/StatNNI.cpp'; then $(CYGPATH_W) './src/proposals/StatNNI.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/StatNNI.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-AminoModelJump.obj `if test -f './src/proposals/AminoModelJump.cpp'; then $(CYGPATH_W) './src/proposals/AminoModelJump.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/AminoModelJump.cpp'; fi`
 
 ./src/proposals/libbayes_a-BranchLengthMultiplier.o: ./src/proposals/BranchLengthMultiplier.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-BranchLengthMultiplier.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-BranchLengthMultiplier.Tpo -c -o ./src/proposals/libbayes_a-BranchLengthMultiplier.o `test -f './src/proposals/BranchLengthMultiplier.cpp' || echo '$(srcdir)/'`./src/proposals/BranchLengthMultiplier.cpp
@@ -2714,19 +2673,47 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-DivTimeProposal.obj `if test -f './src/proposals/DivTimeProposal.cpp'; then $(CYGPATH_W) './src/proposals/DivTimeProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/DivTimeProposal.cpp'; fi`
 
-./src/proposals/libbayes_a-ParameterProposal.o: ./src/proposals/ParameterProposal.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParameterProposal.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo -c -o ./src/proposals/libbayes_a-ParameterProposal.o `test -f './src/proposals/ParameterProposal.cpp' || echo '$(srcdir)/'`./src/proposals/ParameterProposal.cpp
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Po
-#	$(AM_V_CXX)source='./src/proposals/ParameterProposal.cpp' object='./src/proposals/libbayes_a-ParameterProposal.o' libtool=no \
+./src/proposals/libbayes_a-ExtendedSPR.o: ./src/proposals/ExtendedSPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedSPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedSPR.o `test -f './src/proposals/ExtendedSPR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedSPR.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Po
+#	$(AM_V_CXX)source='./src/proposals/ExtendedSPR.cpp' object='./src/proposals/libbayes_a-ExtendedSPR.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParameterProposal.o `test -f './src/proposals/ParameterProposal.cpp' || echo '$(srcdir)/'`./src/proposals/ParameterProposal.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedSPR.o `test -f './src/proposals/ExtendedSPR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedSPR.cpp
 
-./src/proposals/libbayes_a-ParameterProposal.obj: ./src/proposals/ParameterProposal.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParameterProposal.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo -c -o ./src/proposals/libbayes_a-ParameterProposal.obj `if test -f './src/proposals/ParameterProposal.cpp'; then $(CYGPATH_W) './src/proposals/ParameterProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParameterProposal.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Po
-#	$(AM_V_CXX)source='./src/proposals/ParameterProposal.cpp' object='./src/proposals/libbayes_a-ParameterProposal.obj' libtool=no \
+./src/proposals/libbayes_a-ExtendedSPR.obj: ./src/proposals/ExtendedSPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedSPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedSPR.obj `if test -f './src/proposals/ExtendedSPR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedSPR.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedSPR.Po
+#	$(AM_V_CXX)source='./src/proposals/ExtendedSPR.cpp' object='./src/proposals/libbayes_a-ExtendedSPR.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParameterProposal.obj `if test -f './src/proposals/ParameterProposal.cpp'; then $(CYGPATH_W) './src/proposals/ParameterProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParameterProposal.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedSPR.obj `if test -f './src/proposals/ExtendedSPR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedSPR.cpp'; fi`
+
+./src/proposals/libbayes_a-ExtendedTBR.o: ./src/proposals/ExtendedTBR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedTBR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedTBR.o `test -f './src/proposals/ExtendedTBR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedTBR.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Po
+#	$(AM_V_CXX)source='./src/proposals/ExtendedTBR.cpp' object='./src/proposals/libbayes_a-ExtendedTBR.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedTBR.o `test -f './src/proposals/ExtendedTBR.cpp' || echo '$(srcdir)/'`./src/proposals/ExtendedTBR.cpp
+
+./src/proposals/libbayes_a-ExtendedTBR.obj: ./src/proposals/ExtendedTBR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ExtendedTBR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo -c -o ./src/proposals/libbayes_a-ExtendedTBR.obj `if test -f './src/proposals/ExtendedTBR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedTBR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedTBR.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ExtendedTBR.Po
+#	$(AM_V_CXX)source='./src/proposals/ExtendedTBR.cpp' object='./src/proposals/libbayes_a-ExtendedTBR.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ExtendedTBR.obj `if test -f './src/proposals/ExtendedTBR.cpp'; then $(CYGPATH_W) './src/proposals/ExtendedTBR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ExtendedTBR.cpp'; fi`
+
+./src/proposals/libbayes_a-LikelihoodSPR.o: ./src/proposals/LikelihoodSPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-LikelihoodSPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo -c -o ./src/proposals/libbayes_a-LikelihoodSPR.o `test -f './src/proposals/LikelihoodSPR.cpp' || echo '$(srcdir)/'`./src/proposals/LikelihoodSPR.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Po
+#	$(AM_V_CXX)source='./src/proposals/LikelihoodSPR.cpp' object='./src/proposals/libbayes_a-LikelihoodSPR.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-LikelihoodSPR.o `test -f './src/proposals/LikelihoodSPR.cpp' || echo '$(srcdir)/'`./src/proposals/LikelihoodSPR.cpp
+
+./src/proposals/libbayes_a-LikelihoodSPR.obj: ./src/proposals/LikelihoodSPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-LikelihoodSPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo -c -o ./src/proposals/libbayes_a-LikelihoodSPR.obj `if test -f './src/proposals/LikelihoodSPR.cpp'; then $(CYGPATH_W) './src/proposals/LikelihoodSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/LikelihoodSPR.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-LikelihoodSPR.Po
+#	$(AM_V_CXX)source='./src/proposals/LikelihoodSPR.cpp' object='./src/proposals/libbayes_a-LikelihoodSPR.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-LikelihoodSPR.obj `if test -f './src/proposals/LikelihoodSPR.cpp'; then $(CYGPATH_W) './src/proposals/LikelihoodSPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/LikelihoodSPR.cpp'; fi`
 
 ./src/proposals/libbayes_a-NodeSlider.o: ./src/proposals/NodeSlider.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-NodeSlider.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-NodeSlider.Tpo -c -o ./src/proposals/libbayes_a-NodeSlider.o `test -f './src/proposals/NodeSlider.cpp' || echo '$(srcdir)/'`./src/proposals/NodeSlider.cpp
@@ -2742,19 +2729,131 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-NodeSlider.obj `if test -f './src/proposals/NodeSlider.cpp'; then $(CYGPATH_W) './src/proposals/NodeSlider.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/NodeSlider.cpp'; fi`
 
-./src/parameters/libbayes_a-ProtModelParameter.o: ./src/parameters/ProtModelParameter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-ProtModelParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo -c -o ./src/parameters/libbayes_a-ProtModelParameter.o `test -f './src/parameters/ProtModelParameter.cpp' || echo '$(srcdir)/'`./src/parameters/ProtModelParameter.cpp
-	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Po
-#	$(AM_V_CXX)source='./src/parameters/ProtModelParameter.cpp' object='./src/parameters/libbayes_a-ProtModelParameter.o' libtool=no \
+./src/proposals/libbayes_a-ParameterProposal.o: ./src/proposals/ParameterProposal.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParameterProposal.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo -c -o ./src/proposals/libbayes_a-ParameterProposal.o `test -f './src/proposals/ParameterProposal.cpp' || echo '$(srcdir)/'`./src/proposals/ParameterProposal.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Po
+#	$(AM_V_CXX)source='./src/proposals/ParameterProposal.cpp' object='./src/proposals/libbayes_a-ParameterProposal.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-ProtModelParameter.o `test -f './src/parameters/ProtModelParameter.cpp' || echo '$(srcdir)/'`./src/parameters/ProtModelParameter.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParameterProposal.o `test -f './src/proposals/ParameterProposal.cpp' || echo '$(srcdir)/'`./src/proposals/ParameterProposal.cpp
 
-./src/parameters/libbayes_a-ProtModelParameter.obj: ./src/parameters/ProtModelParameter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-ProtModelParameter.obj -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo -c -o ./src/parameters/libbayes_a-ProtModelParameter.obj `if test -f './src/parameters/ProtModelParameter.cpp'; then $(CYGPATH_W) './src/parameters/ProtModelParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/ProtModelParameter.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Po
-#	$(AM_V_CXX)source='./src/parameters/ProtModelParameter.cpp' object='./src/parameters/libbayes_a-ProtModelParameter.obj' libtool=no \
+./src/proposals/libbayes_a-ParameterProposal.obj: ./src/proposals/ParameterProposal.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParameterProposal.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo -c -o ./src/proposals/libbayes_a-ParameterProposal.obj `if test -f './src/proposals/ParameterProposal.cpp'; then $(CYGPATH_W) './src/proposals/ParameterProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParameterProposal.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParameterProposal.Po
+#	$(AM_V_CXX)source='./src/proposals/ParameterProposal.cpp' object='./src/proposals/libbayes_a-ParameterProposal.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-ProtModelParameter.obj `if test -f './src/parameters/ProtModelParameter.cpp'; then $(CYGPATH_W) './src/parameters/ProtModelParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/ProtModelParameter.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParameterProposal.obj `if test -f './src/proposals/ParameterProposal.cpp'; then $(CYGPATH_W) './src/proposals/ParameterProposal.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParameterProposal.cpp'; fi`
+
+./src/proposals/libbayes_a-ParsimonySPR.o: ./src/proposals/ParsimonySPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParsimonySPR.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo -c -o ./src/proposals/libbayes_a-ParsimonySPR.o `test -f './src/proposals/ParsimonySPR.cpp' || echo '$(srcdir)/'`./src/proposals/ParsimonySPR.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Po
+#	$(AM_V_CXX)source='./src/proposals/ParsimonySPR.cpp' object='./src/proposals/libbayes_a-ParsimonySPR.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParsimonySPR.o `test -f './src/proposals/ParsimonySPR.cpp' || echo '$(srcdir)/'`./src/proposals/ParsimonySPR.cpp
+
+./src/proposals/libbayes_a-ParsimonySPR.obj: ./src/proposals/ParsimonySPR.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ParsimonySPR.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo -c -o ./src/proposals/libbayes_a-ParsimonySPR.obj `if test -f './src/proposals/ParsimonySPR.cpp'; then $(CYGPATH_W) './src/proposals/ParsimonySPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParsimonySPR.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ParsimonySPR.Po
+#	$(AM_V_CXX)source='./src/proposals/ParsimonySPR.cpp' object='./src/proposals/libbayes_a-ParsimonySPR.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ParsimonySPR.obj `if test -f './src/proposals/ParsimonySPR.cpp'; then $(CYGPATH_W) './src/proposals/ParsimonySPR.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ParsimonySPR.cpp'; fi`
+
+./src/proposals/libbayes_a-ProposalSet.o: ./src/proposals/ProposalSet.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalSet.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo -c -o ./src/proposals/libbayes_a-ProposalSet.o `test -f './src/proposals/ProposalSet.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalSet.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Po
+#	$(AM_V_CXX)source='./src/proposals/ProposalSet.cpp' object='./src/proposals/libbayes_a-ProposalSet.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalSet.o `test -f './src/proposals/ProposalSet.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalSet.cpp
+
+./src/proposals/libbayes_a-ProposalSet.obj: ./src/proposals/ProposalSet.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalSet.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo -c -o ./src/proposals/libbayes_a-ProposalSet.obj `if test -f './src/proposals/ProposalSet.cpp'; then $(CYGPATH_W) './src/proposals/ProposalSet.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalSet.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalSet.Po
+#	$(AM_V_CXX)source='./src/proposals/ProposalSet.cpp' object='./src/proposals/libbayes_a-ProposalSet.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalSet.obj `if test -f './src/proposals/ProposalSet.cpp'; then $(CYGPATH_W) './src/proposals/ProposalSet.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalSet.cpp'; fi`
+
+./src/proposals/libbayes_a-ProposalType.o: ./src/proposals/ProposalType.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalType.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo -c -o ./src/proposals/libbayes_a-ProposalType.o `test -f './src/proposals/ProposalType.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalType.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Po
+#	$(AM_V_CXX)source='./src/proposals/ProposalType.cpp' object='./src/proposals/libbayes_a-ProposalType.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalType.o `test -f './src/proposals/ProposalType.cpp' || echo '$(srcdir)/'`./src/proposals/ProposalType.cpp
+
+./src/proposals/libbayes_a-ProposalType.obj: ./src/proposals/ProposalType.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-ProposalType.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo -c -o ./src/proposals/libbayes_a-ProposalType.obj `if test -f './src/proposals/ProposalType.cpp'; then $(CYGPATH_W) './src/proposals/ProposalType.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalType.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-ProposalType.Po
+#	$(AM_V_CXX)source='./src/proposals/ProposalType.cpp' object='./src/proposals/libbayes_a-ProposalType.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-ProposalType.obj `if test -f './src/proposals/ProposalType.cpp'; then $(CYGPATH_W) './src/proposals/ProposalType.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/ProposalType.cpp'; fi`
+
+./src/proposals/libbayes_a-SprMove.o: ./src/proposals/SprMove.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-SprMove.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo -c -o ./src/proposals/libbayes_a-SprMove.o `test -f './src/proposals/SprMove.cpp' || echo '$(srcdir)/'`./src/proposals/SprMove.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Po
+#	$(AM_V_CXX)source='./src/proposals/SprMove.cpp' object='./src/proposals/libbayes_a-SprMove.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-SprMove.o `test -f './src/proposals/SprMove.cpp' || echo '$(srcdir)/'`./src/proposals/SprMove.cpp
+
+./src/proposals/libbayes_a-SprMove.obj: ./src/proposals/SprMove.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-SprMove.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo -c -o ./src/proposals/libbayes_a-SprMove.obj `if test -f './src/proposals/SprMove.cpp'; then $(CYGPATH_W) './src/proposals/SprMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/SprMove.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-SprMove.Po
+#	$(AM_V_CXX)source='./src/proposals/SprMove.cpp' object='./src/proposals/libbayes_a-SprMove.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-SprMove.obj `if test -f './src/proposals/SprMove.cpp'; then $(CYGPATH_W) './src/proposals/SprMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/SprMove.cpp'; fi`
+
+./src/proposals/libbayes_a-StatNNI.o: ./src/proposals/StatNNI.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-StatNNI.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo -c -o ./src/proposals/libbayes_a-StatNNI.o `test -f './src/proposals/StatNNI.cpp' || echo '$(srcdir)/'`./src/proposals/StatNNI.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Po
+#	$(AM_V_CXX)source='./src/proposals/StatNNI.cpp' object='./src/proposals/libbayes_a-StatNNI.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-StatNNI.o `test -f './src/proposals/StatNNI.cpp' || echo '$(srcdir)/'`./src/proposals/StatNNI.cpp
+
+./src/proposals/libbayes_a-StatNNI.obj: ./src/proposals/StatNNI.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-StatNNI.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo -c -o ./src/proposals/libbayes_a-StatNNI.obj `if test -f './src/proposals/StatNNI.cpp'; then $(CYGPATH_W) './src/proposals/StatNNI.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/StatNNI.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-StatNNI.Po
+#	$(AM_V_CXX)source='./src/proposals/StatNNI.cpp' object='./src/proposals/libbayes_a-StatNNI.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-StatNNI.obj `if test -f './src/proposals/StatNNI.cpp'; then $(CYGPATH_W) './src/proposals/StatNNI.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/StatNNI.cpp'; fi`
+
+./src/proposals/libbayes_a-TbrMove.o: ./src/proposals/TbrMove.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TbrMove.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo -c -o ./src/proposals/libbayes_a-TbrMove.o `test -f './src/proposals/TbrMove.cpp' || echo '$(srcdir)/'`./src/proposals/TbrMove.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Po
+#	$(AM_V_CXX)source='./src/proposals/TbrMove.cpp' object='./src/proposals/libbayes_a-TbrMove.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TbrMove.o `test -f './src/proposals/TbrMove.cpp' || echo '$(srcdir)/'`./src/proposals/TbrMove.cpp
+
+./src/proposals/libbayes_a-TbrMove.obj: ./src/proposals/TbrMove.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TbrMove.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo -c -o ./src/proposals/libbayes_a-TbrMove.obj `if test -f './src/proposals/TbrMove.cpp'; then $(CYGPATH_W) './src/proposals/TbrMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TbrMove.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TbrMove.Po
+#	$(AM_V_CXX)source='./src/proposals/TbrMove.cpp' object='./src/proposals/libbayes_a-TbrMove.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TbrMove.obj `if test -f './src/proposals/TbrMove.cpp'; then $(CYGPATH_W) './src/proposals/TbrMove.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TbrMove.cpp'; fi`
+
+./src/proposals/libbayes_a-TreeLengthMultiplier.o: ./src/proposals/TreeLengthMultiplier.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TreeLengthMultiplier.o -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.o `test -f './src/proposals/TreeLengthMultiplier.cpp' || echo '$(srcdir)/'`./src/proposals/TreeLengthMultiplier.cpp
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Po
+#	$(AM_V_CXX)source='./src/proposals/TreeLengthMultiplier.cpp' object='./src/proposals/libbayes_a-TreeLengthMultiplier.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.o `test -f './src/proposals/TreeLengthMultiplier.cpp' || echo '$(srcdir)/'`./src/proposals/TreeLengthMultiplier.cpp
+
+./src/proposals/libbayes_a-TreeLengthMultiplier.obj: ./src/proposals/TreeLengthMultiplier.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposals/libbayes_a-TreeLengthMultiplier.obj -MD -MP -MF ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.obj `if test -f './src/proposals/TreeLengthMultiplier.cpp'; then $(CYGPATH_W) './src/proposals/TreeLengthMultiplier.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TreeLengthMultiplier.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Tpo ./src/proposals/$(DEPDIR)/libbayes_a-TreeLengthMultiplier.Po
+#	$(AM_V_CXX)source='./src/proposals/TreeLengthMultiplier.cpp' object='./src/proposals/libbayes_a-TreeLengthMultiplier.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposals/libbayes_a-TreeLengthMultiplier.obj `if test -f './src/proposals/TreeLengthMultiplier.cpp'; then $(CYGPATH_W) './src/proposals/TreeLengthMultiplier.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposals/TreeLengthMultiplier.cpp'; fi`
+
+./src/parameters/libbayes_a-AbstractParameter.o: ./src/parameters/AbstractParameter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-AbstractParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo -c -o ./src/parameters/libbayes_a-AbstractParameter.o `test -f './src/parameters/AbstractParameter.cpp' || echo '$(srcdir)/'`./src/parameters/AbstractParameter.cpp
+	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Po
+#	$(AM_V_CXX)source='./src/parameters/AbstractParameter.cpp' object='./src/parameters/libbayes_a-AbstractParameter.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-AbstractParameter.o `test -f './src/parameters/AbstractParameter.cpp' || echo '$(srcdir)/'`./src/parameters/AbstractParameter.cpp
+
+./src/parameters/libbayes_a-AbstractParameter.obj: ./src/parameters/AbstractParameter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-AbstractParameter.obj -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo -c -o ./src/parameters/libbayes_a-AbstractParameter.obj `if test -f './src/parameters/AbstractParameter.cpp'; then $(CYGPATH_W) './src/parameters/AbstractParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/AbstractParameter.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Po
+#	$(AM_V_CXX)source='./src/parameters/AbstractParameter.cpp' object='./src/parameters/libbayes_a-AbstractParameter.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-AbstractParameter.obj `if test -f './src/parameters/AbstractParameter.cpp'; then $(CYGPATH_W) './src/parameters/AbstractParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/AbstractParameter.cpp'; fi`
 
 ./src/parameters/libbayes_a-BranchLengthsParameter.o: ./src/parameters/BranchLengthsParameter.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-BranchLengthsParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-BranchLengthsParameter.Tpo -c -o ./src/parameters/libbayes_a-BranchLengthsParameter.o `test -f './src/parameters/BranchLengthsParameter.cpp' || echo '$(srcdir)/'`./src/parameters/BranchLengthsParameter.cpp
@@ -2798,6 +2897,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-ParameterContent.obj `if test -f './src/parameters/ParameterContent.cpp'; then $(CYGPATH_W) './src/parameters/ParameterContent.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/ParameterContent.cpp'; fi`
 
+./src/parameters/libbayes_a-ProtModelParameter.o: ./src/parameters/ProtModelParameter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-ProtModelParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo -c -o ./src/parameters/libbayes_a-ProtModelParameter.o `test -f './src/parameters/ProtModelParameter.cpp' || echo '$(srcdir)/'`./src/parameters/ProtModelParameter.cpp
+	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Po
+#	$(AM_V_CXX)source='./src/parameters/ProtModelParameter.cpp' object='./src/parameters/libbayes_a-ProtModelParameter.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-ProtModelParameter.o `test -f './src/parameters/ProtModelParameter.cpp' || echo '$(srcdir)/'`./src/parameters/ProtModelParameter.cpp
+
+./src/parameters/libbayes_a-ProtModelParameter.obj: ./src/parameters/ProtModelParameter.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-ProtModelParameter.obj -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo -c -o ./src/parameters/libbayes_a-ProtModelParameter.obj `if test -f './src/parameters/ProtModelParameter.cpp'; then $(CYGPATH_W) './src/parameters/ProtModelParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/ProtModelParameter.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-ProtModelParameter.Po
+#	$(AM_V_CXX)source='./src/parameters/ProtModelParameter.cpp' object='./src/parameters/libbayes_a-ProtModelParameter.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-ProtModelParameter.obj `if test -f './src/parameters/ProtModelParameter.cpp'; then $(CYGPATH_W) './src/parameters/ProtModelParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/ProtModelParameter.cpp'; fi`
+
 ./src/parameters/libbayes_a-RateHetParameter.o: ./src/parameters/RateHetParameter.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-RateHetParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-RateHetParameter.Tpo -c -o ./src/parameters/libbayes_a-RateHetParameter.o `test -f './src/parameters/RateHetParameter.cpp' || echo '$(srcdir)/'`./src/parameters/RateHetParameter.cpp
 	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-RateHetParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-RateHetParameter.Po
@@ -2825,20 +2938,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/parameters/RevMatParameter.cpp' object='./src/parameters/libbayes_a-RevMatParameter.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-RevMatParameter.obj `if test -f './src/parameters/RevMatParameter.cpp'; then $(CYGPATH_W) './src/parameters/RevMatParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/RevMatParameter.cpp'; fi`
-
-./src/parameters/libbayes_a-AbstractParameter.o: ./src/parameters/AbstractParameter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-AbstractParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo -c -o ./src/parameters/libbayes_a-AbstractParameter.o `test -f './src/parameters/AbstractParameter.cpp' || echo '$(srcdir)/'`./src/parameters/AbstractParameter.cpp
-	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Po
-#	$(AM_V_CXX)source='./src/parameters/AbstractParameter.cpp' object='./src/parameters/libbayes_a-AbstractParameter.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-AbstractParameter.o `test -f './src/parameters/AbstractParameter.cpp' || echo '$(srcdir)/'`./src/parameters/AbstractParameter.cpp
-
-./src/parameters/libbayes_a-AbstractParameter.obj: ./src/parameters/AbstractParameter.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-AbstractParameter.obj -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo -c -o ./src/parameters/libbayes_a-AbstractParameter.obj `if test -f './src/parameters/AbstractParameter.cpp'; then $(CYGPATH_W) './src/parameters/AbstractParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/AbstractParameter.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Tpo ./src/parameters/$(DEPDIR)/libbayes_a-AbstractParameter.Po
-#	$(AM_V_CXX)source='./src/parameters/AbstractParameter.cpp' object='./src/parameters/libbayes_a-AbstractParameter.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/parameters/libbayes_a-AbstractParameter.obj `if test -f './src/parameters/AbstractParameter.cpp'; then $(CYGPATH_W) './src/parameters/AbstractParameter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/parameters/AbstractParameter.cpp'; fi`
 
 ./src/parameters/libbayes_a-TopologyParameter.o: ./src/parameters/TopologyParameter.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parameters/libbayes_a-TopologyParameter.o -MD -MP -MF ./src/parameters/$(DEPDIR)/libbayes_a-TopologyParameter.Tpo -c -o ./src/parameters/libbayes_a-TopologyParameter.o `test -f './src/parameters/TopologyParameter.cpp' || echo '$(srcdir)/'`./src/parameters/TopologyParameter.cpp
@@ -2868,48 +2967,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockParams.obj `if test -f './src/config/BlockParams.cpp'; then $(CYGPATH_W) './src/config/BlockParams.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockParams.cpp'; fi`
 
-./src/config/libbayes_a-BlockProposalConfig.o: ./src/config/BlockProposalConfig.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockProposalConfig.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo -c -o ./src/config/libbayes_a-BlockProposalConfig.o `test -f './src/config/BlockProposalConfig.cpp' || echo '$(srcdir)/'`./src/config/BlockProposalConfig.cpp
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Po
-#	$(AM_V_CXX)source='./src/config/BlockProposalConfig.cpp' object='./src/config/libbayes_a-BlockProposalConfig.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockProposalConfig.o `test -f './src/config/BlockProposalConfig.cpp' || echo '$(srcdir)/'`./src/config/BlockProposalConfig.cpp
-
-./src/config/libbayes_a-BlockProposalConfig.obj: ./src/config/BlockProposalConfig.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockProposalConfig.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo -c -o ./src/config/libbayes_a-BlockProposalConfig.obj `if test -f './src/config/BlockProposalConfig.cpp'; then $(CYGPATH_W) './src/config/BlockProposalConfig.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockProposalConfig.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Po
-#	$(AM_V_CXX)source='./src/config/BlockProposalConfig.cpp' object='./src/config/libbayes_a-BlockProposalConfig.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockProposalConfig.obj `if test -f './src/config/BlockProposalConfig.cpp'; then $(CYGPATH_W) './src/config/BlockProposalConfig.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockProposalConfig.cpp'; fi`
-
-./src/config/libbayes_a-MemoryMode.o: ./src/config/MemoryMode.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-MemoryMode.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo -c -o ./src/config/libbayes_a-MemoryMode.o `test -f './src/config/MemoryMode.cpp' || echo '$(srcdir)/'`./src/config/MemoryMode.cpp
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Po
-#	$(AM_V_CXX)source='./src/config/MemoryMode.cpp' object='./src/config/libbayes_a-MemoryMode.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-MemoryMode.o `test -f './src/config/MemoryMode.cpp' || echo '$(srcdir)/'`./src/config/MemoryMode.cpp
-
-./src/config/libbayes_a-MemoryMode.obj: ./src/config/MemoryMode.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-MemoryMode.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo -c -o ./src/config/libbayes_a-MemoryMode.obj `if test -f './src/config/MemoryMode.cpp'; then $(CYGPATH_W) './src/config/MemoryMode.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/MemoryMode.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Po
-#	$(AM_V_CXX)source='./src/config/MemoryMode.cpp' object='./src/config/libbayes_a-MemoryMode.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-MemoryMode.obj `if test -f './src/config/MemoryMode.cpp'; then $(CYGPATH_W) './src/config/MemoryMode.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/MemoryMode.cpp'; fi`
-
-./src/config/libbayes_a-ExaBlock.o: ./src/config/ExaBlock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-ExaBlock.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo -c -o ./src/config/libbayes_a-ExaBlock.o `test -f './src/config/ExaBlock.cpp' || echo '$(srcdir)/'`./src/config/ExaBlock.cpp
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Po
-#	$(AM_V_CXX)source='./src/config/ExaBlock.cpp' object='./src/config/libbayes_a-ExaBlock.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-ExaBlock.o `test -f './src/config/ExaBlock.cpp' || echo '$(srcdir)/'`./src/config/ExaBlock.cpp
-
-./src/config/libbayes_a-ExaBlock.obj: ./src/config/ExaBlock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-ExaBlock.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo -c -o ./src/config/libbayes_a-ExaBlock.obj `if test -f './src/config/ExaBlock.cpp'; then $(CYGPATH_W) './src/config/ExaBlock.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/ExaBlock.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Po
-#	$(AM_V_CXX)source='./src/config/ExaBlock.cpp' object='./src/config/libbayes_a-ExaBlock.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-ExaBlock.obj `if test -f './src/config/ExaBlock.cpp'; then $(CYGPATH_W) './src/config/ExaBlock.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/ExaBlock.cpp'; fi`
-
 ./src/config/libbayes_a-BlockPrior.o: ./src/config/BlockPrior.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockPrior.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockPrior.Tpo -c -o ./src/config/libbayes_a-BlockPrior.o `test -f './src/config/BlockPrior.cpp' || echo '$(srcdir)/'`./src/config/BlockPrior.cpp
 	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-BlockPrior.Tpo ./src/config/$(DEPDIR)/libbayes_a-BlockPrior.Po
@@ -2923,6 +2980,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/config/BlockPrior.cpp' object='./src/config/libbayes_a-BlockPrior.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockPrior.obj `if test -f './src/config/BlockPrior.cpp'; then $(CYGPATH_W) './src/config/BlockPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockPrior.cpp'; fi`
+
+./src/config/libbayes_a-BlockProposalConfig.o: ./src/config/BlockProposalConfig.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockProposalConfig.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo -c -o ./src/config/libbayes_a-BlockProposalConfig.o `test -f './src/config/BlockProposalConfig.cpp' || echo '$(srcdir)/'`./src/config/BlockProposalConfig.cpp
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Po
+#	$(AM_V_CXX)source='./src/config/BlockProposalConfig.cpp' object='./src/config/libbayes_a-BlockProposalConfig.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockProposalConfig.o `test -f './src/config/BlockProposalConfig.cpp' || echo '$(srcdir)/'`./src/config/BlockProposalConfig.cpp
+
+./src/config/libbayes_a-BlockProposalConfig.obj: ./src/config/BlockProposalConfig.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockProposalConfig.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo -c -o ./src/config/libbayes_a-BlockProposalConfig.obj `if test -f './src/config/BlockProposalConfig.cpp'; then $(CYGPATH_W) './src/config/BlockProposalConfig.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockProposalConfig.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Tpo ./src/config/$(DEPDIR)/libbayes_a-BlockProposalConfig.Po
+#	$(AM_V_CXX)source='./src/config/BlockProposalConfig.cpp' object='./src/config/libbayes_a-BlockProposalConfig.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-BlockProposalConfig.obj `if test -f './src/config/BlockProposalConfig.cpp'; then $(CYGPATH_W) './src/config/BlockProposalConfig.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/BlockProposalConfig.cpp'; fi`
 
 ./src/config/libbayes_a-BlockRunParameters.o: ./src/config/BlockRunParameters.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-BlockRunParameters.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-BlockRunParameters.Tpo -c -o ./src/config/libbayes_a-BlockRunParameters.o `test -f './src/config/BlockRunParameters.cpp' || echo '$(srcdir)/'`./src/config/BlockRunParameters.cpp
@@ -2952,6 +3023,48 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-CommandLine.obj `if test -f './src/config/CommandLine.cpp'; then $(CYGPATH_W) './src/config/CommandLine.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/CommandLine.cpp'; fi`
 
+./src/config/libbayes_a-ExaBlock.o: ./src/config/ExaBlock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-ExaBlock.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo -c -o ./src/config/libbayes_a-ExaBlock.o `test -f './src/config/ExaBlock.cpp' || echo '$(srcdir)/'`./src/config/ExaBlock.cpp
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Po
+#	$(AM_V_CXX)source='./src/config/ExaBlock.cpp' object='./src/config/libbayes_a-ExaBlock.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-ExaBlock.o `test -f './src/config/ExaBlock.cpp' || echo '$(srcdir)/'`./src/config/ExaBlock.cpp
+
+./src/config/libbayes_a-ExaBlock.obj: ./src/config/ExaBlock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-ExaBlock.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo -c -o ./src/config/libbayes_a-ExaBlock.obj `if test -f './src/config/ExaBlock.cpp'; then $(CYGPATH_W) './src/config/ExaBlock.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/ExaBlock.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Tpo ./src/config/$(DEPDIR)/libbayes_a-ExaBlock.Po
+#	$(AM_V_CXX)source='./src/config/ExaBlock.cpp' object='./src/config/libbayes_a-ExaBlock.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-ExaBlock.obj `if test -f './src/config/ExaBlock.cpp'; then $(CYGPATH_W) './src/config/ExaBlock.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/ExaBlock.cpp'; fi`
+
+./src/config/libbayes_a-MemoryMode.o: ./src/config/MemoryMode.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-MemoryMode.o -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo -c -o ./src/config/libbayes_a-MemoryMode.o `test -f './src/config/MemoryMode.cpp' || echo '$(srcdir)/'`./src/config/MemoryMode.cpp
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Po
+#	$(AM_V_CXX)source='./src/config/MemoryMode.cpp' object='./src/config/libbayes_a-MemoryMode.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-MemoryMode.o `test -f './src/config/MemoryMode.cpp' || echo '$(srcdir)/'`./src/config/MemoryMode.cpp
+
+./src/config/libbayes_a-MemoryMode.obj: ./src/config/MemoryMode.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/config/libbayes_a-MemoryMode.obj -MD -MP -MF ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo -c -o ./src/config/libbayes_a-MemoryMode.obj `if test -f './src/config/MemoryMode.cpp'; then $(CYGPATH_W) './src/config/MemoryMode.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/MemoryMode.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Tpo ./src/config/$(DEPDIR)/libbayes_a-MemoryMode.Po
+#	$(AM_V_CXX)source='./src/config/MemoryMode.cpp' object='./src/config/libbayes_a-MemoryMode.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/config/libbayes_a-MemoryMode.obj `if test -f './src/config/MemoryMode.cpp'; then $(CYGPATH_W) './src/config/MemoryMode.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/config/MemoryMode.cpp'; fi`
+
+./src/priors/libbayes_a-DirichletPrior.o: ./src/priors/DirichletPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-DirichletPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo -c -o ./src/priors/libbayes_a-DirichletPrior.o `test -f './src/priors/DirichletPrior.cpp' || echo '$(srcdir)/'`./src/priors/DirichletPrior.cpp
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Po
+#	$(AM_V_CXX)source='./src/priors/DirichletPrior.cpp' object='./src/priors/libbayes_a-DirichletPrior.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-DirichletPrior.o `test -f './src/priors/DirichletPrior.cpp' || echo '$(srcdir)/'`./src/priors/DirichletPrior.cpp
+
+./src/priors/libbayes_a-DirichletPrior.obj: ./src/priors/DirichletPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-DirichletPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo -c -o ./src/priors/libbayes_a-DirichletPrior.obj `if test -f './src/priors/DirichletPrior.cpp'; then $(CYGPATH_W) './src/priors/DirichletPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/DirichletPrior.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Po
+#	$(AM_V_CXX)source='./src/priors/DirichletPrior.cpp' object='./src/priors/libbayes_a-DirichletPrior.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-DirichletPrior.obj `if test -f './src/priors/DirichletPrior.cpp'; then $(CYGPATH_W) './src/priors/DirichletPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/DirichletPrior.cpp'; fi`
+
 ./src/priors/libbayes_a-DiscreteModelPrior.o: ./src/priors/DiscreteModelPrior.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-DiscreteModelPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-DiscreteModelPrior.Tpo -c -o ./src/priors/libbayes_a-DiscreteModelPrior.o `test -f './src/priors/DiscreteModelPrior.cpp' || echo '$(srcdir)/'`./src/priors/DiscreteModelPrior.cpp
 	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-DiscreteModelPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-DiscreteModelPrior.Po
@@ -2965,6 +3078,34 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/priors/DiscreteModelPrior.cpp' object='./src/priors/libbayes_a-DiscreteModelPrior.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-DiscreteModelPrior.obj `if test -f './src/priors/DiscreteModelPrior.cpp'; then $(CYGPATH_W) './src/priors/DiscreteModelPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/DiscreteModelPrior.cpp'; fi`
+
+./src/priors/libbayes_a-ExponentialPrior.o: ./src/priors/ExponentialPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-ExponentialPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo -c -o ./src/priors/libbayes_a-ExponentialPrior.o `test -f './src/priors/ExponentialPrior.cpp' || echo '$(srcdir)/'`./src/priors/ExponentialPrior.cpp
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Po
+#	$(AM_V_CXX)source='./src/priors/ExponentialPrior.cpp' object='./src/priors/libbayes_a-ExponentialPrior.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-ExponentialPrior.o `test -f './src/priors/ExponentialPrior.cpp' || echo '$(srcdir)/'`./src/priors/ExponentialPrior.cpp
+
+./src/priors/libbayes_a-ExponentialPrior.obj: ./src/priors/ExponentialPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-ExponentialPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo -c -o ./src/priors/libbayes_a-ExponentialPrior.obj `if test -f './src/priors/ExponentialPrior.cpp'; then $(CYGPATH_W) './src/priors/ExponentialPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/ExponentialPrior.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Po
+#	$(AM_V_CXX)source='./src/priors/ExponentialPrior.cpp' object='./src/priors/libbayes_a-ExponentialPrior.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-ExponentialPrior.obj `if test -f './src/priors/ExponentialPrior.cpp'; then $(CYGPATH_W) './src/priors/ExponentialPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/ExponentialPrior.cpp'; fi`
+
+./src/priors/libbayes_a-FixedPrior.o: ./src/priors/FixedPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-FixedPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo -c -o ./src/priors/libbayes_a-FixedPrior.o `test -f './src/priors/FixedPrior.cpp' || echo '$(srcdir)/'`./src/priors/FixedPrior.cpp
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Po
+#	$(AM_V_CXX)source='./src/priors/FixedPrior.cpp' object='./src/priors/libbayes_a-FixedPrior.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-FixedPrior.o `test -f './src/priors/FixedPrior.cpp' || echo '$(srcdir)/'`./src/priors/FixedPrior.cpp
+
+./src/priors/libbayes_a-FixedPrior.obj: ./src/priors/FixedPrior.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-FixedPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo -c -o ./src/priors/libbayes_a-FixedPrior.obj `if test -f './src/priors/FixedPrior.cpp'; then $(CYGPATH_W) './src/priors/FixedPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/FixedPrior.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Po
+#	$(AM_V_CXX)source='./src/priors/FixedPrior.cpp' object='./src/priors/libbayes_a-FixedPrior.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-FixedPrior.obj `if test -f './src/priors/FixedPrior.cpp'; then $(CYGPATH_W) './src/priors/FixedPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/FixedPrior.cpp'; fi`
 
 ./src/priors/libbayes_a-PriorBelief.o: ./src/priors/PriorBelief.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-PriorBelief.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-PriorBelief.Tpo -c -o ./src/priors/libbayes_a-PriorBelief.o `test -f './src/priors/PriorBelief.cpp' || echo '$(srcdir)/'`./src/priors/PriorBelief.cpp
@@ -2994,47 +3135,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-UniformPrior.obj `if test -f './src/priors/UniformPrior.cpp'; then $(CYGPATH_W) './src/priors/UniformPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/UniformPrior.cpp'; fi`
 
-./src/priors/libbayes_a-FixedPrior.o: ./src/priors/FixedPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-FixedPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo -c -o ./src/priors/libbayes_a-FixedPrior.o `test -f './src/priors/FixedPrior.cpp' || echo '$(srcdir)/'`./src/priors/FixedPrior.cpp
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Po
-#	$(AM_V_CXX)source='./src/priors/FixedPrior.cpp' object='./src/priors/libbayes_a-FixedPrior.o' libtool=no \
+./src/proposers/libbayes_a-AbstractProposer.o: ./src/proposers/AbstractProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-AbstractProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo -c -o ./src/proposers/libbayes_a-AbstractProposer.o `test -f './src/proposers/AbstractProposer.cpp' || echo '$(srcdir)/'`./src/proposers/AbstractProposer.cpp
+	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Po
+#	$(AM_V_CXX)source='./src/proposers/AbstractProposer.cpp' object='./src/proposers/libbayes_a-AbstractProposer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-FixedPrior.o `test -f './src/priors/FixedPrior.cpp' || echo '$(srcdir)/'`./src/priors/FixedPrior.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-AbstractProposer.o `test -f './src/proposers/AbstractProposer.cpp' || echo '$(srcdir)/'`./src/proposers/AbstractProposer.cpp
 
-./src/priors/libbayes_a-FixedPrior.obj: ./src/priors/FixedPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-FixedPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo -c -o ./src/priors/libbayes_a-FixedPrior.obj `if test -f './src/priors/FixedPrior.cpp'; then $(CYGPATH_W) './src/priors/FixedPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/FixedPrior.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-FixedPrior.Po
-#	$(AM_V_CXX)source='./src/priors/FixedPrior.cpp' object='./src/priors/libbayes_a-FixedPrior.obj' libtool=no \
+./src/proposers/libbayes_a-AbstractProposer.obj: ./src/proposers/AbstractProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-AbstractProposer.obj -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo -c -o ./src/proposers/libbayes_a-AbstractProposer.obj `if test -f './src/proposers/AbstractProposer.cpp'; then $(CYGPATH_W) './src/proposers/AbstractProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/AbstractProposer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Po
+#	$(AM_V_CXX)source='./src/proposers/AbstractProposer.cpp' object='./src/proposers/libbayes_a-AbstractProposer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-FixedPrior.obj `if test -f './src/priors/FixedPrior.cpp'; then $(CYGPATH_W) './src/priors/FixedPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/FixedPrior.cpp'; fi`
-
-./src/priors/libbayes_a-DirichletPrior.o: ./src/priors/DirichletPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-DirichletPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo -c -o ./src/priors/libbayes_a-DirichletPrior.o `test -f './src/priors/DirichletPrior.cpp' || echo '$(srcdir)/'`./src/priors/DirichletPrior.cpp
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Po
-#	$(AM_V_CXX)source='./src/priors/DirichletPrior.cpp' object='./src/priors/libbayes_a-DirichletPrior.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-DirichletPrior.o `test -f './src/priors/DirichletPrior.cpp' || echo '$(srcdir)/'`./src/priors/DirichletPrior.cpp
-
-./src/priors/libbayes_a-DirichletPrior.obj: ./src/priors/DirichletPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-DirichletPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo -c -o ./src/priors/libbayes_a-DirichletPrior.obj `if test -f './src/priors/DirichletPrior.cpp'; then $(CYGPATH_W) './src/priors/DirichletPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/DirichletPrior.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-DirichletPrior.Po
-#	$(AM_V_CXX)source='./src/priors/DirichletPrior.cpp' object='./src/priors/libbayes_a-DirichletPrior.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-DirichletPrior.obj `if test -f './src/priors/DirichletPrior.cpp'; then $(CYGPATH_W) './src/priors/DirichletPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/DirichletPrior.cpp'; fi`
-
-./src/priors/libbayes_a-ExponentialPrior.o: ./src/priors/ExponentialPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-ExponentialPrior.o -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo -c -o ./src/priors/libbayes_a-ExponentialPrior.o `test -f './src/priors/ExponentialPrior.cpp' || echo '$(srcdir)/'`./src/priors/ExponentialPrior.cpp
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Po
-#	$(AM_V_CXX)source='./src/priors/ExponentialPrior.cpp' object='./src/priors/libbayes_a-ExponentialPrior.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-ExponentialPrior.o `test -f './src/priors/ExponentialPrior.cpp' || echo '$(srcdir)/'`./src/priors/ExponentialPrior.cpp
-
-./src/priors/libbayes_a-ExponentialPrior.obj: ./src/priors/ExponentialPrior.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/priors/libbayes_a-ExponentialPrior.obj -MD -MP -MF ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo -c -o ./src/priors/libbayes_a-ExponentialPrior.obj `if test -f './src/priors/ExponentialPrior.cpp'; then $(CYGPATH_W) './src/priors/ExponentialPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/ExponentialPrior.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Tpo ./src/priors/$(DEPDIR)/libbayes_a-ExponentialPrior.Po
-#	$(AM_V_CXX)source='./src/priors/ExponentialPrior.cpp' object='./src/priors/libbayes_a-ExponentialPrior.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/priors/libbayes_a-ExponentialPrior.obj `if test -f './src/priors/ExponentialPrior.cpp'; then $(CYGPATH_W) './src/priors/ExponentialPrior.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/priors/ExponentialPrior.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-AbstractProposer.obj `if test -f './src/proposers/AbstractProposer.cpp'; then $(CYGPATH_W) './src/proposers/AbstractProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/AbstractProposer.cpp'; fi`
 
 ./src/proposers/libbayes_a-DirichletProposer.o: ./src/proposers/DirichletProposer.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-DirichletProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-DirichletProposer.Tpo -c -o ./src/proposers/libbayes_a-DirichletProposer.o `test -f './src/proposers/DirichletProposer.cpp' || echo '$(srcdir)/'`./src/proposers/DirichletProposer.cpp
@@ -3064,34 +3177,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-MultiplierProposer.obj `if test -f './src/proposers/MultiplierProposer.cpp'; then $(CYGPATH_W) './src/proposers/MultiplierProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/MultiplierProposer.cpp'; fi`
 
-./src/proposers/libbayes_a-SlidingProposer.o: ./src/proposers/SlidingProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-SlidingProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo -c -o ./src/proposers/libbayes_a-SlidingProposer.o `test -f './src/proposers/SlidingProposer.cpp' || echo '$(srcdir)/'`./src/proposers/SlidingProposer.cpp
-	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Po
-#	$(AM_V_CXX)source='./src/proposers/SlidingProposer.cpp' object='./src/proposers/libbayes_a-SlidingProposer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-SlidingProposer.o `test -f './src/proposers/SlidingProposer.cpp' || echo '$(srcdir)/'`./src/proposers/SlidingProposer.cpp
-
-./src/proposers/libbayes_a-SlidingProposer.obj: ./src/proposers/SlidingProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-SlidingProposer.obj -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo -c -o ./src/proposers/libbayes_a-SlidingProposer.obj `if test -f './src/proposers/SlidingProposer.cpp'; then $(CYGPATH_W) './src/proposers/SlidingProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/SlidingProposer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Po
-#	$(AM_V_CXX)source='./src/proposers/SlidingProposer.cpp' object='./src/proposers/libbayes_a-SlidingProposer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-SlidingProposer.obj `if test -f './src/proposers/SlidingProposer.cpp'; then $(CYGPATH_W) './src/proposers/SlidingProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/SlidingProposer.cpp'; fi`
-
-./src/proposers/libbayes_a-AbstractProposer.o: ./src/proposers/AbstractProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-AbstractProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo -c -o ./src/proposers/libbayes_a-AbstractProposer.o `test -f './src/proposers/AbstractProposer.cpp' || echo '$(srcdir)/'`./src/proposers/AbstractProposer.cpp
-	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Po
-#	$(AM_V_CXX)source='./src/proposers/AbstractProposer.cpp' object='./src/proposers/libbayes_a-AbstractProposer.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-AbstractProposer.o `test -f './src/proposers/AbstractProposer.cpp' || echo '$(srcdir)/'`./src/proposers/AbstractProposer.cpp
-
-./src/proposers/libbayes_a-AbstractProposer.obj: ./src/proposers/AbstractProposer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-AbstractProposer.obj -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo -c -o ./src/proposers/libbayes_a-AbstractProposer.obj `if test -f './src/proposers/AbstractProposer.cpp'; then $(CYGPATH_W) './src/proposers/AbstractProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/AbstractProposer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-AbstractProposer.Po
-#	$(AM_V_CXX)source='./src/proposers/AbstractProposer.cpp' object='./src/proposers/libbayes_a-AbstractProposer.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-AbstractProposer.obj `if test -f './src/proposers/AbstractProposer.cpp'; then $(CYGPATH_W) './src/proposers/AbstractProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/AbstractProposer.cpp'; fi`
-
 ./src/proposers/libbayes_a-RateDirichletProposer.o: ./src/proposers/RateDirichletProposer.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-RateDirichletProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-RateDirichletProposer.Tpo -c -o ./src/proposers/libbayes_a-RateDirichletProposer.o `test -f './src/proposers/RateDirichletProposer.cpp' || echo '$(srcdir)/'`./src/proposers/RateDirichletProposer.cpp
 	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-RateDirichletProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-RateDirichletProposer.Po
@@ -3120,47 +3205,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-RateSlidingProposer.obj `if test -f './src/proposers/RateSlidingProposer.cpp'; then $(CYGPATH_W) './src/proposers/RateSlidingProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/RateSlidingProposer.cpp'; fi`
 
-./src/file/libbayes_a-ParameterFile.o: ./src/file/ParameterFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-ParameterFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo -c -o ./src/file/libbayes_a-ParameterFile.o `test -f './src/file/ParameterFile.cpp' || echo '$(srcdir)/'`./src/file/ParameterFile.cpp
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Po
-#	$(AM_V_CXX)source='./src/file/ParameterFile.cpp' object='./src/file/libbayes_a-ParameterFile.o' libtool=no \
+./src/proposers/libbayes_a-SlidingProposer.o: ./src/proposers/SlidingProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-SlidingProposer.o -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo -c -o ./src/proposers/libbayes_a-SlidingProposer.o `test -f './src/proposers/SlidingProposer.cpp' || echo '$(srcdir)/'`./src/proposers/SlidingProposer.cpp
+	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Po
+#	$(AM_V_CXX)source='./src/proposers/SlidingProposer.cpp' object='./src/proposers/libbayes_a-SlidingProposer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-ParameterFile.o `test -f './src/file/ParameterFile.cpp' || echo '$(srcdir)/'`./src/file/ParameterFile.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-SlidingProposer.o `test -f './src/proposers/SlidingProposer.cpp' || echo '$(srcdir)/'`./src/proposers/SlidingProposer.cpp
 
-./src/file/libbayes_a-ParameterFile.obj: ./src/file/ParameterFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-ParameterFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo -c -o ./src/file/libbayes_a-ParameterFile.obj `if test -f './src/file/ParameterFile.cpp'; then $(CYGPATH_W) './src/file/ParameterFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/ParameterFile.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Po
-#	$(AM_V_CXX)source='./src/file/ParameterFile.cpp' object='./src/file/libbayes_a-ParameterFile.obj' libtool=no \
+./src/proposers/libbayes_a-SlidingProposer.obj: ./src/proposers/SlidingProposer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/proposers/libbayes_a-SlidingProposer.obj -MD -MP -MF ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo -c -o ./src/proposers/libbayes_a-SlidingProposer.obj `if test -f './src/proposers/SlidingProposer.cpp'; then $(CYGPATH_W) './src/proposers/SlidingProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/SlidingProposer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Tpo ./src/proposers/$(DEPDIR)/libbayes_a-SlidingProposer.Po
+#	$(AM_V_CXX)source='./src/proposers/SlidingProposer.cpp' object='./src/proposers/libbayes_a-SlidingProposer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-ParameterFile.obj `if test -f './src/file/ParameterFile.cpp'; then $(CYGPATH_W) './src/file/ParameterFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/ParameterFile.cpp'; fi`
-
-./src/file/libbayes_a-OutputFile.o: ./src/file/OutputFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-OutputFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo -c -o ./src/file/libbayes_a-OutputFile.o `test -f './src/file/OutputFile.cpp' || echo '$(srcdir)/'`./src/file/OutputFile.cpp
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Po
-#	$(AM_V_CXX)source='./src/file/OutputFile.cpp' object='./src/file/libbayes_a-OutputFile.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-OutputFile.o `test -f './src/file/OutputFile.cpp' || echo '$(srcdir)/'`./src/file/OutputFile.cpp
-
-./src/file/libbayes_a-OutputFile.obj: ./src/file/OutputFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-OutputFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo -c -o ./src/file/libbayes_a-OutputFile.obj `if test -f './src/file/OutputFile.cpp'; then $(CYGPATH_W) './src/file/OutputFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/OutputFile.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Po
-#	$(AM_V_CXX)source='./src/file/OutputFile.cpp' object='./src/file/libbayes_a-OutputFile.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-OutputFile.obj `if test -f './src/file/OutputFile.cpp'; then $(CYGPATH_W) './src/file/OutputFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/OutputFile.cpp'; fi`
-
-./src/file/libbayes_a-TopologyFile.o: ./src/file/TopologyFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-TopologyFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo -c -o ./src/file/libbayes_a-TopologyFile.o `test -f './src/file/TopologyFile.cpp' || echo '$(srcdir)/'`./src/file/TopologyFile.cpp
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Po
-#	$(AM_V_CXX)source='./src/file/TopologyFile.cpp' object='./src/file/libbayes_a-TopologyFile.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-TopologyFile.o `test -f './src/file/TopologyFile.cpp' || echo '$(srcdir)/'`./src/file/TopologyFile.cpp
-
-./src/file/libbayes_a-TopologyFile.obj: ./src/file/TopologyFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-TopologyFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo -c -o ./src/file/libbayes_a-TopologyFile.obj `if test -f './src/file/TopologyFile.cpp'; then $(CYGPATH_W) './src/file/TopologyFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/TopologyFile.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Po
-#	$(AM_V_CXX)source='./src/file/TopologyFile.cpp' object='./src/file/libbayes_a-TopologyFile.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-TopologyFile.obj `if test -f './src/file/TopologyFile.cpp'; then $(CYGPATH_W) './src/file/TopologyFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/TopologyFile.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/proposers/libbayes_a-SlidingProposer.obj `if test -f './src/proposers/SlidingProposer.cpp'; then $(CYGPATH_W) './src/proposers/SlidingProposer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/proposers/SlidingProposer.cpp'; fi`
 
 ./src/file/libbayes_a-DiagnosticsFile.o: ./src/file/DiagnosticsFile.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-DiagnosticsFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-DiagnosticsFile.Tpo -c -o ./src/file/libbayes_a-DiagnosticsFile.o `test -f './src/file/DiagnosticsFile.cpp' || echo '$(srcdir)/'`./src/file/DiagnosticsFile.cpp
@@ -3176,33 +3233,61 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-DiagnosticsFile.obj `if test -f './src/file/DiagnosticsFile.cpp'; then $(CYGPATH_W) './src/file/DiagnosticsFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/DiagnosticsFile.cpp'; fi`
 
-./src/eval/libbayes_a-ArrayRestorer.o: ./src/eval/ArrayRestorer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayRestorer.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo -c -o ./src/eval/libbayes_a-ArrayRestorer.o `test -f './src/eval/ArrayRestorer.cpp' || echo '$(srcdir)/'`./src/eval/ArrayRestorer.cpp
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Po
-#	$(AM_V_CXX)source='./src/eval/ArrayRestorer.cpp' object='./src/eval/libbayes_a-ArrayRestorer.o' libtool=no \
+./src/file/libbayes_a-OutputFile.o: ./src/file/OutputFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-OutputFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo -c -o ./src/file/libbayes_a-OutputFile.o `test -f './src/file/OutputFile.cpp' || echo '$(srcdir)/'`./src/file/OutputFile.cpp
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Po
+#	$(AM_V_CXX)source='./src/file/OutputFile.cpp' object='./src/file/libbayes_a-OutputFile.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayRestorer.o `test -f './src/eval/ArrayRestorer.cpp' || echo '$(srcdir)/'`./src/eval/ArrayRestorer.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-OutputFile.o `test -f './src/file/OutputFile.cpp' || echo '$(srcdir)/'`./src/file/OutputFile.cpp
 
-./src/eval/libbayes_a-ArrayRestorer.obj: ./src/eval/ArrayRestorer.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayRestorer.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo -c -o ./src/eval/libbayes_a-ArrayRestorer.obj `if test -f './src/eval/ArrayRestorer.cpp'; then $(CYGPATH_W) './src/eval/ArrayRestorer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayRestorer.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Po
-#	$(AM_V_CXX)source='./src/eval/ArrayRestorer.cpp' object='./src/eval/libbayes_a-ArrayRestorer.obj' libtool=no \
+./src/file/libbayes_a-OutputFile.obj: ./src/file/OutputFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-OutputFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo -c -o ./src/file/libbayes_a-OutputFile.obj `if test -f './src/file/OutputFile.cpp'; then $(CYGPATH_W) './src/file/OutputFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/OutputFile.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-OutputFile.Po
+#	$(AM_V_CXX)source='./src/file/OutputFile.cpp' object='./src/file/libbayes_a-OutputFile.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayRestorer.obj `if test -f './src/eval/ArrayRestorer.cpp'; then $(CYGPATH_W) './src/eval/ArrayRestorer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayRestorer.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-OutputFile.obj `if test -f './src/file/OutputFile.cpp'; then $(CYGPATH_W) './src/file/OutputFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/OutputFile.cpp'; fi`
 
-./src/eval/libbayes_a-NoCachePolicy.o: ./src/eval/NoCachePolicy.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-NoCachePolicy.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo -c -o ./src/eval/libbayes_a-NoCachePolicy.o `test -f './src/eval/NoCachePolicy.cpp' || echo '$(srcdir)/'`./src/eval/NoCachePolicy.cpp
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Po
-#	$(AM_V_CXX)source='./src/eval/NoCachePolicy.cpp' object='./src/eval/libbayes_a-NoCachePolicy.o' libtool=no \
+./src/file/libbayes_a-ParameterFile.o: ./src/file/ParameterFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-ParameterFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo -c -o ./src/file/libbayes_a-ParameterFile.o `test -f './src/file/ParameterFile.cpp' || echo '$(srcdir)/'`./src/file/ParameterFile.cpp
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Po
+#	$(AM_V_CXX)source='./src/file/ParameterFile.cpp' object='./src/file/libbayes_a-ParameterFile.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-NoCachePolicy.o `test -f './src/eval/NoCachePolicy.cpp' || echo '$(srcdir)/'`./src/eval/NoCachePolicy.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-ParameterFile.o `test -f './src/file/ParameterFile.cpp' || echo '$(srcdir)/'`./src/file/ParameterFile.cpp
 
-./src/eval/libbayes_a-NoCachePolicy.obj: ./src/eval/NoCachePolicy.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-NoCachePolicy.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo -c -o ./src/eval/libbayes_a-NoCachePolicy.obj `if test -f './src/eval/NoCachePolicy.cpp'; then $(CYGPATH_W) './src/eval/NoCachePolicy.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/NoCachePolicy.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Po
-#	$(AM_V_CXX)source='./src/eval/NoCachePolicy.cpp' object='./src/eval/libbayes_a-NoCachePolicy.obj' libtool=no \
+./src/file/libbayes_a-ParameterFile.obj: ./src/file/ParameterFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-ParameterFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo -c -o ./src/file/libbayes_a-ParameterFile.obj `if test -f './src/file/ParameterFile.cpp'; then $(CYGPATH_W) './src/file/ParameterFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/ParameterFile.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-ParameterFile.Po
+#	$(AM_V_CXX)source='./src/file/ParameterFile.cpp' object='./src/file/libbayes_a-ParameterFile.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-NoCachePolicy.obj `if test -f './src/eval/NoCachePolicy.cpp'; then $(CYGPATH_W) './src/eval/NoCachePolicy.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/NoCachePolicy.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-ParameterFile.obj `if test -f './src/file/ParameterFile.cpp'; then $(CYGPATH_W) './src/file/ParameterFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/ParameterFile.cpp'; fi`
+
+./src/file/libbayes_a-TopologyFile.o: ./src/file/TopologyFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-TopologyFile.o -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo -c -o ./src/file/libbayes_a-TopologyFile.o `test -f './src/file/TopologyFile.cpp' || echo '$(srcdir)/'`./src/file/TopologyFile.cpp
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Po
+#	$(AM_V_CXX)source='./src/file/TopologyFile.cpp' object='./src/file/libbayes_a-TopologyFile.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-TopologyFile.o `test -f './src/file/TopologyFile.cpp' || echo '$(srcdir)/'`./src/file/TopologyFile.cpp
+
+./src/file/libbayes_a-TopologyFile.obj: ./src/file/TopologyFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/file/libbayes_a-TopologyFile.obj -MD -MP -MF ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo -c -o ./src/file/libbayes_a-TopologyFile.obj `if test -f './src/file/TopologyFile.cpp'; then $(CYGPATH_W) './src/file/TopologyFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/TopologyFile.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Tpo ./src/file/$(DEPDIR)/libbayes_a-TopologyFile.Po
+#	$(AM_V_CXX)source='./src/file/TopologyFile.cpp' object='./src/file/libbayes_a-TopologyFile.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/file/libbayes_a-TopologyFile.obj `if test -f './src/file/TopologyFile.cpp'; then $(CYGPATH_W) './src/file/TopologyFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/file/TopologyFile.cpp'; fi`
+
+./src/eval/libbayes_a-ArrayOrientation.o: ./src/eval/ArrayOrientation.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayOrientation.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo -c -o ./src/eval/libbayes_a-ArrayOrientation.o `test -f './src/eval/ArrayOrientation.cpp' || echo '$(srcdir)/'`./src/eval/ArrayOrientation.cpp
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Po
+#	$(AM_V_CXX)source='./src/eval/ArrayOrientation.cpp' object='./src/eval/libbayes_a-ArrayOrientation.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayOrientation.o `test -f './src/eval/ArrayOrientation.cpp' || echo '$(srcdir)/'`./src/eval/ArrayOrientation.cpp
+
+./src/eval/libbayes_a-ArrayOrientation.obj: ./src/eval/ArrayOrientation.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayOrientation.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo -c -o ./src/eval/libbayes_a-ArrayOrientation.obj `if test -f './src/eval/ArrayOrientation.cpp'; then $(CYGPATH_W) './src/eval/ArrayOrientation.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayOrientation.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Po
+#	$(AM_V_CXX)source='./src/eval/ArrayOrientation.cpp' object='./src/eval/libbayes_a-ArrayOrientation.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayOrientation.obj `if test -f './src/eval/ArrayOrientation.cpp'; then $(CYGPATH_W) './src/eval/ArrayOrientation.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayOrientation.cpp'; fi`
 
 ./src/eval/libbayes_a-ArrayReservoir.o: ./src/eval/ArrayReservoir.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayReservoir.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayReservoir.Tpo -c -o ./src/eval/libbayes_a-ArrayReservoir.o `test -f './src/eval/ArrayReservoir.cpp' || echo '$(srcdir)/'`./src/eval/ArrayReservoir.cpp
@@ -3218,33 +3303,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayReservoir.obj `if test -f './src/eval/ArrayReservoir.cpp'; then $(CYGPATH_W) './src/eval/ArrayReservoir.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayReservoir.cpp'; fi`
 
-./src/eval/libbayes_a-ParsimonyEvaluator.o: ./src/eval/ParsimonyEvaluator.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ParsimonyEvaluator.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.o `test -f './src/eval/ParsimonyEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/ParsimonyEvaluator.cpp
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Po
-#	$(AM_V_CXX)source='./src/eval/ParsimonyEvaluator.cpp' object='./src/eval/libbayes_a-ParsimonyEvaluator.o' libtool=no \
+./src/eval/libbayes_a-ArrayRestorer.o: ./src/eval/ArrayRestorer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayRestorer.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo -c -o ./src/eval/libbayes_a-ArrayRestorer.o `test -f './src/eval/ArrayRestorer.cpp' || echo '$(srcdir)/'`./src/eval/ArrayRestorer.cpp
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Po
+#	$(AM_V_CXX)source='./src/eval/ArrayRestorer.cpp' object='./src/eval/libbayes_a-ArrayRestorer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.o `test -f './src/eval/ParsimonyEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/ParsimonyEvaluator.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayRestorer.o `test -f './src/eval/ArrayRestorer.cpp' || echo '$(srcdir)/'`./src/eval/ArrayRestorer.cpp
 
-./src/eval/libbayes_a-ParsimonyEvaluator.obj: ./src/eval/ParsimonyEvaluator.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ParsimonyEvaluator.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.obj `if test -f './src/eval/ParsimonyEvaluator.cpp'; then $(CYGPATH_W) './src/eval/ParsimonyEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ParsimonyEvaluator.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Po
-#	$(AM_V_CXX)source='./src/eval/ParsimonyEvaluator.cpp' object='./src/eval/libbayes_a-ParsimonyEvaluator.obj' libtool=no \
+./src/eval/libbayes_a-ArrayRestorer.obj: ./src/eval/ArrayRestorer.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayRestorer.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo -c -o ./src/eval/libbayes_a-ArrayRestorer.obj `if test -f './src/eval/ArrayRestorer.cpp'; then $(CYGPATH_W) './src/eval/ArrayRestorer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayRestorer.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayRestorer.Po
+#	$(AM_V_CXX)source='./src/eval/ArrayRestorer.cpp' object='./src/eval/libbayes_a-ArrayRestorer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.obj `if test -f './src/eval/ParsimonyEvaluator.cpp'; then $(CYGPATH_W) './src/eval/ParsimonyEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ParsimonyEvaluator.cpp'; fi`
-
-./src/eval/libbayes_a-LikelihoodEvaluator.o: ./src/eval/LikelihoodEvaluator.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-LikelihoodEvaluator.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.o `test -f './src/eval/LikelihoodEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/LikelihoodEvaluator.cpp
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Po
-#	$(AM_V_CXX)source='./src/eval/LikelihoodEvaluator.cpp' object='./src/eval/libbayes_a-LikelihoodEvaluator.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.o `test -f './src/eval/LikelihoodEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/LikelihoodEvaluator.cpp
-
-./src/eval/libbayes_a-LikelihoodEvaluator.obj: ./src/eval/LikelihoodEvaluator.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-LikelihoodEvaluator.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.obj `if test -f './src/eval/LikelihoodEvaluator.cpp'; then $(CYGPATH_W) './src/eval/LikelihoodEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/LikelihoodEvaluator.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Po
-#	$(AM_V_CXX)source='./src/eval/LikelihoodEvaluator.cpp' object='./src/eval/libbayes_a-LikelihoodEvaluator.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.obj `if test -f './src/eval/LikelihoodEvaluator.cpp'; then $(CYGPATH_W) './src/eval/LikelihoodEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/LikelihoodEvaluator.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayRestorer.obj `if test -f './src/eval/ArrayRestorer.cpp'; then $(CYGPATH_W) './src/eval/ArrayRestorer.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayRestorer.cpp'; fi`
 
 ./src/eval/libbayes_a-FullCachePolicy.o: ./src/eval/FullCachePolicy.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-FullCachePolicy.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-FullCachePolicy.Tpo -c -o ./src/eval/libbayes_a-FullCachePolicy.o `test -f './src/eval/FullCachePolicy.cpp' || echo '$(srcdir)/'`./src/eval/FullCachePolicy.cpp
@@ -3260,19 +3331,47 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-FullCachePolicy.obj `if test -f './src/eval/FullCachePolicy.cpp'; then $(CYGPATH_W) './src/eval/FullCachePolicy.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/FullCachePolicy.cpp'; fi`
 
-./src/eval/libbayes_a-ArrayOrientation.o: ./src/eval/ArrayOrientation.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayOrientation.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo -c -o ./src/eval/libbayes_a-ArrayOrientation.o `test -f './src/eval/ArrayOrientation.cpp' || echo '$(srcdir)/'`./src/eval/ArrayOrientation.cpp
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Po
-#	$(AM_V_CXX)source='./src/eval/ArrayOrientation.cpp' object='./src/eval/libbayes_a-ArrayOrientation.o' libtool=no \
+./src/eval/libbayes_a-LikelihoodEvaluator.o: ./src/eval/LikelihoodEvaluator.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-LikelihoodEvaluator.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.o `test -f './src/eval/LikelihoodEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/LikelihoodEvaluator.cpp
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Po
+#	$(AM_V_CXX)source='./src/eval/LikelihoodEvaluator.cpp' object='./src/eval/libbayes_a-LikelihoodEvaluator.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayOrientation.o `test -f './src/eval/ArrayOrientation.cpp' || echo '$(srcdir)/'`./src/eval/ArrayOrientation.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.o `test -f './src/eval/LikelihoodEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/LikelihoodEvaluator.cpp
 
-./src/eval/libbayes_a-ArrayOrientation.obj: ./src/eval/ArrayOrientation.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ArrayOrientation.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo -c -o ./src/eval/libbayes_a-ArrayOrientation.obj `if test -f './src/eval/ArrayOrientation.cpp'; then $(CYGPATH_W) './src/eval/ArrayOrientation.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayOrientation.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ArrayOrientation.Po
-#	$(AM_V_CXX)source='./src/eval/ArrayOrientation.cpp' object='./src/eval/libbayes_a-ArrayOrientation.obj' libtool=no \
+./src/eval/libbayes_a-LikelihoodEvaluator.obj: ./src/eval/LikelihoodEvaluator.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-LikelihoodEvaluator.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.obj `if test -f './src/eval/LikelihoodEvaluator.cpp'; then $(CYGPATH_W) './src/eval/LikelihoodEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/LikelihoodEvaluator.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-LikelihoodEvaluator.Po
+#	$(AM_V_CXX)source='./src/eval/LikelihoodEvaluator.cpp' object='./src/eval/libbayes_a-LikelihoodEvaluator.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ArrayOrientation.obj `if test -f './src/eval/ArrayOrientation.cpp'; then $(CYGPATH_W) './src/eval/ArrayOrientation.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ArrayOrientation.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-LikelihoodEvaluator.obj `if test -f './src/eval/LikelihoodEvaluator.cpp'; then $(CYGPATH_W) './src/eval/LikelihoodEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/LikelihoodEvaluator.cpp'; fi`
+
+./src/eval/libbayes_a-NoCachePolicy.o: ./src/eval/NoCachePolicy.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-NoCachePolicy.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo -c -o ./src/eval/libbayes_a-NoCachePolicy.o `test -f './src/eval/NoCachePolicy.cpp' || echo '$(srcdir)/'`./src/eval/NoCachePolicy.cpp
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Po
+#	$(AM_V_CXX)source='./src/eval/NoCachePolicy.cpp' object='./src/eval/libbayes_a-NoCachePolicy.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-NoCachePolicy.o `test -f './src/eval/NoCachePolicy.cpp' || echo '$(srcdir)/'`./src/eval/NoCachePolicy.cpp
+
+./src/eval/libbayes_a-NoCachePolicy.obj: ./src/eval/NoCachePolicy.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-NoCachePolicy.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo -c -o ./src/eval/libbayes_a-NoCachePolicy.obj `if test -f './src/eval/NoCachePolicy.cpp'; then $(CYGPATH_W) './src/eval/NoCachePolicy.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/NoCachePolicy.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Tpo ./src/eval/$(DEPDIR)/libbayes_a-NoCachePolicy.Po
+#	$(AM_V_CXX)source='./src/eval/NoCachePolicy.cpp' object='./src/eval/libbayes_a-NoCachePolicy.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-NoCachePolicy.obj `if test -f './src/eval/NoCachePolicy.cpp'; then $(CYGPATH_W) './src/eval/NoCachePolicy.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/NoCachePolicy.cpp'; fi`
+
+./src/eval/libbayes_a-ParsimonyEvaluator.o: ./src/eval/ParsimonyEvaluator.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ParsimonyEvaluator.o -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.o `test -f './src/eval/ParsimonyEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/ParsimonyEvaluator.cpp
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Po
+#	$(AM_V_CXX)source='./src/eval/ParsimonyEvaluator.cpp' object='./src/eval/libbayes_a-ParsimonyEvaluator.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.o `test -f './src/eval/ParsimonyEvaluator.cpp' || echo '$(srcdir)/'`./src/eval/ParsimonyEvaluator.cpp
+
+./src/eval/libbayes_a-ParsimonyEvaluator.obj: ./src/eval/ParsimonyEvaluator.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/eval/libbayes_a-ParsimonyEvaluator.obj -MD -MP -MF ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.obj `if test -f './src/eval/ParsimonyEvaluator.cpp'; then $(CYGPATH_W) './src/eval/ParsimonyEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ParsimonyEvaluator.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Tpo ./src/eval/$(DEPDIR)/libbayes_a-ParsimonyEvaluator.Po
+#	$(AM_V_CXX)source='./src/eval/ParsimonyEvaluator.cpp' object='./src/eval/libbayes_a-ParsimonyEvaluator.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/eval/libbayes_a-ParsimonyEvaluator.obj `if test -f './src/eval/ParsimonyEvaluator.cpp'; then $(CYGPATH_W) './src/eval/ParsimonyEvaluator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/eval/ParsimonyEvaluator.cpp'; fi`
 
 ./src/parser/libbayes_a-PhylipParser.o: ./src/parser/PhylipParser.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/parser/libbayes_a-PhylipParser.o -MD -MP -MF ./src/parser/$(DEPDIR)/libbayes_a-PhylipParser.Tpo -c -o ./src/parser/libbayes_a-PhylipParser.o `test -f './src/parser/PhylipParser.cpp' || echo '$(srcdir)/'`./src/parser/PhylipParser.cpp
@@ -3316,20 +3415,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/tree-parse/libbayes_a-TreeProcessor.obj `if test -f './src/tree-parse/TreeProcessor.cpp'; then $(CYGPATH_W) './src/tree-parse/TreeProcessor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/tree-parse/TreeProcessor.cpp'; fi`
 
-./src/contrib/libbayes_a-ConsensusTree.o: ./src/contrib/ConsensusTree.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-ConsensusTree.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo -c -o ./src/contrib/libbayes_a-ConsensusTree.o `test -f './src/contrib/ConsensusTree.cpp' || echo '$(srcdir)/'`./src/contrib/ConsensusTree.cpp
-	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Po
-#	$(AM_V_CXX)source='./src/contrib/ConsensusTree.cpp' object='./src/contrib/libbayes_a-ConsensusTree.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-ConsensusTree.o `test -f './src/contrib/ConsensusTree.cpp' || echo '$(srcdir)/'`./src/contrib/ConsensusTree.cpp
-
-./src/contrib/libbayes_a-ConsensusTree.obj: ./src/contrib/ConsensusTree.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-ConsensusTree.obj -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo -c -o ./src/contrib/libbayes_a-ConsensusTree.obj `if test -f './src/contrib/ConsensusTree.cpp'; then $(CYGPATH_W) './src/contrib/ConsensusTree.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/ConsensusTree.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Po
-#	$(AM_V_CXX)source='./src/contrib/ConsensusTree.cpp' object='./src/contrib/libbayes_a-ConsensusTree.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-ConsensusTree.obj `if test -f './src/contrib/ConsensusTree.cpp'; then $(CYGPATH_W) './src/contrib/ConsensusTree.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/ConsensusTree.cpp'; fi`
-
 ./src/contrib/libbayes_a-BipartitionExtractor.o: ./src/contrib/BipartitionExtractor.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-BipartitionExtractor.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-BipartitionExtractor.Tpo -c -o ./src/contrib/libbayes_a-BipartitionExtractor.o `test -f './src/contrib/BipartitionExtractor.cpp' || echo '$(srcdir)/'`./src/contrib/BipartitionExtractor.cpp
 	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-BipartitionExtractor.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-BipartitionExtractor.Po
@@ -3344,19 +3429,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-BipartitionExtractor.obj `if test -f './src/contrib/BipartitionExtractor.cpp'; then $(CYGPATH_W) './src/contrib/BipartitionExtractor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/BipartitionExtractor.cpp'; fi`
 
-./src/contrib/libbayes_a-SplitFreqAssessor.o: ./src/contrib/SplitFreqAssessor.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-SplitFreqAssessor.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.o `test -f './src/contrib/SplitFreqAssessor.cpp' || echo '$(srcdir)/'`./src/contrib/SplitFreqAssessor.cpp
-	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Po
-#	$(AM_V_CXX)source='./src/contrib/SplitFreqAssessor.cpp' object='./src/contrib/libbayes_a-SplitFreqAssessor.o' libtool=no \
+./src/contrib/libbayes_a-ConsensusTree.o: ./src/contrib/ConsensusTree.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-ConsensusTree.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo -c -o ./src/contrib/libbayes_a-ConsensusTree.o `test -f './src/contrib/ConsensusTree.cpp' || echo '$(srcdir)/'`./src/contrib/ConsensusTree.cpp
+	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Po
+#	$(AM_V_CXX)source='./src/contrib/ConsensusTree.cpp' object='./src/contrib/libbayes_a-ConsensusTree.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.o `test -f './src/contrib/SplitFreqAssessor.cpp' || echo '$(srcdir)/'`./src/contrib/SplitFreqAssessor.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-ConsensusTree.o `test -f './src/contrib/ConsensusTree.cpp' || echo '$(srcdir)/'`./src/contrib/ConsensusTree.cpp
 
-./src/contrib/libbayes_a-SplitFreqAssessor.obj: ./src/contrib/SplitFreqAssessor.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-SplitFreqAssessor.obj -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.obj `if test -f './src/contrib/SplitFreqAssessor.cpp'; then $(CYGPATH_W) './src/contrib/SplitFreqAssessor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/SplitFreqAssessor.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Po
-#	$(AM_V_CXX)source='./src/contrib/SplitFreqAssessor.cpp' object='./src/contrib/libbayes_a-SplitFreqAssessor.obj' libtool=no \
+./src/contrib/libbayes_a-ConsensusTree.obj: ./src/contrib/ConsensusTree.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-ConsensusTree.obj -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo -c -o ./src/contrib/libbayes_a-ConsensusTree.obj `if test -f './src/contrib/ConsensusTree.cpp'; then $(CYGPATH_W) './src/contrib/ConsensusTree.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/ConsensusTree.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-ConsensusTree.Po
+#	$(AM_V_CXX)source='./src/contrib/ConsensusTree.cpp' object='./src/contrib/libbayes_a-ConsensusTree.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.obj `if test -f './src/contrib/SplitFreqAssessor.cpp'; then $(CYGPATH_W) './src/contrib/SplitFreqAssessor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/SplitFreqAssessor.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-ConsensusTree.obj `if test -f './src/contrib/ConsensusTree.cpp'; then $(CYGPATH_W) './src/contrib/ConsensusTree.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/ConsensusTree.cpp'; fi`
 
 ./src/contrib/libbayes_a-CredibleSet.o: ./src/contrib/CredibleSet.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-CredibleSet.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-CredibleSet.Tpo -c -o ./src/contrib/libbayes_a-CredibleSet.o `test -f './src/contrib/CredibleSet.cpp' || echo '$(srcdir)/'`./src/contrib/CredibleSet.cpp
@@ -3371,6 +3456,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/contrib/CredibleSet.cpp' object='./src/contrib/libbayes_a-CredibleSet.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-CredibleSet.obj `if test -f './src/contrib/CredibleSet.cpp'; then $(CYGPATH_W) './src/contrib/CredibleSet.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/CredibleSet.cpp'; fi`
+
+./src/contrib/libbayes_a-SplitFreqAssessor.o: ./src/contrib/SplitFreqAssessor.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-SplitFreqAssessor.o -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.o `test -f './src/contrib/SplitFreqAssessor.cpp' || echo '$(srcdir)/'`./src/contrib/SplitFreqAssessor.cpp
+	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Po
+#	$(AM_V_CXX)source='./src/contrib/SplitFreqAssessor.cpp' object='./src/contrib/libbayes_a-SplitFreqAssessor.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.o `test -f './src/contrib/SplitFreqAssessor.cpp' || echo '$(srcdir)/'`./src/contrib/SplitFreqAssessor.cpp
+
+./src/contrib/libbayes_a-SplitFreqAssessor.obj: ./src/contrib/SplitFreqAssessor.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/contrib/libbayes_a-SplitFreqAssessor.obj -MD -MP -MF ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.obj `if test -f './src/contrib/SplitFreqAssessor.cpp'; then $(CYGPATH_W) './src/contrib/SplitFreqAssessor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/SplitFreqAssessor.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Tpo ./src/contrib/$(DEPDIR)/libbayes_a-SplitFreqAssessor.Po
+#	$(AM_V_CXX)source='./src/contrib/SplitFreqAssessor.cpp' object='./src/contrib/libbayes_a-SplitFreqAssessor.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/contrib/libbayes_a-SplitFreqAssessor.obj `if test -f './src/contrib/SplitFreqAssessor.cpp'; then $(CYGPATH_W) './src/contrib/SplitFreqAssessor.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/contrib/SplitFreqAssessor.cpp'; fi`
 
 ./src/mcmc/libbayes_a-Chain.o: ./src/mcmc/Chain.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-Chain.o -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-Chain.Tpo -c -o ./src/mcmc/libbayes_a-Chain.o `test -f './src/mcmc/Chain.cpp' || echo '$(srcdir)/'`./src/mcmc/Chain.cpp
@@ -3414,20 +3513,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SampleMaster.obj `if test -f './src/mcmc/SampleMaster.cpp'; then $(CYGPATH_W) './src/mcmc/SampleMaster.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SampleMaster.cpp'; fi`
 
-./src/mcmc/libbayes_a-SwapMatrix.o: ./src/mcmc/SwapMatrix.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-SwapMatrix.o -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo -c -o ./src/mcmc/libbayes_a-SwapMatrix.o `test -f './src/mcmc/SwapMatrix.cpp' || echo '$(srcdir)/'`./src/mcmc/SwapMatrix.cpp
-	$(AM_V_at)$(am__mv) ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Po
-#	$(AM_V_CXX)source='./src/mcmc/SwapMatrix.cpp' object='./src/mcmc/libbayes_a-SwapMatrix.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SwapMatrix.o `test -f './src/mcmc/SwapMatrix.cpp' || echo '$(srcdir)/'`./src/mcmc/SwapMatrix.cpp
-
-./src/mcmc/libbayes_a-SwapMatrix.obj: ./src/mcmc/SwapMatrix.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-SwapMatrix.obj -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo -c -o ./src/mcmc/libbayes_a-SwapMatrix.obj `if test -f './src/mcmc/SwapMatrix.cpp'; then $(CYGPATH_W) './src/mcmc/SwapMatrix.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SwapMatrix.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Po
-#	$(AM_V_CXX)source='./src/mcmc/SwapMatrix.cpp' object='./src/mcmc/libbayes_a-SwapMatrix.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SwapMatrix.obj `if test -f './src/mcmc/SwapMatrix.cpp'; then $(CYGPATH_W) './src/mcmc/SwapMatrix.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SwapMatrix.cpp'; fi`
-
 ./src/mcmc/libbayes_a-SuccessCounter.o: ./src/mcmc/SuccessCounter.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-SuccessCounter.o -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-SuccessCounter.Tpo -c -o ./src/mcmc/libbayes_a-SuccessCounter.o `test -f './src/mcmc/SuccessCounter.cpp' || echo '$(srcdir)/'`./src/mcmc/SuccessCounter.cpp
 	$(AM_V_at)$(am__mv) ./src/mcmc/$(DEPDIR)/libbayes_a-SuccessCounter.Tpo ./src/mcmc/$(DEPDIR)/libbayes_a-SuccessCounter.Po
@@ -3442,19 +3527,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SuccessCounter.obj `if test -f './src/mcmc/SuccessCounter.cpp'; then $(CYGPATH_W) './src/mcmc/SuccessCounter.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SuccessCounter.cpp'; fi`
 
-./src/model/libbayes_a-LengthPart.o: ./src/model/LengthPart.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-LengthPart.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo -c -o ./src/model/libbayes_a-LengthPart.o `test -f './src/model/LengthPart.cpp' || echo '$(srcdir)/'`./src/model/LengthPart.cpp
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Po
-#	$(AM_V_CXX)source='./src/model/LengthPart.cpp' object='./src/model/libbayes_a-LengthPart.o' libtool=no \
+./src/mcmc/libbayes_a-SwapMatrix.o: ./src/mcmc/SwapMatrix.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-SwapMatrix.o -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo -c -o ./src/mcmc/libbayes_a-SwapMatrix.o `test -f './src/mcmc/SwapMatrix.cpp' || echo '$(srcdir)/'`./src/mcmc/SwapMatrix.cpp
+	$(AM_V_at)$(am__mv) ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Po
+#	$(AM_V_CXX)source='./src/mcmc/SwapMatrix.cpp' object='./src/mcmc/libbayes_a-SwapMatrix.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-LengthPart.o `test -f './src/model/LengthPart.cpp' || echo '$(srcdir)/'`./src/model/LengthPart.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SwapMatrix.o `test -f './src/mcmc/SwapMatrix.cpp' || echo '$(srcdir)/'`./src/mcmc/SwapMatrix.cpp
 
-./src/model/libbayes_a-LengthPart.obj: ./src/model/LengthPart.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-LengthPart.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo -c -o ./src/model/libbayes_a-LengthPart.obj `if test -f './src/model/LengthPart.cpp'; then $(CYGPATH_W) './src/model/LengthPart.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/LengthPart.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Po
-#	$(AM_V_CXX)source='./src/model/LengthPart.cpp' object='./src/model/libbayes_a-LengthPart.obj' libtool=no \
+./src/mcmc/libbayes_a-SwapMatrix.obj: ./src/mcmc/SwapMatrix.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/mcmc/libbayes_a-SwapMatrix.obj -MD -MP -MF ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo -c -o ./src/mcmc/libbayes_a-SwapMatrix.obj `if test -f './src/mcmc/SwapMatrix.cpp'; then $(CYGPATH_W) './src/mcmc/SwapMatrix.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SwapMatrix.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Tpo ./src/mcmc/$(DEPDIR)/libbayes_a-SwapMatrix.Po
+#	$(AM_V_CXX)source='./src/mcmc/SwapMatrix.cpp' object='./src/mcmc/libbayes_a-SwapMatrix.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-LengthPart.obj `if test -f './src/model/LengthPart.cpp'; then $(CYGPATH_W) './src/model/LengthPart.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/LengthPart.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/mcmc/libbayes_a-SwapMatrix.obj `if test -f './src/mcmc/SwapMatrix.cpp'; then $(CYGPATH_W) './src/mcmc/SwapMatrix.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/mcmc/SwapMatrix.cpp'; fi`
 
 ./src/model/libbayes_a-Branch.o: ./src/model/Branch.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Branch.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Branch.Tpo -c -o ./src/model/libbayes_a-Branch.o `test -f './src/model/Branch.cpp' || echo '$(srcdir)/'`./src/model/Branch.cpp
@@ -3470,20 +3555,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Branch.obj `if test -f './src/model/Branch.cpp'; then $(CYGPATH_W) './src/model/Branch.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Branch.cpp'; fi`
 
-./src/model/libbayes_a-ProtModel.o: ./src/model/ProtModel.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-ProtModel.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo -c -o ./src/model/libbayes_a-ProtModel.o `test -f './src/model/ProtModel.cpp' || echo '$(srcdir)/'`./src/model/ProtModel.cpp
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Po
-#	$(AM_V_CXX)source='./src/model/ProtModel.cpp' object='./src/model/libbayes_a-ProtModel.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-ProtModel.o `test -f './src/model/ProtModel.cpp' || echo '$(srcdir)/'`./src/model/ProtModel.cpp
-
-./src/model/libbayes_a-ProtModel.obj: ./src/model/ProtModel.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-ProtModel.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo -c -o ./src/model/libbayes_a-ProtModel.obj `if test -f './src/model/ProtModel.cpp'; then $(CYGPATH_W) './src/model/ProtModel.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/ProtModel.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Po
-#	$(AM_V_CXX)source='./src/model/ProtModel.cpp' object='./src/model/libbayes_a-ProtModel.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-ProtModel.obj `if test -f './src/model/ProtModel.cpp'; then $(CYGPATH_W) './src/model/ProtModel.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/ProtModel.cpp'; fi`
-
 ./src/model/libbayes_a-BranchLengthResource.o: ./src/model/BranchLengthResource.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-BranchLengthResource.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-BranchLengthResource.Tpo -c -o ./src/model/libbayes_a-BranchLengthResource.o `test -f './src/model/BranchLengthResource.cpp' || echo '$(srcdir)/'`./src/model/BranchLengthResource.cpp
 	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-BranchLengthResource.Tpo ./src/model/$(DEPDIR)/libbayes_a-BranchLengthResource.Po
@@ -3497,48 +3568,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/model/BranchLengthResource.cpp' object='./src/model/libbayes_a-BranchLengthResource.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-BranchLengthResource.obj `if test -f './src/model/BranchLengthResource.cpp'; then $(CYGPATH_W) './src/model/BranchLengthResource.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/BranchLengthResource.cpp'; fi`
-
-./src/model/libbayes_a-RateHelper.o: ./src/model/RateHelper.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-RateHelper.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo -c -o ./src/model/libbayes_a-RateHelper.o `test -f './src/model/RateHelper.cpp' || echo '$(srcdir)/'`./src/model/RateHelper.cpp
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Po
-#	$(AM_V_CXX)source='./src/model/RateHelper.cpp' object='./src/model/libbayes_a-RateHelper.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-RateHelper.o `test -f './src/model/RateHelper.cpp' || echo '$(srcdir)/'`./src/model/RateHelper.cpp
-
-./src/model/libbayes_a-RateHelper.obj: ./src/model/RateHelper.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-RateHelper.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo -c -o ./src/model/libbayes_a-RateHelper.obj `if test -f './src/model/RateHelper.cpp'; then $(CYGPATH_W) './src/model/RateHelper.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/RateHelper.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Po
-#	$(AM_V_CXX)source='./src/model/RateHelper.cpp' object='./src/model/libbayes_a-RateHelper.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-RateHelper.obj `if test -f './src/model/RateHelper.cpp'; then $(CYGPATH_W) './src/model/RateHelper.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/RateHelper.cpp'; fi`
-
-./src/model/libbayes_a-Partition.o: ./src/model/Partition.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Partition.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo -c -o ./src/model/libbayes_a-Partition.o `test -f './src/model/Partition.cpp' || echo '$(srcdir)/'`./src/model/Partition.cpp
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo ./src/model/$(DEPDIR)/libbayes_a-Partition.Po
-#	$(AM_V_CXX)source='./src/model/Partition.cpp' object='./src/model/libbayes_a-Partition.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Partition.o `test -f './src/model/Partition.cpp' || echo '$(srcdir)/'`./src/model/Partition.cpp
-
-./src/model/libbayes_a-Partition.obj: ./src/model/Partition.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Partition.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo -c -o ./src/model/libbayes_a-Partition.obj `if test -f './src/model/Partition.cpp'; then $(CYGPATH_W) './src/model/Partition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Partition.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo ./src/model/$(DEPDIR)/libbayes_a-Partition.Po
-#	$(AM_V_CXX)source='./src/model/Partition.cpp' object='./src/model/libbayes_a-Partition.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Partition.obj `if test -f './src/model/Partition.cpp'; then $(CYGPATH_W) './src/model/Partition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Partition.cpp'; fi`
-
-./src/model/libbayes_a-TreeAln.o: ./src/model/TreeAln.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-TreeAln.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo -c -o ./src/model/libbayes_a-TreeAln.o `test -f './src/model/TreeAln.cpp' || echo '$(srcdir)/'`./src/model/TreeAln.cpp
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Po
-#	$(AM_V_CXX)source='./src/model/TreeAln.cpp' object='./src/model/libbayes_a-TreeAln.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-TreeAln.o `test -f './src/model/TreeAln.cpp' || echo '$(srcdir)/'`./src/model/TreeAln.cpp
-
-./src/model/libbayes_a-TreeAln.obj: ./src/model/TreeAln.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-TreeAln.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo -c -o ./src/model/libbayes_a-TreeAln.obj `if test -f './src/model/TreeAln.cpp'; then $(CYGPATH_W) './src/model/TreeAln.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/TreeAln.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Po
-#	$(AM_V_CXX)source='./src/model/TreeAln.cpp' object='./src/model/libbayes_a-TreeAln.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-TreeAln.obj `if test -f './src/model/TreeAln.cpp'; then $(CYGPATH_W) './src/model/TreeAln.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/TreeAln.cpp'; fi`
 
 ./src/model/libbayes_a-Category.o: ./src/model/Category.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Category.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Category.Tpo -c -o ./src/model/libbayes_a-Category.o `test -f './src/model/Category.cpp' || echo '$(srcdir)/'`./src/model/Category.cpp
@@ -3554,103 +3583,75 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Category.obj `if test -f './src/model/Category.cpp'; then $(CYGPATH_W) './src/model/Category.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Category.cpp'; fi`
 
-./src/system/libbayes_a-time.o: ./src/system/time.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-time.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-time.Tpo -c -o ./src/system/libbayes_a-time.o `test -f './src/system/time.cpp' || echo '$(srcdir)/'`./src/system/time.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-time.Tpo ./src/system/$(DEPDIR)/libbayes_a-time.Po
-#	$(AM_V_CXX)source='./src/system/time.cpp' object='./src/system/libbayes_a-time.o' libtool=no \
+./src/model/libbayes_a-LengthPart.o: ./src/model/LengthPart.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-LengthPart.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo -c -o ./src/model/libbayes_a-LengthPart.o `test -f './src/model/LengthPart.cpp' || echo '$(srcdir)/'`./src/model/LengthPart.cpp
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Po
+#	$(AM_V_CXX)source='./src/model/LengthPart.cpp' object='./src/model/libbayes_a-LengthPart.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-time.o `test -f './src/system/time.cpp' || echo '$(srcdir)/'`./src/system/time.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-LengthPart.o `test -f './src/model/LengthPart.cpp' || echo '$(srcdir)/'`./src/model/LengthPart.cpp
 
-./src/system/libbayes_a-time.obj: ./src/system/time.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-time.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-time.Tpo -c -o ./src/system/libbayes_a-time.obj `if test -f './src/system/time.cpp'; then $(CYGPATH_W) './src/system/time.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/time.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-time.Tpo ./src/system/$(DEPDIR)/libbayes_a-time.Po
-#	$(AM_V_CXX)source='./src/system/time.cpp' object='./src/system/libbayes_a-time.obj' libtool=no \
+./src/model/libbayes_a-LengthPart.obj: ./src/model/LengthPart.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-LengthPart.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo -c -o ./src/model/libbayes_a-LengthPart.obj `if test -f './src/model/LengthPart.cpp'; then $(CYGPATH_W) './src/model/LengthPart.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/LengthPart.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Tpo ./src/model/$(DEPDIR)/libbayes_a-LengthPart.Po
+#	$(AM_V_CXX)source='./src/model/LengthPart.cpp' object='./src/model/libbayes_a-LengthPart.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-time.obj `if test -f './src/system/time.cpp'; then $(CYGPATH_W) './src/system/time.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/time.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-LengthPart.obj `if test -f './src/model/LengthPart.cpp'; then $(CYGPATH_W) './src/model/LengthPart.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/LengthPart.cpp'; fi`
 
-./src/system/libbayes_a-extensions.o: ./src/system/extensions.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-extensions.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo -c -o ./src/system/libbayes_a-extensions.o `test -f './src/system/extensions.cpp' || echo '$(srcdir)/'`./src/system/extensions.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo ./src/system/$(DEPDIR)/libbayes_a-extensions.Po
-#	$(AM_V_CXX)source='./src/system/extensions.cpp' object='./src/system/libbayes_a-extensions.o' libtool=no \
+./src/model/libbayes_a-Partition.o: ./src/model/Partition.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Partition.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo -c -o ./src/model/libbayes_a-Partition.o `test -f './src/model/Partition.cpp' || echo '$(srcdir)/'`./src/model/Partition.cpp
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo ./src/model/$(DEPDIR)/libbayes_a-Partition.Po
+#	$(AM_V_CXX)source='./src/model/Partition.cpp' object='./src/model/libbayes_a-Partition.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-extensions.o `test -f './src/system/extensions.cpp' || echo '$(srcdir)/'`./src/system/extensions.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Partition.o `test -f './src/model/Partition.cpp' || echo '$(srcdir)/'`./src/model/Partition.cpp
 
-./src/system/libbayes_a-extensions.obj: ./src/system/extensions.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-extensions.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo -c -o ./src/system/libbayes_a-extensions.obj `if test -f './src/system/extensions.cpp'; then $(CYGPATH_W) './src/system/extensions.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/extensions.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo ./src/system/$(DEPDIR)/libbayes_a-extensions.Po
-#	$(AM_V_CXX)source='./src/system/extensions.cpp' object='./src/system/libbayes_a-extensions.obj' libtool=no \
+./src/model/libbayes_a-Partition.obj: ./src/model/Partition.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-Partition.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo -c -o ./src/model/libbayes_a-Partition.obj `if test -f './src/model/Partition.cpp'; then $(CYGPATH_W) './src/model/Partition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Partition.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-Partition.Tpo ./src/model/$(DEPDIR)/libbayes_a-Partition.Po
+#	$(AM_V_CXX)source='./src/model/Partition.cpp' object='./src/model/libbayes_a-Partition.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-extensions.obj `if test -f './src/system/extensions.cpp'; then $(CYGPATH_W) './src/system/extensions.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/extensions.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-Partition.obj `if test -f './src/model/Partition.cpp'; then $(CYGPATH_W) './src/model/Partition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/Partition.cpp'; fi`
 
-./src/system/libbayes_a-NastyGlobalVariables.o: ./src/system/NastyGlobalVariables.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-NastyGlobalVariables.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo -c -o ./src/system/libbayes_a-NastyGlobalVariables.o `test -f './src/system/NastyGlobalVariables.cpp' || echo '$(srcdir)/'`./src/system/NastyGlobalVariables.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Po
-#	$(AM_V_CXX)source='./src/system/NastyGlobalVariables.cpp' object='./src/system/libbayes_a-NastyGlobalVariables.o' libtool=no \
+./src/model/libbayes_a-ProtModel.o: ./src/model/ProtModel.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-ProtModel.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo -c -o ./src/model/libbayes_a-ProtModel.o `test -f './src/model/ProtModel.cpp' || echo '$(srcdir)/'`./src/model/ProtModel.cpp
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Po
+#	$(AM_V_CXX)source='./src/model/ProtModel.cpp' object='./src/model/libbayes_a-ProtModel.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-NastyGlobalVariables.o `test -f './src/system/NastyGlobalVariables.cpp' || echo '$(srcdir)/'`./src/system/NastyGlobalVariables.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-ProtModel.o `test -f './src/model/ProtModel.cpp' || echo '$(srcdir)/'`./src/model/ProtModel.cpp
 
-./src/system/libbayes_a-NastyGlobalVariables.obj: ./src/system/NastyGlobalVariables.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-NastyGlobalVariables.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo -c -o ./src/system/libbayes_a-NastyGlobalVariables.obj `if test -f './src/system/NastyGlobalVariables.cpp'; then $(CYGPATH_W) './src/system/NastyGlobalVariables.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/NastyGlobalVariables.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Po
-#	$(AM_V_CXX)source='./src/system/NastyGlobalVariables.cpp' object='./src/system/libbayes_a-NastyGlobalVariables.obj' libtool=no \
+./src/model/libbayes_a-ProtModel.obj: ./src/model/ProtModel.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-ProtModel.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo -c -o ./src/model/libbayes_a-ProtModel.obj `if test -f './src/model/ProtModel.cpp'; then $(CYGPATH_W) './src/model/ProtModel.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/ProtModel.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Tpo ./src/model/$(DEPDIR)/libbayes_a-ProtModel.Po
+#	$(AM_V_CXX)source='./src/model/ProtModel.cpp' object='./src/model/libbayes_a-ProtModel.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-NastyGlobalVariables.obj `if test -f './src/system/NastyGlobalVariables.cpp'; then $(CYGPATH_W) './src/system/NastyGlobalVariables.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/NastyGlobalVariables.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-ProtModel.obj `if test -f './src/model/ProtModel.cpp'; then $(CYGPATH_W) './src/model/ProtModel.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/ProtModel.cpp'; fi`
 
-./src/system/libbayes_a-RunFactory.o: ./src/system/RunFactory.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-RunFactory.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo -c -o ./src/system/libbayes_a-RunFactory.o `test -f './src/system/RunFactory.cpp' || echo '$(srcdir)/'`./src/system/RunFactory.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Po
-#	$(AM_V_CXX)source='./src/system/RunFactory.cpp' object='./src/system/libbayes_a-RunFactory.o' libtool=no \
+./src/model/libbayes_a-RateHelper.o: ./src/model/RateHelper.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-RateHelper.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo -c -o ./src/model/libbayes_a-RateHelper.o `test -f './src/model/RateHelper.cpp' || echo '$(srcdir)/'`./src/model/RateHelper.cpp
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Po
+#	$(AM_V_CXX)source='./src/model/RateHelper.cpp' object='./src/model/libbayes_a-RateHelper.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-RunFactory.o `test -f './src/system/RunFactory.cpp' || echo '$(srcdir)/'`./src/system/RunFactory.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-RateHelper.o `test -f './src/model/RateHelper.cpp' || echo '$(srcdir)/'`./src/model/RateHelper.cpp
 
-./src/system/libbayes_a-RunFactory.obj: ./src/system/RunFactory.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-RunFactory.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo -c -o ./src/system/libbayes_a-RunFactory.obj `if test -f './src/system/RunFactory.cpp'; then $(CYGPATH_W) './src/system/RunFactory.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/RunFactory.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Po
-#	$(AM_V_CXX)source='./src/system/RunFactory.cpp' object='./src/system/libbayes_a-RunFactory.obj' libtool=no \
+./src/model/libbayes_a-RateHelper.obj: ./src/model/RateHelper.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-RateHelper.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo -c -o ./src/model/libbayes_a-RateHelper.obj `if test -f './src/model/RateHelper.cpp'; then $(CYGPATH_W) './src/model/RateHelper.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/RateHelper.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Tpo ./src/model/$(DEPDIR)/libbayes_a-RateHelper.Po
+#	$(AM_V_CXX)source='./src/model/RateHelper.cpp' object='./src/model/libbayes_a-RateHelper.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-RunFactory.obj `if test -f './src/system/RunFactory.cpp'; then $(CYGPATH_W) './src/system/RunFactory.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/RunFactory.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-RateHelper.obj `if test -f './src/model/RateHelper.cpp'; then $(CYGPATH_W) './src/model/RateHelper.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/RateHelper.cpp'; fi`
 
-./src/system/libbayes_a-BoundsChecker.o: ./src/system/BoundsChecker.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BoundsChecker.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo -c -o ./src/system/libbayes_a-BoundsChecker.o `test -f './src/system/BoundsChecker.cpp' || echo '$(srcdir)/'`./src/system/BoundsChecker.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Po
-#	$(AM_V_CXX)source='./src/system/BoundsChecker.cpp' object='./src/system/libbayes_a-BoundsChecker.o' libtool=no \
+./src/model/libbayes_a-TreeAln.o: ./src/model/TreeAln.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-TreeAln.o -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo -c -o ./src/model/libbayes_a-TreeAln.o `test -f './src/model/TreeAln.cpp' || echo '$(srcdir)/'`./src/model/TreeAln.cpp
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Po
+#	$(AM_V_CXX)source='./src/model/TreeAln.cpp' object='./src/model/libbayes_a-TreeAln.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BoundsChecker.o `test -f './src/system/BoundsChecker.cpp' || echo '$(srcdir)/'`./src/system/BoundsChecker.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-TreeAln.o `test -f './src/model/TreeAln.cpp' || echo '$(srcdir)/'`./src/model/TreeAln.cpp
 
-./src/system/libbayes_a-BoundsChecker.obj: ./src/system/BoundsChecker.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BoundsChecker.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo -c -o ./src/system/libbayes_a-BoundsChecker.obj `if test -f './src/system/BoundsChecker.cpp'; then $(CYGPATH_W) './src/system/BoundsChecker.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BoundsChecker.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Po
-#	$(AM_V_CXX)source='./src/system/BoundsChecker.cpp' object='./src/system/libbayes_a-BoundsChecker.obj' libtool=no \
+./src/model/libbayes_a-TreeAln.obj: ./src/model/TreeAln.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/model/libbayes_a-TreeAln.obj -MD -MP -MF ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo -c -o ./src/model/libbayes_a-TreeAln.obj `if test -f './src/model/TreeAln.cpp'; then $(CYGPATH_W) './src/model/TreeAln.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/TreeAln.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Tpo ./src/model/$(DEPDIR)/libbayes_a-TreeAln.Po
+#	$(AM_V_CXX)source='./src/model/TreeAln.cpp' object='./src/model/libbayes_a-TreeAln.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BoundsChecker.obj `if test -f './src/system/BoundsChecker.cpp'; then $(CYGPATH_W) './src/system/BoundsChecker.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BoundsChecker.cpp'; fi`
-
-./src/system/libbayes_a-log_double.o: ./src/system/log_double.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-log_double.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo -c -o ./src/system/libbayes_a-log_double.o `test -f './src/system/log_double.cpp' || echo '$(srcdir)/'`./src/system/log_double.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo ./src/system/$(DEPDIR)/libbayes_a-log_double.Po
-#	$(AM_V_CXX)source='./src/system/log_double.cpp' object='./src/system/libbayes_a-log_double.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-log_double.o `test -f './src/system/log_double.cpp' || echo '$(srcdir)/'`./src/system/log_double.cpp
-
-./src/system/libbayes_a-log_double.obj: ./src/system/log_double.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-log_double.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo -c -o ./src/system/libbayes_a-log_double.obj `if test -f './src/system/log_double.cpp'; then $(CYGPATH_W) './src/system/log_double.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/log_double.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo ./src/system/$(DEPDIR)/libbayes_a-log_double.Po
-#	$(AM_V_CXX)source='./src/system/log_double.cpp' object='./src/system/libbayes_a-log_double.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-log_double.obj `if test -f './src/system/log_double.cpp'; then $(CYGPATH_W) './src/system/log_double.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/log_double.cpp'; fi`
-
-./src/system/libbayes_a-PartitionAssignment.o: ./src/system/PartitionAssignment.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-PartitionAssignment.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo -c -o ./src/system/libbayes_a-PartitionAssignment.o `test -f './src/system/PartitionAssignment.cpp' || echo '$(srcdir)/'`./src/system/PartitionAssignment.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Po
-#	$(AM_V_CXX)source='./src/system/PartitionAssignment.cpp' object='./src/system/libbayes_a-PartitionAssignment.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-PartitionAssignment.o `test -f './src/system/PartitionAssignment.cpp' || echo '$(srcdir)/'`./src/system/PartitionAssignment.cpp
-
-./src/system/libbayes_a-PartitionAssignment.obj: ./src/system/PartitionAssignment.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-PartitionAssignment.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo -c -o ./src/system/libbayes_a-PartitionAssignment.obj `if test -f './src/system/PartitionAssignment.cpp'; then $(CYGPATH_W) './src/system/PartitionAssignment.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/PartitionAssignment.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Po
-#	$(AM_V_CXX)source='./src/system/PartitionAssignment.cpp' object='./src/system/libbayes_a-PartitionAssignment.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-PartitionAssignment.obj `if test -f './src/system/PartitionAssignment.cpp'; then $(CYGPATH_W) './src/system/PartitionAssignment.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/PartitionAssignment.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/model/libbayes_a-TreeAln.obj `if test -f './src/model/TreeAln.cpp'; then $(CYGPATH_W) './src/model/TreeAln.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/model/TreeAln.cpp'; fi`
 
 ./src/system/libbayes_a-BandWidthTest.o: ./src/system/BandWidthTest.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BandWidthTest.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BandWidthTest.Tpo -c -o ./src/system/libbayes_a-BandWidthTest.o `test -f './src/system/BandWidthTest.cpp' || echo '$(srcdir)/'`./src/system/BandWidthTest.cpp
@@ -3666,20 +3667,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BandWidthTest.obj `if test -f './src/system/BandWidthTest.cpp'; then $(CYGPATH_W) './src/system/BandWidthTest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BandWidthTest.cpp'; fi`
 
-./src/system/libbayes_a-Serializable.o: ./src/system/Serializable.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-Serializable.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo -c -o ./src/system/libbayes_a-Serializable.o `test -f './src/system/Serializable.cpp' || echo '$(srcdir)/'`./src/system/Serializable.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo ./src/system/$(DEPDIR)/libbayes_a-Serializable.Po
-#	$(AM_V_CXX)source='./src/system/Serializable.cpp' object='./src/system/libbayes_a-Serializable.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-Serializable.o `test -f './src/system/Serializable.cpp' || echo '$(srcdir)/'`./src/system/Serializable.cpp
-
-./src/system/libbayes_a-Serializable.obj: ./src/system/Serializable.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-Serializable.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo -c -o ./src/system/libbayes_a-Serializable.obj `if test -f './src/system/Serializable.cpp'; then $(CYGPATH_W) './src/system/Serializable.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/Serializable.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo ./src/system/$(DEPDIR)/libbayes_a-Serializable.Po
-#	$(AM_V_CXX)source='./src/system/Serializable.cpp' object='./src/system/libbayes_a-Serializable.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-Serializable.obj `if test -f './src/system/Serializable.cpp'; then $(CYGPATH_W) './src/system/Serializable.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/Serializable.cpp'; fi`
-
 ./src/system/libbayes_a-BitMask.o: ./src/system/BitMask.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BitMask.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BitMask.Tpo -c -o ./src/system/libbayes_a-BitMask.o `test -f './src/system/BitMask.cpp' || echo '$(srcdir)/'`./src/system/BitMask.cpp
 	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-BitMask.Tpo ./src/system/$(DEPDIR)/libbayes_a-BitMask.Po
@@ -3693,6 +3680,90 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/system/BitMask.cpp' object='./src/system/libbayes_a-BitMask.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BitMask.obj `if test -f './src/system/BitMask.cpp'; then $(CYGPATH_W) './src/system/BitMask.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BitMask.cpp'; fi`
+
+./src/system/libbayes_a-BoundsChecker.o: ./src/system/BoundsChecker.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BoundsChecker.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo -c -o ./src/system/libbayes_a-BoundsChecker.o `test -f './src/system/BoundsChecker.cpp' || echo '$(srcdir)/'`./src/system/BoundsChecker.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Po
+#	$(AM_V_CXX)source='./src/system/BoundsChecker.cpp' object='./src/system/libbayes_a-BoundsChecker.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BoundsChecker.o `test -f './src/system/BoundsChecker.cpp' || echo '$(srcdir)/'`./src/system/BoundsChecker.cpp
+
+./src/system/libbayes_a-BoundsChecker.obj: ./src/system/BoundsChecker.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-BoundsChecker.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo -c -o ./src/system/libbayes_a-BoundsChecker.obj `if test -f './src/system/BoundsChecker.cpp'; then $(CYGPATH_W) './src/system/BoundsChecker.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BoundsChecker.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Tpo ./src/system/$(DEPDIR)/libbayes_a-BoundsChecker.Po
+#	$(AM_V_CXX)source='./src/system/BoundsChecker.cpp' object='./src/system/libbayes_a-BoundsChecker.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-BoundsChecker.obj `if test -f './src/system/BoundsChecker.cpp'; then $(CYGPATH_W) './src/system/BoundsChecker.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/BoundsChecker.cpp'; fi`
+
+./src/system/libbayes_a-ByteFile.o: ./src/system/ByteFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-ByteFile.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo -c -o ./src/system/libbayes_a-ByteFile.o `test -f './src/system/ByteFile.cpp' || echo '$(srcdir)/'`./src/system/ByteFile.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Po
+#	$(AM_V_CXX)source='./src/system/ByteFile.cpp' object='./src/system/libbayes_a-ByteFile.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-ByteFile.o `test -f './src/system/ByteFile.cpp' || echo '$(srcdir)/'`./src/system/ByteFile.cpp
+
+./src/system/libbayes_a-ByteFile.obj: ./src/system/ByteFile.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-ByteFile.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo -c -o ./src/system/libbayes_a-ByteFile.obj `if test -f './src/system/ByteFile.cpp'; then $(CYGPATH_W) './src/system/ByteFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/ByteFile.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Po
+#	$(AM_V_CXX)source='./src/system/ByteFile.cpp' object='./src/system/libbayes_a-ByteFile.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-ByteFile.obj `if test -f './src/system/ByteFile.cpp'; then $(CYGPATH_W) './src/system/ByteFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/ByteFile.cpp'; fi`
+
+./src/system/libbayes_a-extensions.o: ./src/system/extensions.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-extensions.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo -c -o ./src/system/libbayes_a-extensions.o `test -f './src/system/extensions.cpp' || echo '$(srcdir)/'`./src/system/extensions.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo ./src/system/$(DEPDIR)/libbayes_a-extensions.Po
+#	$(AM_V_CXX)source='./src/system/extensions.cpp' object='./src/system/libbayes_a-extensions.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-extensions.o `test -f './src/system/extensions.cpp' || echo '$(srcdir)/'`./src/system/extensions.cpp
+
+./src/system/libbayes_a-extensions.obj: ./src/system/extensions.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-extensions.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo -c -o ./src/system/libbayes_a-extensions.obj `if test -f './src/system/extensions.cpp'; then $(CYGPATH_W) './src/system/extensions.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/extensions.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-extensions.Tpo ./src/system/$(DEPDIR)/libbayes_a-extensions.Po
+#	$(AM_V_CXX)source='./src/system/extensions.cpp' object='./src/system/libbayes_a-extensions.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-extensions.obj `if test -f './src/system/extensions.cpp'; then $(CYGPATH_W) './src/system/extensions.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/extensions.cpp'; fi`
+
+./src/system/libbayes_a-log_double.o: ./src/system/log_double.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-log_double.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo -c -o ./src/system/libbayes_a-log_double.o `test -f './src/system/log_double.cpp' || echo '$(srcdir)/'`./src/system/log_double.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo ./src/system/$(DEPDIR)/libbayes_a-log_double.Po
+#	$(AM_V_CXX)source='./src/system/log_double.cpp' object='./src/system/libbayes_a-log_double.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-log_double.o `test -f './src/system/log_double.cpp' || echo '$(srcdir)/'`./src/system/log_double.cpp
+
+./src/system/libbayes_a-log_double.obj: ./src/system/log_double.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-log_double.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo -c -o ./src/system/libbayes_a-log_double.obj `if test -f './src/system/log_double.cpp'; then $(CYGPATH_W) './src/system/log_double.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/log_double.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-log_double.Tpo ./src/system/$(DEPDIR)/libbayes_a-log_double.Po
+#	$(AM_V_CXX)source='./src/system/log_double.cpp' object='./src/system/libbayes_a-log_double.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-log_double.obj `if test -f './src/system/log_double.cpp'; then $(CYGPATH_W) './src/system/log_double.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/log_double.cpp'; fi`
+
+./src/system/libbayes_a-NastyGlobalVariables.o: ./src/system/NastyGlobalVariables.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-NastyGlobalVariables.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo -c -o ./src/system/libbayes_a-NastyGlobalVariables.o `test -f './src/system/NastyGlobalVariables.cpp' || echo '$(srcdir)/'`./src/system/NastyGlobalVariables.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Po
+#	$(AM_V_CXX)source='./src/system/NastyGlobalVariables.cpp' object='./src/system/libbayes_a-NastyGlobalVariables.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-NastyGlobalVariables.o `test -f './src/system/NastyGlobalVariables.cpp' || echo '$(srcdir)/'`./src/system/NastyGlobalVariables.cpp
+
+./src/system/libbayes_a-NastyGlobalVariables.obj: ./src/system/NastyGlobalVariables.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-NastyGlobalVariables.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo -c -o ./src/system/libbayes_a-NastyGlobalVariables.obj `if test -f './src/system/NastyGlobalVariables.cpp'; then $(CYGPATH_W) './src/system/NastyGlobalVariables.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/NastyGlobalVariables.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Tpo ./src/system/$(DEPDIR)/libbayes_a-NastyGlobalVariables.Po
+#	$(AM_V_CXX)source='./src/system/NastyGlobalVariables.cpp' object='./src/system/libbayes_a-NastyGlobalVariables.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-NastyGlobalVariables.obj `if test -f './src/system/NastyGlobalVariables.cpp'; then $(CYGPATH_W) './src/system/NastyGlobalVariables.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/NastyGlobalVariables.cpp'; fi`
+
+./src/system/libbayes_a-PartitionAssignment.o: ./src/system/PartitionAssignment.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-PartitionAssignment.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo -c -o ./src/system/libbayes_a-PartitionAssignment.o `test -f './src/system/PartitionAssignment.cpp' || echo '$(srcdir)/'`./src/system/PartitionAssignment.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Po
+#	$(AM_V_CXX)source='./src/system/PartitionAssignment.cpp' object='./src/system/libbayes_a-PartitionAssignment.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-PartitionAssignment.o `test -f './src/system/PartitionAssignment.cpp' || echo '$(srcdir)/'`./src/system/PartitionAssignment.cpp
+
+./src/system/libbayes_a-PartitionAssignment.obj: ./src/system/PartitionAssignment.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-PartitionAssignment.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo -c -o ./src/system/libbayes_a-PartitionAssignment.obj `if test -f './src/system/PartitionAssignment.cpp'; then $(CYGPATH_W) './src/system/PartitionAssignment.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/PartitionAssignment.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Tpo ./src/system/$(DEPDIR)/libbayes_a-PartitionAssignment.Po
+#	$(AM_V_CXX)source='./src/system/PartitionAssignment.cpp' object='./src/system/libbayes_a-PartitionAssignment.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-PartitionAssignment.obj `if test -f './src/system/PartitionAssignment.cpp'; then $(CYGPATH_W) './src/system/PartitionAssignment.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/PartitionAssignment.cpp'; fi`
 
 ./src/system/libbayes_a-ProposalRegistry.o: ./src/system/ProposalRegistry.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-ProposalRegistry.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-ProposalRegistry.Tpo -c -o ./src/system/libbayes_a-ProposalRegistry.o `test -f './src/system/ProposalRegistry.cpp' || echo '$(srcdir)/'`./src/system/ProposalRegistry.cpp
@@ -3708,6 +3779,34 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-ProposalRegistry.obj `if test -f './src/system/ProposalRegistry.cpp'; then $(CYGPATH_W) './src/system/ProposalRegistry.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/ProposalRegistry.cpp'; fi`
 
+./src/system/libbayes_a-RunFactory.o: ./src/system/RunFactory.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-RunFactory.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo -c -o ./src/system/libbayes_a-RunFactory.o `test -f './src/system/RunFactory.cpp' || echo '$(srcdir)/'`./src/system/RunFactory.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Po
+#	$(AM_V_CXX)source='./src/system/RunFactory.cpp' object='./src/system/libbayes_a-RunFactory.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-RunFactory.o `test -f './src/system/RunFactory.cpp' || echo '$(srcdir)/'`./src/system/RunFactory.cpp
+
+./src/system/libbayes_a-RunFactory.obj: ./src/system/RunFactory.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-RunFactory.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo -c -o ./src/system/libbayes_a-RunFactory.obj `if test -f './src/system/RunFactory.cpp'; then $(CYGPATH_W) './src/system/RunFactory.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/RunFactory.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Tpo ./src/system/$(DEPDIR)/libbayes_a-RunFactory.Po
+#	$(AM_V_CXX)source='./src/system/RunFactory.cpp' object='./src/system/libbayes_a-RunFactory.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-RunFactory.obj `if test -f './src/system/RunFactory.cpp'; then $(CYGPATH_W) './src/system/RunFactory.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/RunFactory.cpp'; fi`
+
+./src/system/libbayes_a-Serializable.o: ./src/system/Serializable.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-Serializable.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo -c -o ./src/system/libbayes_a-Serializable.o `test -f './src/system/Serializable.cpp' || echo '$(srcdir)/'`./src/system/Serializable.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo ./src/system/$(DEPDIR)/libbayes_a-Serializable.Po
+#	$(AM_V_CXX)source='./src/system/Serializable.cpp' object='./src/system/libbayes_a-Serializable.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-Serializable.o `test -f './src/system/Serializable.cpp' || echo '$(srcdir)/'`./src/system/Serializable.cpp
+
+./src/system/libbayes_a-Serializable.obj: ./src/system/Serializable.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-Serializable.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo -c -o ./src/system/libbayes_a-Serializable.obj `if test -f './src/system/Serializable.cpp'; then $(CYGPATH_W) './src/system/Serializable.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/Serializable.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-Serializable.Tpo ./src/system/$(DEPDIR)/libbayes_a-Serializable.Po
+#	$(AM_V_CXX)source='./src/system/Serializable.cpp' object='./src/system/libbayes_a-Serializable.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-Serializable.obj `if test -f './src/system/Serializable.cpp'; then $(CYGPATH_W) './src/system/Serializable.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/Serializable.cpp'; fi`
+
 ./src/system/libbayes_a-Teebuf.o: ./src/system/Teebuf.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-Teebuf.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-Teebuf.Tpo -c -o ./src/system/libbayes_a-Teebuf.o `test -f './src/system/Teebuf.cpp' || echo '$(srcdir)/'`./src/system/Teebuf.cpp
 	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-Teebuf.Tpo ./src/system/$(DEPDIR)/libbayes_a-Teebuf.Po
@@ -3722,19 +3821,33 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-Teebuf.obj `if test -f './src/system/Teebuf.cpp'; then $(CYGPATH_W) './src/system/Teebuf.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/Teebuf.cpp'; fi`
 
-./src/system/libbayes_a-ByteFile.o: ./src/system/ByteFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-ByteFile.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo -c -o ./src/system/libbayes_a-ByteFile.o `test -f './src/system/ByteFile.cpp' || echo '$(srcdir)/'`./src/system/ByteFile.cpp
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Po
-#	$(AM_V_CXX)source='./src/system/ByteFile.cpp' object='./src/system/libbayes_a-ByteFile.o' libtool=no \
+./src/system/libbayes_a-time.o: ./src/system/time.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-time.o -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-time.Tpo -c -o ./src/system/libbayes_a-time.o `test -f './src/system/time.cpp' || echo '$(srcdir)/'`./src/system/time.cpp
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-time.Tpo ./src/system/$(DEPDIR)/libbayes_a-time.Po
+#	$(AM_V_CXX)source='./src/system/time.cpp' object='./src/system/libbayes_a-time.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-ByteFile.o `test -f './src/system/ByteFile.cpp' || echo '$(srcdir)/'`./src/system/ByteFile.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-time.o `test -f './src/system/time.cpp' || echo '$(srcdir)/'`./src/system/time.cpp
 
-./src/system/libbayes_a-ByteFile.obj: ./src/system/ByteFile.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-ByteFile.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo -c -o ./src/system/libbayes_a-ByteFile.obj `if test -f './src/system/ByteFile.cpp'; then $(CYGPATH_W) './src/system/ByteFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/ByteFile.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Tpo ./src/system/$(DEPDIR)/libbayes_a-ByteFile.Po
-#	$(AM_V_CXX)source='./src/system/ByteFile.cpp' object='./src/system/libbayes_a-ByteFile.obj' libtool=no \
+./src/system/libbayes_a-time.obj: ./src/system/time.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/system/libbayes_a-time.obj -MD -MP -MF ./src/system/$(DEPDIR)/libbayes_a-time.Tpo -c -o ./src/system/libbayes_a-time.obj `if test -f './src/system/time.cpp'; then $(CYGPATH_W) './src/system/time.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/time.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/system/$(DEPDIR)/libbayes_a-time.Tpo ./src/system/$(DEPDIR)/libbayes_a-time.Po
+#	$(AM_V_CXX)source='./src/system/time.cpp' object='./src/system/libbayes_a-time.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-ByteFile.obj `if test -f './src/system/ByteFile.cpp'; then $(CYGPATH_W) './src/system/ByteFile.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/ByteFile.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/system/libbayes_a-time.obj `if test -f './src/system/time.cpp'; then $(CYGPATH_W) './src/system/time.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/system/time.cpp'; fi`
+
+./src/data-struct/libbayes_a-Bipartition.o: ./src/data-struct/Bipartition.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/data-struct/libbayes_a-Bipartition.o -MD -MP -MF ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo -c -o ./src/data-struct/libbayes_a-Bipartition.o `test -f './src/data-struct/Bipartition.cpp' || echo '$(srcdir)/'`./src/data-struct/Bipartition.cpp
+	$(AM_V_at)$(am__mv) ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Po
+#	$(AM_V_CXX)source='./src/data-struct/Bipartition.cpp' object='./src/data-struct/libbayes_a-Bipartition.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/data-struct/libbayes_a-Bipartition.o `test -f './src/data-struct/Bipartition.cpp' || echo '$(srcdir)/'`./src/data-struct/Bipartition.cpp
+
+./src/data-struct/libbayes_a-Bipartition.obj: ./src/data-struct/Bipartition.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/data-struct/libbayes_a-Bipartition.obj -MD -MP -MF ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo -c -o ./src/data-struct/libbayes_a-Bipartition.obj `if test -f './src/data-struct/Bipartition.cpp'; then $(CYGPATH_W) './src/data-struct/Bipartition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/data-struct/Bipartition.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Po
+#	$(AM_V_CXX)source='./src/data-struct/Bipartition.cpp' object='./src/data-struct/libbayes_a-Bipartition.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/data-struct/libbayes_a-Bipartition.obj `if test -f './src/data-struct/Bipartition.cpp'; then $(CYGPATH_W) './src/data-struct/Bipartition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/data-struct/Bipartition.cpp'; fi`
 
 ./src/data-struct/libbayes_a-BipartitionHash.o: ./src/data-struct/BipartitionHash.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/data-struct/libbayes_a-BipartitionHash.o -MD -MP -MF ./src/data-struct/$(DEPDIR)/libbayes_a-BipartitionHash.Tpo -c -o ./src/data-struct/libbayes_a-BipartitionHash.o `test -f './src/data-struct/BipartitionHash.cpp' || echo '$(srcdir)/'`./src/data-struct/BipartitionHash.cpp
@@ -3764,33 +3877,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/data-struct/libbayes_a-Path.obj `if test -f './src/data-struct/Path.cpp'; then $(CYGPATH_W) './src/data-struct/Path.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/data-struct/Path.cpp'; fi`
 
-./src/data-struct/libbayes_a-Bipartition.o: ./src/data-struct/Bipartition.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/data-struct/libbayes_a-Bipartition.o -MD -MP -MF ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo -c -o ./src/data-struct/libbayes_a-Bipartition.o `test -f './src/data-struct/Bipartition.cpp' || echo '$(srcdir)/'`./src/data-struct/Bipartition.cpp
-	$(AM_V_at)$(am__mv) ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Po
-#	$(AM_V_CXX)source='./src/data-struct/Bipartition.cpp' object='./src/data-struct/libbayes_a-Bipartition.o' libtool=no \
+./src/math/libbayes_a-Arithmetics.o: ./src/math/Arithmetics.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Arithmetics.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo -c -o ./src/math/libbayes_a-Arithmetics.o `test -f './src/math/Arithmetics.cpp' || echo '$(srcdir)/'`./src/math/Arithmetics.cpp
+	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Po
+#	$(AM_V_CXX)source='./src/math/Arithmetics.cpp' object='./src/math/libbayes_a-Arithmetics.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/data-struct/libbayes_a-Bipartition.o `test -f './src/data-struct/Bipartition.cpp' || echo '$(srcdir)/'`./src/data-struct/Bipartition.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Arithmetics.o `test -f './src/math/Arithmetics.cpp' || echo '$(srcdir)/'`./src/math/Arithmetics.cpp
 
-./src/data-struct/libbayes_a-Bipartition.obj: ./src/data-struct/Bipartition.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/data-struct/libbayes_a-Bipartition.obj -MD -MP -MF ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo -c -o ./src/data-struct/libbayes_a-Bipartition.obj `if test -f './src/data-struct/Bipartition.cpp'; then $(CYGPATH_W) './src/data-struct/Bipartition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/data-struct/Bipartition.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Tpo ./src/data-struct/$(DEPDIR)/libbayes_a-Bipartition.Po
-#	$(AM_V_CXX)source='./src/data-struct/Bipartition.cpp' object='./src/data-struct/libbayes_a-Bipartition.obj' libtool=no \
+./src/math/libbayes_a-Arithmetics.obj: ./src/math/Arithmetics.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Arithmetics.obj -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo -c -o ./src/math/libbayes_a-Arithmetics.obj `if test -f './src/math/Arithmetics.cpp'; then $(CYGPATH_W) './src/math/Arithmetics.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Arithmetics.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Po
+#	$(AM_V_CXX)source='./src/math/Arithmetics.cpp' object='./src/math/libbayes_a-Arithmetics.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/data-struct/libbayes_a-Bipartition.obj `if test -f './src/data-struct/Bipartition.cpp'; then $(CYGPATH_W) './src/data-struct/Bipartition.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/data-struct/Bipartition.cpp'; fi`
-
-./src/math/libbayes_a-Density.o: ./src/math/Density.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Density.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo -c -o ./src/math/libbayes_a-Density.o `test -f './src/math/Density.cpp' || echo '$(srcdir)/'`./src/math/Density.cpp
-	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo ./src/math/$(DEPDIR)/libbayes_a-Density.Po
-#	$(AM_V_CXX)source='./src/math/Density.cpp' object='./src/math/libbayes_a-Density.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Density.o `test -f './src/math/Density.cpp' || echo '$(srcdir)/'`./src/math/Density.cpp
-
-./src/math/libbayes_a-Density.obj: ./src/math/Density.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Density.obj -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo -c -o ./src/math/libbayes_a-Density.obj `if test -f './src/math/Density.cpp'; then $(CYGPATH_W) './src/math/Density.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Density.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo ./src/math/$(DEPDIR)/libbayes_a-Density.Po
-#	$(AM_V_CXX)source='./src/math/Density.cpp' object='./src/math/libbayes_a-Density.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Density.obj `if test -f './src/math/Density.cpp'; then $(CYGPATH_W) './src/math/Density.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Density.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Arithmetics.obj `if test -f './src/math/Arithmetics.cpp'; then $(CYGPATH_W) './src/math/Arithmetics.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Arithmetics.cpp'; fi`
 
 ./src/math/libbayes_a-brent.o: ./src/math/brent.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-brent.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-brent.Tpo -c -o ./src/math/libbayes_a-brent.o `test -f './src/math/brent.cpp' || echo '$(srcdir)/'`./src/math/brent.cpp
@@ -3806,19 +3905,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-brent.obj `if test -f './src/math/brent.cpp'; then $(CYGPATH_W) './src/math/brent.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/brent.cpp'; fi`
 
-./src/math/libbayes_a-Arithmetics.o: ./src/math/Arithmetics.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Arithmetics.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo -c -o ./src/math/libbayes_a-Arithmetics.o `test -f './src/math/Arithmetics.cpp' || echo '$(srcdir)/'`./src/math/Arithmetics.cpp
-	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Po
-#	$(AM_V_CXX)source='./src/math/Arithmetics.cpp' object='./src/math/libbayes_a-Arithmetics.o' libtool=no \
+./src/math/libbayes_a-Density.o: ./src/math/Density.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Density.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo -c -o ./src/math/libbayes_a-Density.o `test -f './src/math/Density.cpp' || echo '$(srcdir)/'`./src/math/Density.cpp
+	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo ./src/math/$(DEPDIR)/libbayes_a-Density.Po
+#	$(AM_V_CXX)source='./src/math/Density.cpp' object='./src/math/libbayes_a-Density.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Arithmetics.o `test -f './src/math/Arithmetics.cpp' || echo '$(srcdir)/'`./src/math/Arithmetics.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Density.o `test -f './src/math/Density.cpp' || echo '$(srcdir)/'`./src/math/Density.cpp
 
-./src/math/libbayes_a-Arithmetics.obj: ./src/math/Arithmetics.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Arithmetics.obj -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo -c -o ./src/math/libbayes_a-Arithmetics.obj `if test -f './src/math/Arithmetics.cpp'; then $(CYGPATH_W) './src/math/Arithmetics.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Arithmetics.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Tpo ./src/math/$(DEPDIR)/libbayes_a-Arithmetics.Po
-#	$(AM_V_CXX)source='./src/math/Arithmetics.cpp' object='./src/math/libbayes_a-Arithmetics.obj' libtool=no \
+./src/math/libbayes_a-Density.obj: ./src/math/Density.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Density.obj -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo -c -o ./src/math/libbayes_a-Density.obj `if test -f './src/math/Density.cpp'; then $(CYGPATH_W) './src/math/Density.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Density.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/math/$(DEPDIR)/libbayes_a-Density.Tpo ./src/math/$(DEPDIR)/libbayes_a-Density.Po
+#	$(AM_V_CXX)source='./src/math/Density.cpp' object='./src/math/libbayes_a-Density.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Arithmetics.obj `if test -f './src/math/Arithmetics.cpp'; then $(CYGPATH_W) './src/math/Arithmetics.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Arithmetics.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Density.obj `if test -f './src/math/Density.cpp'; then $(CYGPATH_W) './src/math/Density.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Density.cpp'; fi`
 
 ./src/math/libbayes_a-Randomness.o: ./src/math/Randomness.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/math/libbayes_a-Randomness.o -MD -MP -MF ./src/math/$(DEPDIR)/libbayes_a-Randomness.Tpo -c -o ./src/math/libbayes_a-Randomness.o `test -f './src/math/Randomness.cpp' || echo '$(srcdir)/'`./src/math/Randomness.cpp
@@ -3834,75 +3933,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libbayes_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/math/libbayes_a-Randomness.obj `if test -f './src/math/Randomness.cpp'; then $(CYGPATH_W) './src/math/Randomness.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/math/Randomness.cpp'; fi`
 
-./src/comm/libcommdummy_a-PendingSwap.o: ./src/comm/PendingSwap.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-PendingSwap.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo -c -o ./src/comm/libcommdummy_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Po
-#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommdummy_a-PendingSwap.o' libtool=no \
+./src/comm/libcommdummy_a-CommRequest.o: ./src/comm/CommRequest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-CommRequest.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo -c -o ./src/comm/libcommdummy_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Po
+#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommdummy_a-CommRequest.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
 
-./src/comm/libcommdummy_a-PendingSwap.obj: ./src/comm/PendingSwap.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-PendingSwap.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo -c -o ./src/comm/libcommdummy_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Po
-#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommdummy_a-PendingSwap.obj' libtool=no \
+./src/comm/libcommdummy_a-CommRequest.obj: ./src/comm/CommRequest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-CommRequest.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo -c -o ./src/comm/libcommdummy_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Po
+#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommdummy_a-CommRequest.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
-
-./src/comm/libcommdummy_a-IncompleteMesh.o: ./src/comm/IncompleteMesh.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-IncompleteMesh.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommdummy_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Po
-#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommdummy_a-IncompleteMesh.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
-
-./src/comm/libcommdummy_a-IncompleteMesh.obj: ./src/comm/IncompleteMesh.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-IncompleteMesh.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommdummy_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Po
-#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommdummy_a-IncompleteMesh.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
-
-./src/comm/libcommdummy_a-RemoteComm.o: ./src/comm/RemoteComm.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-RemoteComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo -c -o ./src/comm/libcommdummy_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Po
-#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommdummy_a-RemoteComm.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
-
-./src/comm/libcommdummy_a-RemoteComm.obj: ./src/comm/RemoteComm.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-RemoteComm.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo -c -o ./src/comm/libcommdummy_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Po
-#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommdummy_a-RemoteComm.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
-
-./src/comm/libcommdummy_a-SwapElem.o: ./src/comm/SwapElem.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-SwapElem.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo -c -o ./src/comm/libcommdummy_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Po
-#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommdummy_a-SwapElem.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
-
-./src/comm/libcommdummy_a-SwapElem.obj: ./src/comm/SwapElem.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-SwapElem.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo -c -o ./src/comm/libcommdummy_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Po
-#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommdummy_a-SwapElem.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
-
-./src/comm/libcommdummy_a-ParallelSetup.o: ./src/comm/ParallelSetup.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-ParallelSetup.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo -c -o ./src/comm/libcommdummy_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Po
-#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommdummy_a-ParallelSetup.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
-
-./src/comm/libcommdummy_a-ParallelSetup.obj: ./src/comm/ParallelSetup.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-ParallelSetup.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo -c -o ./src/comm/libcommdummy_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Po
-#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommdummy_a-ParallelSetup.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
 
 ./src/comm/libcommdummy_a-Communicator.o: ./src/comm/Communicator.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-Communicator.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-Communicator.Tpo -c -o ./src/comm/libcommdummy_a-Communicator.o `test -f './src/comm/Communicator.cpp' || echo '$(srcdir)/'`./src/comm/Communicator.cpp
@@ -3918,19 +3961,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-Communicator.obj `if test -f './src/comm/Communicator.cpp'; then $(CYGPATH_W) './src/comm/Communicator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/Communicator.cpp'; fi`
 
-./src/comm/libcommdummy_a-CommRequest.o: ./src/comm/CommRequest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-CommRequest.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo -c -o ./src/comm/libcommdummy_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Po
-#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommdummy_a-CommRequest.o' libtool=no \
+./src/comm/libcommdummy_a-IncompleteMesh.o: ./src/comm/IncompleteMesh.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-IncompleteMesh.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommdummy_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Po
+#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommdummy_a-IncompleteMesh.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
 
-./src/comm/libcommdummy_a-CommRequest.obj: ./src/comm/CommRequest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-CommRequest.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo -c -o ./src/comm/libcommdummy_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-CommRequest.Po
-#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommdummy_a-CommRequest.obj' libtool=no \
+./src/comm/libcommdummy_a-IncompleteMesh.obj: ./src/comm/IncompleteMesh.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-IncompleteMesh.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommdummy_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-IncompleteMesh.Po
+#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommdummy_a-IncompleteMesh.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
 
 ./src/comm/libcommdummy_a-LocalComm.o: ./src/comm/LocalComm.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-LocalComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-LocalComm.Tpo -c -o ./src/comm/libcommdummy_a-LocalComm.o `test -f './src/comm/LocalComm.cpp' || echo '$(srcdir)/'`./src/comm/LocalComm.cpp
@@ -3959,6 +4002,62 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/comm/LocalSwap.cpp' object='./src/comm/libcommdummy_a-LocalSwap.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-LocalSwap.obj `if test -f './src/comm/LocalSwap.cpp'; then $(CYGPATH_W) './src/comm/LocalSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/LocalSwap.cpp'; fi`
+
+./src/comm/libcommdummy_a-ParallelSetup.o: ./src/comm/ParallelSetup.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-ParallelSetup.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo -c -o ./src/comm/libcommdummy_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Po
+#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommdummy_a-ParallelSetup.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
+
+./src/comm/libcommdummy_a-ParallelSetup.obj: ./src/comm/ParallelSetup.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-ParallelSetup.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo -c -o ./src/comm/libcommdummy_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-ParallelSetup.Po
+#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommdummy_a-ParallelSetup.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
+
+./src/comm/libcommdummy_a-PendingSwap.o: ./src/comm/PendingSwap.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-PendingSwap.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo -c -o ./src/comm/libcommdummy_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Po
+#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommdummy_a-PendingSwap.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
+
+./src/comm/libcommdummy_a-PendingSwap.obj: ./src/comm/PendingSwap.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-PendingSwap.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo -c -o ./src/comm/libcommdummy_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-PendingSwap.Po
+#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommdummy_a-PendingSwap.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
+
+./src/comm/libcommdummy_a-RemoteComm.o: ./src/comm/RemoteComm.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-RemoteComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo -c -o ./src/comm/libcommdummy_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Po
+#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommdummy_a-RemoteComm.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
+
+./src/comm/libcommdummy_a-RemoteComm.obj: ./src/comm/RemoteComm.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-RemoteComm.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo -c -o ./src/comm/libcommdummy_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-RemoteComm.Po
+#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommdummy_a-RemoteComm.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
+
+./src/comm/libcommdummy_a-SwapElem.o: ./src/comm/SwapElem.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-SwapElem.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo -c -o ./src/comm/libcommdummy_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Po
+#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommdummy_a-SwapElem.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
+
+./src/comm/libcommdummy_a-SwapElem.obj: ./src/comm/SwapElem.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommdummy_a-SwapElem.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo -c -o ./src/comm/libcommdummy_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommdummy_a-SwapElem.Po
+#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommdummy_a-SwapElem.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommdummy_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
 
 ./src/comm/dummy/libcommdummy_a-CommRequestImpl.o: ./src/comm/dummy/CommRequestImpl.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/dummy/libcommdummy_a-CommRequestImpl.o -MD -MP -MF ./src/comm/dummy/$(DEPDIR)/libcommdummy_a-CommRequestImpl.Tpo -c -o ./src/comm/dummy/libcommdummy_a-CommRequestImpl.o `test -f './src/comm/dummy/CommRequestImpl.cpp' || echo '$(srcdir)/'`./src/comm/dummy/CommRequestImpl.cpp
@@ -4002,6 +4101,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/dummy/libcommdummy_a-RemoteCommImpl.obj `if test -f './src/comm/dummy/RemoteCommImpl.cpp'; then $(CYGPATH_W) './src/comm/dummy/RemoteCommImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/dummy/RemoteCommImpl.cpp'; fi`
 
+./src/comm/threads/libcommdummy_a-MessageQueue.o: ./src/comm/threads/MessageQueue.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommdummy_a-MessageQueue.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Po
+#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommdummy_a-MessageQueue.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
+
+./src/comm/threads/libcommdummy_a-MessageQueue.obj: ./src/comm/threads/MessageQueue.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommdummy_a-MessageQueue.obj -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Po
+#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommdummy_a-MessageQueue.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
+
 ./src/comm/threads/libcommdummy_a-MessageQueueSingle.o: ./src/comm/threads/MessageQueueSingle.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommdummy_a-MessageQueueSingle.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueueSingle.Tpo -c -o ./src/comm/threads/libcommdummy_a-MessageQueueSingle.o `test -f './src/comm/threads/MessageQueueSingle.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueueSingle.cpp
 	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueueSingle.Tpo ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueueSingle.Po
@@ -4030,19 +4143,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommdummy_a-ThreadResource.obj `if test -f './src/comm/threads/ThreadResource.cpp'; then $(CYGPATH_W) './src/comm/threads/ThreadResource.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/ThreadResource.cpp'; fi`
 
-./src/comm/threads/libcommdummy_a-MessageQueue.o: ./src/comm/threads/MessageQueue.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommdummy_a-MessageQueue.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Po
-#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommdummy_a-MessageQueue.o' libtool=no \
+./src/comm/threads/libcommmpi_a-MessageQueue.o: ./src/comm/threads/MessageQueue.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommmpi_a-MessageQueue.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Po
+#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommmpi_a-MessageQueue.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
 
-./src/comm/threads/libcommdummy_a-MessageQueue.obj: ./src/comm/threads/MessageQueue.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommdummy_a-MessageQueue.obj -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommdummy_a-MessageQueue.Po
-#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommdummy_a-MessageQueue.obj' libtool=no \
+./src/comm/threads/libcommmpi_a-MessageQueue.obj: ./src/comm/threads/MessageQueue.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommmpi_a-MessageQueue.obj -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Po
+#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommmpi_a-MessageQueue.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommdummy_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommdummy_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
 
 ./src/comm/threads/libcommmpi_a-MessageQueueSingle.o: ./src/comm/threads/MessageQueueSingle.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommmpi_a-MessageQueueSingle.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueueSingle.Tpo -c -o ./src/comm/threads/libcommmpi_a-MessageQueueSingle.o `test -f './src/comm/threads/MessageQueueSingle.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueueSingle.cpp
@@ -4072,19 +4185,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommmpi_a-ThreadResource.obj `if test -f './src/comm/threads/ThreadResource.cpp'; then $(CYGPATH_W) './src/comm/threads/ThreadResource.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/ThreadResource.cpp'; fi`
 
-./src/comm/threads/libcommmpi_a-MessageQueue.o: ./src/comm/threads/MessageQueue.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommmpi_a-MessageQueue.o -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Po
-#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommmpi_a-MessageQueue.o' libtool=no \
+./src/comm/mpi/libcommmpi_a-CommRequestImpl.o: ./src/comm/mpi/CommRequestImpl.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o `test -f './src/comm/mpi/CommRequestImpl.cpp' || echo '$(srcdir)/'`./src/comm/mpi/CommRequestImpl.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Po
+#	$(AM_V_CXX)source='./src/comm/mpi/CommRequestImpl.cpp' object='./src/comm/mpi/libcommmpi_a-CommRequestImpl.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.o `test -f './src/comm/threads/MessageQueue.cpp' || echo '$(srcdir)/'`./src/comm/threads/MessageQueue.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o `test -f './src/comm/mpi/CommRequestImpl.cpp' || echo '$(srcdir)/'`./src/comm/mpi/CommRequestImpl.cpp
 
-./src/comm/threads/libcommmpi_a-MessageQueue.obj: ./src/comm/threads/MessageQueue.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/threads/libcommmpi_a-MessageQueue.obj -MD -MP -MF ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Tpo ./src/comm/threads/$(DEPDIR)/libcommmpi_a-MessageQueue.Po
-#	$(AM_V_CXX)source='./src/comm/threads/MessageQueue.cpp' object='./src/comm/threads/libcommmpi_a-MessageQueue.obj' libtool=no \
+./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj: ./src/comm/mpi/CommRequestImpl.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj `if test -f './src/comm/mpi/CommRequestImpl.cpp'; then $(CYGPATH_W) './src/comm/mpi/CommRequestImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/CommRequestImpl.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Po
+#	$(AM_V_CXX)source='./src/comm/mpi/CommRequestImpl.cpp' object='./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/threads/libcommmpi_a-MessageQueue.obj `if test -f './src/comm/threads/MessageQueue.cpp'; then $(CYGPATH_W) './src/comm/threads/MessageQueue.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/threads/MessageQueue.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj `if test -f './src/comm/mpi/CommRequestImpl.cpp'; then $(CYGPATH_W) './src/comm/mpi/CommRequestImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/CommRequestImpl.cpp'; fi`
 
 ./src/comm/mpi/libcommmpi_a-MpiType.o: ./src/comm/mpi/MpiType.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-MpiType.o -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-MpiType.Tpo -c -o ./src/comm/mpi/libcommmpi_a-MpiType.o `test -f './src/comm/mpi/MpiType.cpp' || echo '$(srcdir)/'`./src/comm/mpi/MpiType.cpp
@@ -4099,20 +4212,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./src/comm/mpi/MpiType.cpp' object='./src/comm/mpi/libcommmpi_a-MpiType.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-MpiType.obj `if test -f './src/comm/mpi/MpiType.cpp'; then $(CYGPATH_W) './src/comm/mpi/MpiType.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/MpiType.cpp'; fi`
-
-./src/comm/mpi/libcommmpi_a-CommRequestImpl.o: ./src/comm/mpi/CommRequestImpl.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o `test -f './src/comm/mpi/CommRequestImpl.cpp' || echo '$(srcdir)/'`./src/comm/mpi/CommRequestImpl.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Po
-#	$(AM_V_CXX)source='./src/comm/mpi/CommRequestImpl.cpp' object='./src/comm/mpi/libcommmpi_a-CommRequestImpl.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.o `test -f './src/comm/mpi/CommRequestImpl.cpp' || echo '$(srcdir)/'`./src/comm/mpi/CommRequestImpl.cpp
-
-./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj: ./src/comm/mpi/CommRequestImpl.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj `if test -f './src/comm/mpi/CommRequestImpl.cpp'; then $(CYGPATH_W) './src/comm/mpi/CommRequestImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/CommRequestImpl.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Tpo ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-CommRequestImpl.Po
-#	$(AM_V_CXX)source='./src/comm/mpi/CommRequestImpl.cpp' object='./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-CommRequestImpl.obj `if test -f './src/comm/mpi/CommRequestImpl.cpp'; then $(CYGPATH_W) './src/comm/mpi/CommRequestImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/CommRequestImpl.cpp'; fi`
 
 ./src/comm/mpi/libcommmpi_a-PendingSwapImpl.o: ./src/comm/mpi/PendingSwapImpl.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/mpi/libcommmpi_a-PendingSwapImpl.o -MD -MP -MF ./src/comm/mpi/$(DEPDIR)/libcommmpi_a-PendingSwapImpl.Tpo -c -o ./src/comm/mpi/libcommmpi_a-PendingSwapImpl.o `test -f './src/comm/mpi/PendingSwapImpl.cpp' || echo '$(srcdir)/'`./src/comm/mpi/PendingSwapImpl.cpp
@@ -4142,75 +4241,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/mpi/libcommmpi_a-RemoteCommImpl.obj `if test -f './src/comm/mpi/RemoteCommImpl.cpp'; then $(CYGPATH_W) './src/comm/mpi/RemoteCommImpl.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/mpi/RemoteCommImpl.cpp'; fi`
 
-./src/comm/libcommmpi_a-PendingSwap.o: ./src/comm/PendingSwap.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-PendingSwap.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo -c -o ./src/comm/libcommmpi_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Po
-#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommmpi_a-PendingSwap.o' libtool=no \
+./src/comm/libcommmpi_a-CommRequest.o: ./src/comm/CommRequest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-CommRequest.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo -c -o ./src/comm/libcommmpi_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Po
+#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommmpi_a-CommRequest.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
 
-./src/comm/libcommmpi_a-PendingSwap.obj: ./src/comm/PendingSwap.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-PendingSwap.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo -c -o ./src/comm/libcommmpi_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Po
-#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommmpi_a-PendingSwap.obj' libtool=no \
+./src/comm/libcommmpi_a-CommRequest.obj: ./src/comm/CommRequest.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-CommRequest.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo -c -o ./src/comm/libcommmpi_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Po
+#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommmpi_a-CommRequest.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
-
-./src/comm/libcommmpi_a-IncompleteMesh.o: ./src/comm/IncompleteMesh.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-IncompleteMesh.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommmpi_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Po
-#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommmpi_a-IncompleteMesh.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
-
-./src/comm/libcommmpi_a-IncompleteMesh.obj: ./src/comm/IncompleteMesh.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-IncompleteMesh.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommmpi_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Po
-#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommmpi_a-IncompleteMesh.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
-
-./src/comm/libcommmpi_a-RemoteComm.o: ./src/comm/RemoteComm.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-RemoteComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo -c -o ./src/comm/libcommmpi_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Po
-#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommmpi_a-RemoteComm.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
-
-./src/comm/libcommmpi_a-RemoteComm.obj: ./src/comm/RemoteComm.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-RemoteComm.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo -c -o ./src/comm/libcommmpi_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Po
-#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommmpi_a-RemoteComm.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
-
-./src/comm/libcommmpi_a-SwapElem.o: ./src/comm/SwapElem.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-SwapElem.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo -c -o ./src/comm/libcommmpi_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Po
-#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommmpi_a-SwapElem.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
-
-./src/comm/libcommmpi_a-SwapElem.obj: ./src/comm/SwapElem.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-SwapElem.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo -c -o ./src/comm/libcommmpi_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Po
-#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommmpi_a-SwapElem.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
-
-./src/comm/libcommmpi_a-ParallelSetup.o: ./src/comm/ParallelSetup.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-ParallelSetup.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo -c -o ./src/comm/libcommmpi_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Po
-#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommmpi_a-ParallelSetup.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
-
-./src/comm/libcommmpi_a-ParallelSetup.obj: ./src/comm/ParallelSetup.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-ParallelSetup.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo -c -o ./src/comm/libcommmpi_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Po
-#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommmpi_a-ParallelSetup.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
 
 ./src/comm/libcommmpi_a-Communicator.o: ./src/comm/Communicator.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-Communicator.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-Communicator.Tpo -c -o ./src/comm/libcommmpi_a-Communicator.o `test -f './src/comm/Communicator.cpp' || echo '$(srcdir)/'`./src/comm/Communicator.cpp
@@ -4226,19 +4269,19 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-Communicator.obj `if test -f './src/comm/Communicator.cpp'; then $(CYGPATH_W) './src/comm/Communicator.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/Communicator.cpp'; fi`
 
-./src/comm/libcommmpi_a-CommRequest.o: ./src/comm/CommRequest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-CommRequest.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo -c -o ./src/comm/libcommmpi_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Po
-#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommmpi_a-CommRequest.o' libtool=no \
+./src/comm/libcommmpi_a-IncompleteMesh.o: ./src/comm/IncompleteMesh.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-IncompleteMesh.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommmpi_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Po
+#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommmpi_a-IncompleteMesh.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-CommRequest.o `test -f './src/comm/CommRequest.cpp' || echo '$(srcdir)/'`./src/comm/CommRequest.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-IncompleteMesh.o `test -f './src/comm/IncompleteMesh.cpp' || echo '$(srcdir)/'`./src/comm/IncompleteMesh.cpp
 
-./src/comm/libcommmpi_a-CommRequest.obj: ./src/comm/CommRequest.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-CommRequest.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo -c -o ./src/comm/libcommmpi_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-CommRequest.Po
-#	$(AM_V_CXX)source='./src/comm/CommRequest.cpp' object='./src/comm/libcommmpi_a-CommRequest.obj' libtool=no \
+./src/comm/libcommmpi_a-IncompleteMesh.obj: ./src/comm/IncompleteMesh.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-IncompleteMesh.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo -c -o ./src/comm/libcommmpi_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-IncompleteMesh.Po
+#	$(AM_V_CXX)source='./src/comm/IncompleteMesh.cpp' object='./src/comm/libcommmpi_a-IncompleteMesh.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-CommRequest.obj `if test -f './src/comm/CommRequest.cpp'; then $(CYGPATH_W) './src/comm/CommRequest.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/CommRequest.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-IncompleteMesh.obj `if test -f './src/comm/IncompleteMesh.cpp'; then $(CYGPATH_W) './src/comm/IncompleteMesh.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/IncompleteMesh.cpp'; fi`
 
 ./src/comm/libcommmpi_a-LocalComm.o: ./src/comm/LocalComm.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-LocalComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-LocalComm.Tpo -c -o ./src/comm/libcommmpi_a-LocalComm.o `test -f './src/comm/LocalComm.cpp' || echo '$(srcdir)/'`./src/comm/LocalComm.cpp
@@ -4268,61 +4311,61 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-LocalSwap.obj `if test -f './src/comm/LocalSwap.cpp'; then $(CYGPATH_W) './src/comm/LocalSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/LocalSwap.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o: ./lib/ncl-2.1.18/ncl/nxstoken.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o `test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstoken.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstoken.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o' libtool=no \
+./src/comm/libcommmpi_a-ParallelSetup.o: ./src/comm/ParallelSetup.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-ParallelSetup.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo -c -o ./src/comm/libcommmpi_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Po
+#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommmpi_a-ParallelSetup.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o `test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstoken.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-ParallelSetup.o `test -f './src/comm/ParallelSetup.cpp' || echo '$(srcdir)/'`./src/comm/ParallelSetup.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj: ./lib/ncl-2.1.18/ncl/nxstoken.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj `if test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstoken.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstoken.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstoken.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj' libtool=no \
+./src/comm/libcommmpi_a-ParallelSetup.obj: ./src/comm/ParallelSetup.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-ParallelSetup.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo -c -o ./src/comm/libcommmpi_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-ParallelSetup.Po
+#	$(AM_V_CXX)source='./src/comm/ParallelSetup.cpp' object='./src/comm/libcommmpi_a-ParallelSetup.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj `if test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstoken.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstoken.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-ParallelSetup.obj `if test -f './src/comm/ParallelSetup.cpp'; then $(CYGPATH_W) './src/comm/ParallelSetup.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/ParallelSetup.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o: ./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o `test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsdatablock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o' libtool=no \
+./src/comm/libcommmpi_a-PendingSwap.o: ./src/comm/PendingSwap.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-PendingSwap.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo -c -o ./src/comm/libcommmpi_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Po
+#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommmpi_a-PendingSwap.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o `test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-PendingSwap.o `test -f './src/comm/PendingSwap.cpp' || echo '$(srcdir)/'`./src/comm/PendingSwap.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj: ./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsdatablock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj' libtool=no \
+./src/comm/libcommmpi_a-PendingSwap.obj: ./src/comm/PendingSwap.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-PendingSwap.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo -c -o ./src/comm/libcommmpi_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-PendingSwap.Po
+#	$(AM_V_CXX)source='./src/comm/PendingSwap.cpp' object='./src/comm/libcommmpi_a-PendingSwap.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-PendingSwap.obj `if test -f './src/comm/PendingSwap.cpp'; then $(CYGPATH_W) './src/comm/PendingSwap.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/PendingSwap.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o: ./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o `test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o' libtool=no \
+./src/comm/libcommmpi_a-RemoteComm.o: ./src/comm/RemoteComm.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-RemoteComm.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo -c -o ./src/comm/libcommmpi_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Po
+#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommmpi_a-RemoteComm.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o `test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-RemoteComm.o `test -f './src/comm/RemoteComm.cpp' || echo '$(srcdir)/'`./src/comm/RemoteComm.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj: ./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj' libtool=no \
+./src/comm/libcommmpi_a-RemoteComm.obj: ./src/comm/RemoteComm.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-RemoteComm.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo -c -o ./src/comm/libcommmpi_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-RemoteComm.Po
+#	$(AM_V_CXX)source='./src/comm/RemoteComm.cpp' object='./src/comm/libcommmpi_a-RemoteComm.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-RemoteComm.obj `if test -f './src/comm/RemoteComm.cpp'; then $(CYGPATH_W) './src/comm/RemoteComm.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/RemoteComm.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o: ./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o `test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o' libtool=no \
+./src/comm/libcommmpi_a-SwapElem.o: ./src/comm/SwapElem.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-SwapElem.o -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo -c -o ./src/comm/libcommmpi_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Po
+#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommmpi_a-SwapElem.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o `test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-SwapElem.o `test -f './src/comm/SwapElem.cpp' || echo '$(srcdir)/'`./src/comm/SwapElem.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj: ./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj `if test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj' libtool=no \
+./src/comm/libcommmpi_a-SwapElem.obj: ./src/comm/SwapElem.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -MT ./src/comm/libcommmpi_a-SwapElem.obj -MD -MP -MF ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo -c -o ./src/comm/libcommmpi_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Tpo ./src/comm/$(DEPDIR)/libcommmpi_a-SwapElem.Po
+#	$(AM_V_CXX)source='./src/comm/SwapElem.cpp' object='./src/comm/libcommmpi_a-SwapElem.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj `if test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libcommmpi_a_CXXFLAGS) $(CXXFLAGS) -c -o ./src/comm/libcommmpi_a-SwapElem.obj `if test -f './src/comm/SwapElem.cpp'; then $(CYGPATH_W) './src/comm/SwapElem.cpp'; else $(CYGPATH_W) '$(srcdir)/./src/comm/SwapElem.cpp'; fi`
 
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.o: ./lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsassumptionsblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.o `test -f './lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp
@@ -4338,19 +4381,33 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsassumptionsblock.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o: ./lib/ncl-2.1.18/ncl/nxssetreader.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o `test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxssetreader.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxssetreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o: ./lib/ncl-2.1.18/ncl/nxsblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o `test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsblock.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o `test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxssetreader.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o `test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsblock.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj: ./lib/ncl-2.1.18/ncl/nxssetreader.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxssetreader.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxssetreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj: ./lib/ncl-2.1.18/ncl/nxsblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsblock.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxssetreader.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsblock.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o: ./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o `test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o `test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj: ./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscharactersblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxscharactersblock.cpp'; fi`
 
 ./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.o: ./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxscxxdiscretematrix.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.o `test -f './lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp
@@ -4366,6 +4423,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.obj `if test -f './lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxscxxdiscretematrix.cpp'; fi`
 
+./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o: ./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o `test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsdatablock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o `test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj: ./lib/ncl-2.1.18/ncl/nxsdatablock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdatablock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsdatablock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsdatablock.cpp'; fi`
+
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.o: ./lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdistancesblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.o `test -f './lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp
 	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdistancesblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsdistancesblock.Po
@@ -4379,6 +4450,20 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsdistancesblock.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o: ./lib/ncl-2.1.18/ncl/nxsexception.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o `test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsexception.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsexception.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o `test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsexception.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj: ./lib/ncl-2.1.18/ncl/nxsexception.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj `if test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsexception.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsexception.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsexception.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj `if test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsexception.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsexception.cpp'; fi`
 
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.o: ./lib/ncl-2.1.18/ncl/nxsmultiformat.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsmultiformat.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.o `test -f './lib/ncl-2.1.18/ncl/nxsmultiformat.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsmultiformat.cpp
@@ -4394,19 +4479,61 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.obj `if test -f './lib/ncl-2.1.18/ncl/nxsmultiformat.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsmultiformat.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsmultiformat.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o: ./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o `test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstreesblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o: ./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o `test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o `test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o `test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj: ./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstreesblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj: ./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj `if test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxspublicblocks.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.obj `if test -f './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxspublicblocks.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o: ./lib/ncl-2.1.18/ncl/nxsreader.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o `test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsreader.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o `test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsreader.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj: ./lib/ncl-2.1.18/ncl/nxsreader.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsreader.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsreader.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o: ./lib/ncl-2.1.18/ncl/nxssetreader.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o `test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxssetreader.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxssetreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o `test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxssetreader.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj: ./lib/ncl-2.1.18/ncl/nxssetreader.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxssetreader.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxssetreader.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxssetreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxssetreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxssetreader.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o: ./lib/ncl-2.1.18/ncl/nxsstring.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o `test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsstring.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsstring.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o `test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsstring.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj: ./lib/ncl-2.1.18/ncl/nxsstring.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj `if test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsstring.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsstring.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsstring.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj `if test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsstring.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsstring.cpp'; fi`
 
 ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.o: ./lib/ncl-2.1.18/ncl/nxstaxaassociationblock.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstaxaassociationblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.o `test -f './lib/ncl-2.1.18/ncl/nxstaxaassociationblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstaxaassociationblock.cpp
@@ -4436,19 +4563,33 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstaxablock.obj `if test -f './lib/ncl-2.1.18/ncl/nxstaxablock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstaxablock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstaxablock.cpp'; fi`
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o: ./lib/ncl-2.1.18/ncl/nxsreader.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o `test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsreader.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o: ./lib/ncl-2.1.18/ncl/nxstoken.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o `test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstoken.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstoken.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o `test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsreader.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o `test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstoken.cpp
 
-./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj: ./lib/ncl-2.1.18/ncl/nxsreader.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsreader.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsreader.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsreader.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj' libtool=no \
+./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj: ./lib/ncl-2.1.18/ncl/nxstoken.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj `if test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstoken.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstoken.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstoken.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstoken.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsreader.obj `if test -f './lib/ncl-2.1.18/ncl/nxsreader.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsreader.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsreader.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstoken.obj `if test -f './lib/ncl-2.1.18/ncl/nxstoken.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstoken.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstoken.cpp'; fi`
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o: ./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o `test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstreesblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o `test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
+
+./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj: ./lib/ncl-2.1.18/ncl/nxstreesblock.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; fi`
+	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxstreesblock.Po
+#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxstreesblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxstreesblock.cpp'; fi`
 
 ./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.o: ./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsunalignedblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.o `test -f './lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp
@@ -4463,48 +4604,6 @@ include ./tests/$(DEPDIR)/exatest-exatest.Po
 #	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsunalignedblock.cpp'; fi`
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o: ./lib/ncl-2.1.18/ncl/nxsblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o `test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsblock.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o `test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsblock.cpp
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj: ./lib/ncl-2.1.18/ncl/nxsblock.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsblock.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsblock.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsblock.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsblock.obj `if test -f './lib/ncl-2.1.18/ncl/nxsblock.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsblock.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsblock.cpp'; fi`
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o: ./lib/ncl-2.1.18/ncl/nxsstring.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o `test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsstring.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsstring.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o `test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsstring.cpp
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj: ./lib/ncl-2.1.18/ncl/nxsstring.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj `if test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsstring.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsstring.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsstring.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsstring.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsstring.obj `if test -f './lib/ncl-2.1.18/ncl/nxsstring.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsstring.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsstring.cpp'; fi`
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o: ./lib/ncl-2.1.18/ncl/nxsexception.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o `test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsexception.cpp
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsexception.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o `test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp' || echo '$(srcdir)/'`./lib/ncl-2.1.18/ncl/nxsexception.cpp
-
-./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj: ./lib/ncl-2.1.18/ncl/nxsexception.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -MT ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj -MD -MP -MF ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj `if test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsexception.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsexception.cpp'; fi`
-	$(AM_V_at)$(am__mv) ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Tpo ./lib/ncl-2.1.18/ncl/$(DEPDIR)/libncl_a-nxsexception.Po
-#	$(AM_V_CXX)source='./lib/ncl-2.1.18/ncl/nxsexception.cpp' object='./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libncl_a_CXXFLAGS) $(CXXFLAGS) -c -o ./lib/ncl-2.1.18/ncl/libncl_a-nxsexception.obj `if test -f './lib/ncl-2.1.18/ncl/nxsexception.cpp'; then $(CYGPATH_W) './lib/ncl-2.1.18/ncl/nxsexception.cpp'; else $(CYGPATH_W) '$(srcdir)/./lib/ncl-2.1.18/ncl/nxsexception.cpp'; fi`
 
 ./src/apps/consense-consense.o: ./src/apps/consense.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(consense_CXXFLAGS) $(CXXFLAGS) -MT ./src/apps/consense-consense.o -MD -MP -MF ./src/apps/$(DEPDIR)/consense-consense.Tpo -c -o ./src/apps/consense-consense.o `test -f './src/apps/consense.cpp' || echo '$(srcdir)/'`./src/apps/consense.cpp
@@ -5041,7 +5140,7 @@ uninstall-am: uninstall-binPROGRAMS
 
 .PHONY: my-update-src doc mydist  man  dist
 my-update-src:
-	@echo -n "" > src.am 
+	@echo "" > src.am 
 	@echo "libbayes_a_SOURCES=" $(shell echo "./src/common.h ./src/pll.h")   $(shell find $(folders)  -maxdepth 1   -name "*.[cht]pp" ) >> src.am
 	@echo "libcommdummy_a_SOURCES=" $(shell find ${dummyFolds} -maxdepth 1 -name "*.[cht]pp" ) >> src.am
 	@echo "libcommmpi_a_SOURCES=" $(shell find ${mpiFolds}  -maxdepth 1 -name "*.[cht]pp" ) >> src.am

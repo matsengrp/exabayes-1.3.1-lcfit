@@ -2,7 +2,7 @@ folders=./src ./src/proposals ./src/parameters  ./src/config ./src/priors ./src/
 mpiFolds= ./src/comm/threads ./src/comm/mpi ./src/comm/
 dummyFolds= ./src/comm/ ./src/comm/dummy ./src/comm/threads
 my-update-src:
-	@echo -n "" > src.am 
+	@echo "" > src.am 
 	@echo "libbayes_a_SOURCES=" $(shell echo "./src/common.h ./src/pll.h")   $(shell find $(folders)  -maxdepth 1   -name "*.[cht]pp" ) >> src.am
 	@echo "libcommdummy_a_SOURCES=" $(shell find ${dummyFolds} -maxdepth 1 -name "*.[cht]pp" ) >> src.am
 	@echo "libcommmpi_a_SOURCES=" $(shell find ${mpiFolds}  -maxdepth 1 -name "*.[cht]pp" ) >> src.am

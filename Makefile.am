@@ -40,7 +40,7 @@ noinst_LIBRARIES+=libpll.a
 
 bin_PROGRAMS = yggdrasil  sdsf postProcParam credibleSet extractBips consense parser 	
 # lcfit
-liblcfit_a_CFLAGS=$(AM_CFLAGS) -std=c99 -O2 -Wall -pedantic -DLCFIT2_VERBOSE
+liblcfit_a_CFLAGS=$(AM_CFLAGS) -std=c99 -O2 -Wall -pedantic -DLCFIT3_VERBOSE -DLCFIT_AUTO_VERBOSE
 noinst_LIBRARIES+=liblcfit.a
 
 # configure examl/pll specific stuff 
