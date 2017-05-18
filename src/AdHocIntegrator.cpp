@@ -221,15 +221,6 @@ void run_lcfit2(std::string runid,
                 const double min_t, const double max_t,
                 const double t0, const double d1, const double d2)
 {
-  lcfit2_bsm_t model = {1100.0, 800.0, t0, d1, d2};
-  bool success = false;
-
-  if (abs(d1) < 0.1) {
-    const double alpha = 0.0;
-
-    lcfit2_fit_auto(lnl_fn.fn, lnl_fn.args, &model, min_t, max_t, alpha);
-  }
-
   const log_likelihood_data* lnl_data = static_cast<log_likelihood_data*>(lnl_fn.args);
 
   std::stringstream ss;
@@ -238,19 +229,6 @@ void run_lcfit2(std::string runid,
      << ".tab";
 
   const std::string file_suffix = ss.str();
-
-  // Write out lcfit2 data.
-  std::ofstream lcfit2Out("lcfit2" + file_suffix);
-
-  lcfit2Out << tolerance << "\t"
-            << lnl_data->n_evals << "\t"
-            << (success ? "true" : "false") << "\t"
-            << setprecision(std::numeric_limits<double>::digits10)
-            << model.c << "\t"
-            << model.m << "\t"
-            << t0 << "\t"
-            << d1 << "\t"
-            << d2 << std::endl;
 
   // Write out log-likelihoods evaluated at extreme points.
   std::ofstream extremesOut("extremes" + file_suffix);
